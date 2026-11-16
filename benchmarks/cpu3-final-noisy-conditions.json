@@ -1,0 +1,37 @@
+{
+  "label": "cpu3-final-noisy",
+  "mode": "noisy",
+  "database": "saas_perf_run_c43f65b79af44660ac9f95bd242afdea",
+  "image": "multi-tenant-saas-app:perf-final",
+  "foreground_only": true,
+  "api_cpu_override": 3,
+  "pool_size_override": null,
+  "commit_delay_override": null,
+  "seed": {
+    "database": "saas_perf_seed",
+    "tenants": 256,
+    "projects": 256,
+    "tasks": 512,
+    "fixture_digest": "6621bab14e12c8532aa5c7ac17f5d747",
+    "synthetic_only": true
+  },
+  "phases": [
+    {
+      "label": "cpu3-final-noisy-r1",
+      "started_unix": 1794730599.7348878,
+      "exit_code": 1
+    },
+    {
+      "label": "cpu3-final-noisy-r2",
+      "started_unix": 1794730699.437033,
+      "exit_code": 1
+    }
+  ],
+  "exit_code": 1,
+  "final_fixture_counts": {
+    "tenants": 256,
+    "projects": 256,
+    "tasks": 512
+  },
+  "live_deployment_restored": true
+}

@@ -1,0 +1,408 @@
+{
+  "unix": 1794723718.270661,
+  "pods": {
+    "saas-7768495d84-wwcl4": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.012",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 4.8234496E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6084544E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 8843584.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1579264.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4516096.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.54944E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8849888.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6522544E7",
+        "process_cpu_usage 0.030076726342710997",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.030108547314578005"
+      ],
+      "cpu_stat": "usage_usec 11928598\nuser_usec 11076337\nsystem_usec 852261\nnice_usec 0\nnr_periods 1566\nnr_throttled 4\nthrottled_usec 263747\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    },
+    "saas-7768495d84-xcvsc": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.01",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.008",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 4.9283072E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6535048E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 7305480.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1577344.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4347136.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.5230464E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8858720.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.651152E7",
+        "process_cpu_usage 0.026152874289324068",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.02618631206569804"
+      ],
+      "cpu_stat": "usage_usec 10405467\nuser_usec 9784367\nsystem_usec 621099\nnice_usec 0\nnr_periods 1584\nnr_throttled 5\nthrottled_usec 182705\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    }
+  },
+  "postgres": [
+    {
+      "state": "active",
+      "wait_event_type": null,
+      "wait_event": null,
+      "count": 2
+    },
+    {
+      "state": "idle",
+      "wait_event_type": "Client",
+      "wait_event": "ClientRead",
+      "count": 11
+    }
+  ]
+}
+{
+  "unix": 1794723721.411495,
+  "pods": {
+    "saas-7768495d84-wwcl4": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.012",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.0331648E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6084544E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 8843584.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1583744.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4631296.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.5622016E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8871368.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6652544E7",
+        "process_cpu_usage 0.037333333333333336",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.051085066666666665"
+      ],
+      "cpu_stat": "usage_usec 11983414\nuser_usec 11121841\nsystem_usec 861572\nnice_usec 0\nnr_periods 1579\nnr_throttled 4\nthrottled_usec 263747\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    },
+    "saas-7768495d84-xcvsc": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.01",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.008",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.1380224E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6535048E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 7305480.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1581824.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4411264.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.5346816E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8880016.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6642016E7",
+        "process_cpu_usage 0.01647058823529412",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.018954117647058823"
+      ],
+      "cpu_stat": "usage_usec 10477855\nuser_usec 9848468\nsystem_usec 629386\nnice_usec 0\nnr_periods 1601\nnr_throttled 5\nthrottled_usec 182705\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    }
+  },
+  "postgres": [
+    {
+      "state": "active",
+      "wait_event_type": null,
+      "wait_event": null,
+      "count": 1
+    },
+    {
+      "state": "idle",
+      "wait_event_type": "Client",
+      "wait_event": "ClientRead",
+      "count": 11
+    }
+  ]
+}
+{
+  "unix": 1794723723.8756962,
+  "pods": {
+    "saas-7768495d84-wwcl4": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.012",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.1380224E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6084544E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 8843584.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1583744.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4645760.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.5758208E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8871368.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.670452E7",
+        "process_cpu_usage 0.018666666666666668",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.0173736"
+      ],
+      "cpu_stat": "usage_usec 12059941\nuser_usec 11192246\nsystem_usec 867695\nnice_usec 0\nnr_periods 1595\nnr_throttled 4\nthrottled_usec 263747\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    },
+    "saas-7768495d84-xcvsc": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.01",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.008",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.3477376E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6535048E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 7305480.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1581824.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4460032.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.5456256E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8880016.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6683048E7",
+        "process_cpu_usage 0.016842105263157894",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.017987157894736844"
+      ],
+      "cpu_stat": "usage_usec 10546390\nuser_usec 9904676\nsystem_usec 641714\nnice_usec 0\nnr_periods 1620\nnr_throttled 5\nthrottled_usec 182705\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    }
+  },
+  "postgres": [
+    {
+      "state": "active",
+      "wait_event_type": null,
+      "wait_event": null,
+      "count": 1
+    },
+    {
+      "state": "idle",
+      "wait_event_type": "Client",
+      "wait_event": "ClientRead",
+      "count": 11
+    }
+  ]
+}
+{
+  "unix": 1794723726.375683,
+  "pods": {
+    "saas-7768495d84-wwcl4": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.012",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.24288E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6084544E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 8843584.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1583744.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4683392.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.588224E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8871368.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6747912E7",
+        "process_cpu_usage 0.013333333333333334",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.015386444444444444"
+      ],
+      "cpu_stat": "usage_usec 12122129\nuser_usec 11245326\nsystem_usec 876802\nnice_usec 0\nnr_periods 1613\nnr_throttled 4\nthrottled_usec 263747\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    },
+    "saas-7768495d84-xcvsc": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.01",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.008",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.3477376E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6535048E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 7305480.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1581824.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4476928.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.553088E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8880016.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6723288E7",
+        "process_cpu_usage 0.008888888888888889",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.010327111111111112"
+      ],
+      "cpu_stat": "usage_usec 10598538\nuser_usec 9949732\nsystem_usec 648806\nnice_usec 0\nnr_periods 1638\nnr_throttled 5\nthrottled_usec 182705\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    }
+  },
+  "postgres": [
+    {
+      "state": "active",
+      "wait_event_type": null,
+      "wait_event": null,
+      "count": 1
+    },
+    {
+      "state": "idle",
+      "wait_event_type": "Client",
+      "wait_event": "ClientRead",
+      "count": 11
+    }
+  ]
+}
+{
+  "unix": 1794723728.836848,
+  "pods": {
+    "saas-7768495d84-wwcl4": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.012",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.3477376E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6084544E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 8843584.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1583744.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4714496.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.6013824E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8871368.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.67808E7",
+        "process_cpu_usage 0.013333333333333334",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.019049"
+      ],
+      "cpu_stat": "usage_usec 12169746\nuser_usec 11284581\nsystem_usec 885165\nnice_usec 0\nnr_periods 1625\nnr_throttled 4\nthrottled_usec 263747\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    },
+    "saas-7768495d84-xcvsc": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.01",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.008",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.4525952E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6535048E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 7305480.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1581824.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4498816.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.5652608E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8880016.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6738576E7",
+        "process_cpu_usage 0.012",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.016676"
+      ],
+      "cpu_stat": "usage_usec 10634916\nuser_usec 9977960\nsystem_usec 656955\nnice_usec 0\nnr_periods 1648\nnr_throttled 5\nthrottled_usec 182705\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    }
+  },
+  "postgres": [
+    {
+      "state": "active",
+      "wait_event_type": null,
+      "wait_event": null,
+      "count": 1
+    },
+    {
+      "state": "idle",
+      "wait_event_type": "Client",
+      "wait_event": "ClientRead",
+      "count": 11
+    }
+  ]
+}
+{
+  "unix": 1794723731.364575,
+  "pods": {
+    "saas-7768495d84-wwcl4": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.012",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.4525952E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6084544E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 8843584.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1583744.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4727168.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.6093696E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8871368.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6797032E7",
+        "process_cpu_usage 0.01",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.013839"
+      ],
+      "cpu_stat": "usage_usec 12210529\nuser_usec 11315159\nsystem_usec 895370\nnice_usec 0\nnr_periods 1637\nnr_throttled 4\nthrottled_usec 263747\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    },
+    "saas-7768495d84-xcvsc": {
+      "metrics": [
+        "hikaricp_connections_active{pool=\"HikariPool-1\"} 0.0",
+        "hikaricp_connections_pending{pool=\"HikariPool-1\"} 0.0",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.01",
+        "jvm_gc_pause_seconds_count{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 1",
+        "jvm_gc_pause_seconds_sum{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.008",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"G1 Evacuation Pause\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_gc_pause_seconds_max{action=\"end of minor GC\",cause=\"Metadata GC Threshold\",gc=\"G1 Young Generation\"} 0.0",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Eden Space\"} 5.5574528E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Old Gen\"} 2.6535048E7",
+        "jvm_memory_used_bytes{area=\"heap\",id=\"G1 Survivor Space\"} 7305480.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-nmethods'\"} 1581824.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'non-profiled nmethods'\"} 4514048.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"CodeHeap 'profiled nmethods'\"} 1.5760384E7",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Compressed Class Space\"} 8880016.0",
+        "jvm_memory_used_bytes{area=\"nonheap\",id=\"Metaspace\"} 6.6772144E7",
+        "process_cpu_usage 0.010666666666666666",
+        "saas_api_budget_cached_tenants 0.0",
+        "saas_api_budget_pending_returns 0.0",
+        "system_cpu_usage 0.014889866666666666"
+      ],
+      "cpu_stat": "usage_usec 10680817\nuser_usec 10019653\nsystem_usec 661164\nnice_usec 0\nnr_periods 1663\nnr_throttled 5\nthrottled_usec 182705\nnr_bursts 0\nburst_usec 0\n",
+      "cpu_max": "250000 100000\n"
+    }
+  },
+  "postgres": [
+    {
+      "state": "active",
+      "wait_event_type": null,
+      "wait_event": null,
+      "count": 1
+    },
+    {
+      "state": "idle",
+      "wait_event_type": "Client",
+      "wait_event": "ClientRead",
+      "count": 11
+    }
+  ]
+}

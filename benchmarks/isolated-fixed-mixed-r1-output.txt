@@ -1,0 +1,134 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/mixed.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1024 max VUs, 50s max duration (incl. graceful stop):
+              * mixed: 10000.00 iterations/s for 20s (maxVUs: 512-1024, exec: mixed, gracefulStop: 30s)
+
+
+running (00.9s), 0407/0571 VUs, 7008 complete and 0 interrupted iterations
+mixed   [   5% ] 0407/0571 VUs  00.9s/20s  10000.00 iters/s
+
+running (01.9s), 0282/0581 VUs, 16367 complete and 0 interrupted iterations
+mixed   [  10% ] 0282/0581 VUs  01.9s/20s  10000.00 iters/s
+
+running (02.9s), 0280/0590 VUs, 25531 complete and 0 interrupted iterations
+mixed   [  15% ] 0280/0590 VUs  02.9s/20s  10000.00 iters/s
+
+running (03.9s), 0472/0649 VUs, 33729 complete and 0 interrupted iterations
+mixed   [  20% ] 0472/0649 VUs  03.9s/20s  10000.00 iters/s
+
+running (04.9s), 0435/0658 VUs, 43273 complete and 0 interrupted iterations
+mixed   [  25% ] 0435/0658 VUs  04.9s/20s  10000.00 iters/s
+
+running (05.9s), 0175/0659 VUs, 53222 complete and 0 interrupted iterations
+mixed   [  30% ] 0175/0659 VUs  05.9s/20s  10000.00 iters/s
+
+running (06.9s), 0410/0673 VUs, 61701 complete and 0 interrupted iterations
+mixed   [  35% ] 0410/0673 VUs  06.9s/20s  10000.00 iters/s
+
+running (07.9s), 0246/0677 VUs, 71899 complete and 0 interrupted iterations
+mixed   [  40% ] 0247/0677 VUs  07.9s/20s  10000.00 iters/s
+
+running (08.9s), 0282/0680 VUs, 81657 complete and 0 interrupted iterations
+mixed   [  45% ] 0282/0680 VUs  08.9s/20s  10000.00 iters/s
+
+running (10.0s), 0393/0680 VUs, 92162 complete and 0 interrupted iterations
+mixed   [  50% ] 0449/0680 VUs  10.0s/20s  10000.00 iters/s
+
+running (10.9s), 0573/0685 VUs, 101113 complete and 0 interrupted iterations
+mixed   [  55% ] 0573/0685 VUs  10.9s/20s  10000.00 iters/s
+
+running (11.9s), 0085/0689 VUs, 111147 complete and 0 interrupted iterations
+mixed   [  60% ] 0085/0689 VUs  11.9s/20s  10000.00 iters/s
+
+running (12.9s), 0549/0689 VUs, 120806 complete and 0 interrupted iterations
+mixed   [  65% ] 0549/0689 VUs  12.9s/20s  10000.00 iters/s
+
+running (13.9s), 0385/0695 VUs, 129904 complete and 0 interrupted iterations
+mixed   [  70% ] 0385/0695 VUs  13.9s/20s  10000.00 iters/s
+
+running (14.9s), 0161/0700 VUs, 140175 complete and 0 interrupted iterations
+mixed   [  75% ] 0161/0700 VUs  14.9s/20s  10000.00 iters/s
+
+running (15.9s), 0252/0702 VUs, 149923 complete and 0 interrupted iterations
+mixed   [  80% ] 0252/0702 VUs  15.9s/20s  10000.00 iters/s
+
+running (16.9s), 0311/0705 VUs, 159833 complete and 0 interrupted iterations
+mixed   [  85% ] 0311/0705 VUs  16.9s/20s  10000.00 iters/s
+
+running (17.9s), 0125/0705 VUs, 170045 complete and 0 interrupted iterations
+mixed   [  90% ] 0125/0705 VUs  17.9s/20s  10000.00 iters/s
+
+running (18.9s), 0392/0710 VUs, 179043 complete and 0 interrupted iterations
+mixed   [  95% ] 0392/0710 VUs  18.9s/20s  10000.00 iters/s
+
+running (19.9s), 0331/0715 VUs, 188420 complete and 0 interrupted iterations
+mixed   [ 100% ] 0331/0715 VUs  19.9s/20s  10000.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:normal}
+    ✗ 'rate<0.01' rate=49.20%
+
+    business_latency{cohort:normal}
+    ✓ 'p(99)<200' p(99)=115.25ms
+
+    cohort_requests{cohort:normal}
+    ✗ 'count>=199800' count=189446
+
+    dropped_iterations
+    ✗ 'count<200' count=10586
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    admission_rejections...........: 93226  4652.819535/s
+    business_failed................: 49.20% 93226 out of 189446
+      { cohort:normal }............: 49.20% 93226 out of 189446
+    business_latency...............: avg=28.53ms min=172.75µs med=21.68ms max=315.19ms p(90)=60.82ms p(95)=77.98ms p(99)=115.25ms
+      { cohort:normal }............: avg=28.53ms min=172.75µs med=21.68ms max=315.19ms p(90)=60.82ms p(95)=77.98ms p(99)=115.25ms
+    business_success...............: 96220  4802.24718/s
+    cohort_requests................: 189446 9455.066715/s
+      { cohort:normal }............: 189446 9455.066715/s
+    isolation_violations...........: 0      0/s
+    throttled......................: 93226  4652.819535/s
+    write_attempts.................: 18945  945.526635/s
+    write_success..................: 9453   471.790091/s
+
+    HTTP
+    http_req_duration..............: avg=28.53ms min=172.75µs med=21.68ms max=315.19ms p(90)=60.82ms p(95)=77.98ms p(99)=115.25ms
+      { expected_response:true }...: avg=35.52ms min=355.87µs med=28.71ms max=315.19ms p(90)=72.02ms p(95)=89.76ms p(99)=131.88ms
+    http_req_failed................: 49.20% 93226 out of 189446
+    http_reqs......................: 189446 9455.066715/s
+
+    EXECUTION
+    dropped_iterations.............: 10586  528.337026/s
+    iteration_duration.............: avg=32.08ms min=223.33µs med=24.35ms max=334.34ms p(90)=68.58ms p(95)=86.26ms p(99)=128.37ms
+    iterations.....................: 189446 9455.066715/s
+    vus............................: 328    min=70              max=669
+    vus_max........................: 715    min=571             max=715
+
+    NETWORK
+    data_received..................: 105 MB 5.2 MB/s
+    data_sent......................: 269 MB 13 MB/s
+
+
+
+
+running (20.0s), 0000/0717 VUs, 189446 complete and 0 interrupted iterations
+mixed ✓ [ 100% ] 0000/0717 VUs  20s  10000.00 iters/s
+time="2026-11-15T08:52:00Z" level=error msg="thresholds on metrics 'business_failed{cohort:normal}, cohort_requests{cohort:normal}, dropped_iterations' have been crossed"

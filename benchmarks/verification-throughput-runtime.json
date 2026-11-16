@@ -1,0 +1,104 @@
+{
+  "scope": "local-only",
+  "pods": [
+    {
+      "name": "saas-6597949c54-jlqgn",
+      "ready": true,
+      "restarts": 0,
+      "image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:21c392d6740f92f58befd430f4d3f2f1fa66f30d5274978315dd1e056e41842f"
+      ],
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      }
+    },
+    {
+      "name": "saas-6597949c54-zpltg",
+      "ready": true,
+      "restarts": 0,
+      "image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:21c392d6740f92f58befd430f4d3f2f1fa66f30d5274978315dd1e056e41842f"
+      ],
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      }
+    }
+  ],
+  "java_tests": {
+    "tests": 57,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "migrations": [
+    {
+      "version": "1",
+      "description": "platform",
+      "success": true
+    },
+    {
+      "version": "2",
+      "description": "limits",
+      "success": true
+    },
+    {
+      "version": "3",
+      "description": "durable operations",
+      "success": true
+    },
+    {
+      "version": "4",
+      "description": "storage accounting",
+      "success": true
+    },
+    {
+      "version": "5",
+      "description": "subscription period",
+      "success": true
+    },
+    {
+      "version": "6",
+      "description": "short quota reservations",
+      "success": true
+    },
+    {
+      "version": "7",
+      "description": "replay retention",
+      "success": true
+    },
+    {
+      "version": "8",
+      "description": "read fences without row writes",
+      "success": true
+    },
+    {
+      "version": "9",
+      "description": "coherent query cache",
+      "success": true
+    },
+    {
+      "version": "10",
+      "description": "durable api budgets",
+      "success": true
+    }
+  ],
+  "runtime_role": {
+    "rolname": "saas_runtime",
+    "rolsuper": false,
+    "rolbypassrls": false
+  }
+}

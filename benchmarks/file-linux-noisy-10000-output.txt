@@ -1,0 +1,162 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/mixed.js
+        output: -
+
+     scenarios: (100.00%) 2 scenarios, 1280 max VUs, 50s max duration (incl. graceful stop):
+              * hot: 9000.00 iterations/s for 20s (maxVUs: 256-768, exec: hot, gracefulStop: 30s)
+              * neighbor: 1000.00 iterations/s for 20s (maxVUs: 128-512, exec: neighbor, gracefulStop: 30s)
+
+
+running (00.8s), 0397/0484 VUs, 2291 complete and 0 interrupted iterations
+hot        [   4% ] 248/332 VUs  00.8s/20s  9000.00 iters/s
+neighbor   [   4% ] 149/152 VUs  00.8s/20s  1000.00 iters/s
+
+running (01.8s), 0460/0539 VUs, 7332 complete and 0 interrupted iterations
+hot        [   9% ] 359/377 VUs  01.8s/20s  9000.00 iters/s
+neighbor   [   9% ] 101/162 VUs  01.8s/20s  1000.00 iters/s
+
+running (02.8s), 0558/0631 VUs, 11750 complete and 0 interrupted iterations
+hot        [  14% ] 423/459 VUs  02.8s/20s  9000.00 iters/s
+neighbor   [  14% ] 135/172 VUs  02.8s/20s  1000.00 iters/s
+
+running (03.8s), 0453/0693 VUs, 17277 complete and 0 interrupted iterations
+hot        [  19% ] 364/509 VUs  03.8s/20s  9000.00 iters/s
+neighbor   [  19% ] 089/184 VUs  03.8s/20s  1000.00 iters/s
+
+running (04.8s), 0148/0703 VUs, 26118 complete and 0 interrupted iterations
+hot        [  24% ] 130/519 VUs  04.8s/20s  9000.00 iters/s
+neighbor   [  24% ] 018/184 VUs  04.8s/20s  1000.00 iters/s
+
+running (05.8s), 0344/0717 VUs, 34809 complete and 0 interrupted iterations
+hot        [  29% ] 280/533 VUs  05.8s/20s  9000.00 iters/s
+neighbor   [  29% ] 064/184 VUs  05.8s/20s  1000.00 iters/s
+
+running (06.8s), 0449/0726 VUs, 43407 complete and 0 interrupted iterations
+hot        [  34% ] 398/542 VUs  06.8s/20s  9000.00 iters/s
+neighbor   [  34% ] 051/184 VUs  06.8s/20s  1000.00 iters/s
+
+running (07.8s), 0522/0736 VUs, 52811 complete and 0 interrupted iterations
+hot        [  39% ] 481/552 VUs  07.8s/20s  9000.00 iters/s
+neighbor   [  39% ] 041/184 VUs  07.8s/20s  1000.00 iters/s
+
+running (08.8s), 0587/0750 VUs, 61798 complete and 0 interrupted iterations
+hot        [  44% ] 509/566 VUs  08.8s/20s  9000.00 iters/s
+neighbor   [  44% ] 078/184 VUs  08.8s/20s  1000.00 iters/s
+
+running (09.8s), 0526/0762 VUs, 69199 complete and 0 interrupted iterations
+hot        [  49% ] 402/578 VUs  09.8s/20s  9000.00 iters/s
+neighbor   [  49% ] 124/184 VUs  09.8s/20s  1000.00 iters/s
+
+running (10.8s), 0384/0788 VUs, 77189 complete and 0 interrupted iterations
+hot        [  54% ] 320/597 VUs  10.8s/20s  9000.00 iters/s
+neighbor   [  54% ] 064/191 VUs  10.8s/20s  1000.00 iters/s
+
+running (11.8s), 0614/0803 VUs, 84472 complete and 0 interrupted iterations
+hot        [  59% ] 517/612 VUs  11.8s/20s  9000.00 iters/s
+neighbor   [  59% ] 097/191 VUs  11.8s/20s  1000.00 iters/s
+
+running (12.8s), 0295/0811 VUs, 93597 complete and 0 interrupted iterations
+hot        [  64% ] 275/620 VUs  12.8s/20s  9000.00 iters/s
+neighbor   [  64% ] 020/191 VUs  12.8s/20s  1000.00 iters/s
+
+running (13.8s), 0149/0819 VUs, 102834 complete and 0 interrupted iterations
+hot        [  69% ] 109/628 VUs  13.8s/20s  9000.00 iters/s
+neighbor   [  69% ] 040/191 VUs  13.8s/20s  1000.00 iters/s
+
+running (14.8s), 0263/0829 VUs, 110975 complete and 0 interrupted iterations
+hot        [  74% ] 225/638 VUs  14.8s/20s  9000.00 iters/s
+neighbor   [  74% ] 038/191 VUs  14.8s/20s  1000.00 iters/s
+
+running (15.8s), 0338/0833 VUs, 119636 complete and 0 interrupted iterations
+hot        [  79% ] 298/642 VUs  15.8s/20s  9000.00 iters/s
+neighbor   [  79% ] 040/191 VUs  15.8s/20s  1000.00 iters/s
+
+running (16.8s), 0573/0857 VUs, 126175 complete and 0 interrupted iterations
+hot        [  84% ] 420/660 VUs  16.8s/20s  9000.00 iters/s
+neighbor   [  84% ] 153/197 VUs  16.8s/20s  1000.00 iters/s
+
+running (17.8s), 0716/0892 VUs, 133771 complete and 0 interrupted iterations
+hot        [  89% ] 597/689 VUs  17.8s/20s  9000.00 iters/s
+neighbor   [  89% ] 119/203 VUs  17.8s/20s  1000.00 iters/s
+
+running (18.8s), 0143/0896 VUs, 143181 complete and 0 interrupted iterations
+hot        [  94% ] 090/693 VUs  18.8s/20s  9000.00 iters/s
+neighbor   [  94% ] 053/203 VUs  18.8s/20s  1000.00 iters/s
+
+running (19.8s), 0531/0911 VUs, 150606 complete and 0 interrupted iterations
+hot        [  99% ] 422/708 VUs  19.8s/20s  9000.00 iters/s
+neighbor   [  99% ] 109/203 VUs  19.8s/20s  1000.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:neighbor}
+    ✗ 'rate<0.01' rate=1.82%
+
+    business_latency{cohort:neighbor}
+    ✗ 'p(99)<200' p(99)=269.48ms
+
+    cohort_requests{cohort:hot}
+    ✗ 'count>=179820' count=134022
+
+    cohort_requests{cohort:neighbor}
+    ✗ 'count>=19980' count=19374
+
+    dropped_iterations
+    ✗ 'count<200' count=46609
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    admission_rejections...........: 84566  4223.91287/s
+    business_failed................: 86.30% 132387 out of 153396
+      { cohort:neighbor }..........: 1.82%  354 out of 19374
+    business_latency...............: avg=44.11ms min=155.04µs med=30.31ms max=713.06ms p(90)=101.8ms  p(95)=137.54ms p(99)=214.5ms 
+      { cohort:neighbor }..........: avg=67.61ms min=409.5µs  med=49.62ms max=441.83ms p(90)=148.7ms  p(95)=191.73ms p(99)=269.48ms
+    business_success...............: 21009  1049.360091/s
+    cohort_requests................: 153396 7661.842096/s
+      { cohort:hot }...............: 134022 6694.147184/s
+      { cohort:neighbor }..........: 19374  967.694912/s
+    isolation_violations...........: 0      0/s
+    principal_rejections...........: 46571  2326.133982/s
+    quota_rejections...............: 1250   62.435152/s
+    throttled......................: 132387 6612.482004/s
+    write_attempts.................: 15342  766.304085/s
+    write_success..................: 2107   105.240693/s
+
+    HTTP
+    http_req_duration..............: avg=44.11ms min=155.04µs med=30.31ms max=713.06ms p(90)=101.8ms  p(95)=137.54ms p(99)=214.5ms 
+      { expected_response:true }...: avg=69.57ms min=409.5µs  med=50.7ms  max=657.51ms p(90)=152.33ms p(95)=198.77ms p(99)=280.45ms
+    http_req_failed................: 86.30% 132387 out of 153396
+    http_reqs......................: 153396 7661.842096/s
+
+    EXECUTION
+    dropped_iterations.............: 46609  2328.03201/s
+    iteration_duration.............: avg=51.34ms min=206.29µs med=35.54ms max=713.21ms p(90)=120.19ms p(95)=158.54ms p(99)=233.91ms
+    iterations.....................: 153396 7661.842096/s
+    vus............................: 764    min=143              max=764
+    vus_max........................: 911    min=486              max=911
+
+    NETWORK
+    data_received..................: 85 MB  4.3 MB/s
+    data_sent......................: 218 MB 11 MB/s
+
+
+
+
+running (20.0s), 0000/0913 VUs, 153396 complete and 0 interrupted iterations
+hot      ✓ [ 100% ] 000/710 VUs  20s  9000.00 iters/s
+neighbor ✓ [ 100% ] 000/203 VUs  20s  1000.00 iters/s
+time="2026-11-15T05:33:22Z" level=error msg="thresholds on metrics 'business_failed{cohort:neighbor}, business_latency{cohort:neighbor}, cohort_requests{cohort:hot}, cohort_requests{cohort:neighbor}, dropped_iterations' have been crossed"

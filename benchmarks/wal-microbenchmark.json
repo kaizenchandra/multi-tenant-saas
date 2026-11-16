@@ -1,0 +1,93 @@
+{
+  "scope": "Durable logged INSERT over a Unix socket with saas_runtime; no HTTP, JWT, RLS-domain query, audit/outbox or authorization cost. This is not application throughput.",
+  "runs": [
+    {
+      "clients": 1,
+      "exit_code": 0,
+      "output": "pgbench (17.6 (Debian 17.6-2.pgdg13+1))\ntransaction type: /tmp/saas-wal-a6784207981e402dadbec656c1edd20c.sql\nscaling factor: 1\nquery mode: simple\nnumber of clients: 1\nnumber of threads: 1\nmaximum number of tries: 1\nduration: 5 s\nnumber of transactions actually processed: 8935\nnumber of failed transactions: 0 (0.000%)\nlatency average = 0.560 ms\ninitial connection time = 0.926 ms\ntps = 1787.058973 (without initial connection time)\n",
+      "wal_before": {
+        "wal_records": 14220824,
+        "wal_fpi": 124316,
+        "wal_bytes": 2001151379,
+        "wal_buffers_full": 19295,
+        "wal_write": 878967,
+        "wal_sync": 858610,
+        "wal_write_time": 14889.357,
+        "wal_sync_time": 1117233.869,
+        "stats_reset": "2026-11-14T18:48:37.923032+00:00"
+      },
+      "wal_after": {
+        "wal_records": 14247927,
+        "wal_fpi": 124317,
+        "wal_bytes": 2003822402,
+        "wal_buffers_full": 19295,
+        "wal_write": 887903,
+        "wal_sync": 867545,
+        "wal_write_time": 14919.1,
+        "wal_sync_time": 1121750.687,
+        "stats_reset": "2026-11-14T18:48:37.923032+00:00"
+      }
+    },
+    {
+      "clients": 16,
+      "exit_code": 0,
+      "output": "pgbench (17.6 (Debian 17.6-2.pgdg13+1))\ntransaction type: /tmp/saas-wal-a6784207981e402dadbec656c1edd20c.sql\nscaling factor: 1\nquery mode: simple\nnumber of clients: 16\nnumber of threads: 2\nmaximum number of tries: 1\nduration: 5 s\nnumber of transactions actually processed: 15623\nnumber of failed transactions: 0 (0.000%)\nlatency average = 5.117 ms\ninitial connection time = 7.904 ms\ntps = 3126.667978 (without initial connection time)\n",
+      "wal_before": {
+        "wal_records": 14247957,
+        "wal_fpi": 124323,
+        "wal_bytes": 2003850041,
+        "wal_buffers_full": 19295,
+        "wal_write": 887905,
+        "wal_sync": 867547,
+        "wal_write_time": 14919.131,
+        "wal_sync_time": 1121754.729,
+        "stats_reset": "2026-11-14T18:48:37.923032+00:00"
+      },
+      "wal_after": {
+        "wal_records": 14295343,
+        "wal_fpi": 124323,
+        "wal_bytes": 2008506566,
+        "wal_buffers_full": 19295,
+        "wal_write": 889340,
+        "wal_sync": 868981,
+        "wal_write_time": 14942.415,
+        "wal_sync_time": 1124090.572,
+        "stats_reset": "2026-11-14T18:48:37.923032+00:00"
+      }
+    },
+    {
+      "clients": 32,
+      "exit_code": 0,
+      "output": "pgbench (17.6 (Debian 17.6-2.pgdg13+1))\ntransaction type: /tmp/saas-wal-a6784207981e402dadbec656c1edd20c.sql\nscaling factor: 1\nquery mode: simple\nnumber of clients: 32\nnumber of threads: 2\nmaximum number of tries: 1\nduration: 5 s\nnumber of transactions actually processed: 35864\nnumber of failed transactions: 0 (0.000%)\nlatency average = 4.447 ms\ninitial connection time = 25.580 ms\ntps = 7196.349334 (without initial connection time)\n",
+      "wal_before": {
+        "wal_records": 14295373,
+        "wal_fpi": 124329,
+        "wal_bytes": 2008535285,
+        "wal_buffers_full": 19295,
+        "wal_write": 889342,
+        "wal_sync": 868983,
+        "wal_write_time": 14942.438,
+        "wal_sync_time": 1124096.481,
+        "stats_reset": "2026-11-14T18:48:37.923032+00:00"
+      },
+      "wal_after": {
+        "wal_records": 14404357,
+        "wal_fpi": 124333,
+        "wal_bytes": 2019260679,
+        "wal_buffers_full": 19295,
+        "wal_write": 890675,
+        "wal_sync": 870314,
+        "wal_write_time": 14974.17,
+        "wal_sync_time": 1126091.657,
+        "stats_reset": "2026-11-14T18:48:37.923032+00:00"
+      }
+    }
+  ],
+  "settings": {
+    "commit_delay": "1000",
+    "commit_siblings": "5",
+    "fsync": "on",
+    "synchronous_commit": "on",
+    "wal_sync_method": "fdatasync"
+  }
+}

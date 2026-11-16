@@ -1,0 +1,143 @@
+{
+  "counts": {
+    "removed": 5,
+    "running": 22
+  },
+  "containers": [
+    {
+      "id": "41da83172569b23bf617735433423052e47eec52ef26217c74d663f5f9405374",
+      "name": "k8s_app_payments-0_payment-validation_9b165018-26fc-4843-99c5-e85670979c29_0",
+      "status": "removed"
+    },
+    {
+      "id": "34cbb7fdaa2a177966bd064504faccbaf331150dc0fdfd36773d4c9579393a0a",
+      "name": "k8s_app_payments-1_payment-validation_08fdcc5e-031e-4381-acea-c6f770282a89_0",
+      "status": "removed"
+    },
+    {
+      "id": "d172a5859df01856de5071a261b1dc679ed4bda8b3ed7a1ab8362a9e7b42e38a",
+      "name": "k8s_app_payments-2_payment-validation_fbb98c8d-aa2a-4e20-92bc-a47d53dd12ba_0",
+      "status": "removed"
+    },
+    {
+      "id": "29eff933bd80c5304bb4a7b692f44c0bd51cb0b3b8d2e0cbf8cfb5c0ce300099",
+      "name": "idempotent-payments-app-1",
+      "status": "running"
+    },
+    {
+      "id": "cab59baefb2ca0f3285f985d1104612f6aab13f6dceea5bd469f9326f6b83d72",
+      "name": "ride-hailing-platform-backend-1",
+      "status": "removed"
+    },
+    {
+      "id": "668f81294a8d4ee19cac7c1884d961bc71b463ac81e12ab30775860e5ac94dfb",
+      "name": "ride-hailing-platform-keycloak-1",
+      "status": "running"
+    },
+    {
+      "id": "944e3270a70fb62f6a8aca79dec7660733b59a8e2913210428337dd78564cb1d",
+      "name": "ride-hailing-platform-kafka-1",
+      "status": "running"
+    },
+    {
+      "id": "925e1f248b5f3c86ba93746ed7fb996259471e11d706a7dd1d051dfdaf09fff2",
+      "name": "ride-hailing-platform-redis-1",
+      "status": "running"
+    },
+    {
+      "id": "c63c9f9395cabf262ac41733314dda1248ca841af8a043a3f039cb8cb640e363",
+      "name": "ride-hailing-platform-postgres-1",
+      "status": "running"
+    },
+    {
+      "id": "4f8606b1d656407b60bb65c9a8894c7e2f9e3f8ac35165acb8c8af1576f0e1d4",
+      "name": "enterprise-iam-mailpit-1",
+      "status": "running"
+    },
+    {
+      "id": "a05d358a04ed1ff6ce53249d627d6c69def28c869deaac3e1d2077d7cac5fa24",
+      "name": "distributed-web-crawler-worker-1",
+      "status": "running"
+    },
+    {
+      "id": "d478272550a2c2e53e84c1d21987da1d064902e0c2e0b86bb6ae948416219a74",
+      "name": "distributed-web-crawler-egress-1",
+      "status": "running"
+    },
+    {
+      "id": "56c4e962b1a6b32081fdaa5fbbbb20730e50138338f33fd311c53db8c4def824",
+      "name": "distributed-web-crawler-api-1",
+      "status": "running"
+    },
+    {
+      "id": "67797b20e1419b4e1c4dafdda252ce27ce7d2e46a151e40c5c0c58a15a897185",
+      "name": "distributed-web-crawler-indexer-1",
+      "status": "running"
+    },
+    {
+      "id": "9bfc4ce8364b573ecb15fbbb89440a5484d01a308a8d73ef5a0426b25112b312",
+      "name": "distributed-web-crawler-egress-2",
+      "status": "running"
+    },
+    {
+      "id": "f44fe2acac596edc256cd022ca912f31e0e3a78348964e0b867a433de1b0ec6e",
+      "name": "distributed-web-crawler-worker-2",
+      "status": "running"
+    },
+    {
+      "id": "9d63740399ce4a1db686f00a9328e9ddd495b55e10c8b26c530ba0dc0f64410f",
+      "name": "distributed-web-crawler-kafka-1",
+      "status": "running"
+    },
+    {
+      "id": "52e355966b027a847ae8e04cb7d7339a4e67d6601ae12633e27e0589441544e2",
+      "name": "distributed-web-crawler-postgres-1",
+      "status": "running"
+    },
+    {
+      "id": "3ab79db50e844054a52eb8993df744b7f2c0bc41b82e6897f11f54287933068c",
+      "name": "distributed-web-crawler-opensearch-1",
+      "status": "running"
+    },
+    {
+      "id": "472127e07d7921ff0d2b4a7804286ddf04eab5b8144d882838c5e741efacda8a",
+      "name": "distributed-web-crawler-minio-1",
+      "status": "running"
+    },
+    {
+      "id": "7000b13c0feee564d89f20be017b868e2724fac861c2621817b355c887300d5c",
+      "name": "distributed-web-crawler-test-site-1",
+      "status": "running"
+    },
+    {
+      "id": "080a572644c4bcb36974888bae6f2ada6c75982ce76c89150f804303fe4853bb",
+      "name": "distributed-web-crawler-parser-1",
+      "status": "running"
+    },
+    {
+      "id": "54e14c6eaa3fc5a43a51d0f7cfa62960633cf8c22f38c387cb00d3e5549db0d8",
+      "name": "k8s_fake_fake-7dbf56d547-7dxzn_payment-validation_4da1397e-e433-4c0e-9d5c-e188a957ada4_0",
+      "status": "removed"
+    },
+    {
+      "id": "054cfad68954af2b2f1fb6e032a34c2afca90119c95ecf8c3bb7df43173ed770",
+      "name": "idempotent-payments-fake-1",
+      "status": "running"
+    },
+    {
+      "id": "d5299c65e5518a2163ecec89acb744180472645fbb18e4acea264a0603c26325",
+      "name": "idempotent-payments-db-1",
+      "status": "running"
+    },
+    {
+      "id": "612fe9cd3538e0a36a93a6267235e270d0a424dd4aa373b768ff30f21d27af5a",
+      "name": "enterprise-iam-postgres-1",
+      "status": "running"
+    },
+    {
+      "id": "f270a64d0e62a041956e91a4f5495b27d898d0e18a61a24270cb43a8b0925bc7",
+      "name": "enterprise-iam-redis-1",
+      "status": "running"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Volumes/KaizenChandra/Workspace/01-Interview/system-design/system-design/multi-tenant-saas/scripts/restore-drill.py", line 85, in <module>
+    assert restored_digests==source_digests,'Restored row content differs from consistent source snapshot'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Restored row content differs from consistent source snapshot

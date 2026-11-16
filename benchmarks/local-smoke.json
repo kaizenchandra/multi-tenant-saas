@@ -1,0 +1,11 @@
+{
+  "samples": 50,
+  "concurrency": 1,
+  "errors": 0,
+  "elapsed_seconds": 1.374,
+  "achieved_requests_per_second": 36.38,
+  "p50_ms": 8.73,
+  "p95_ms": 12.31,
+  "p99_ms": 15.48,
+  "limitation": "50 sequential local list calls, paced at <=40 requests/s; not a scale claim"
+}

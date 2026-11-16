@@ -1,0 +1,50 @@
+[
+  {
+    "check": "compose",
+    "exit_code": 0,
+    "elapsed_seconds": 32.523,
+    "base_url": "http://localhost:8088"
+  },
+  {
+    "check": "k8s",
+    "exit_code": 0,
+    "elapsed_seconds": 30.654,
+    "base_url": "http://localhost:30088"
+  },
+  {
+    "check": "quota",
+    "exit_code": 0,
+    "elapsed_seconds": 1.51,
+    "base_url": "http://localhost:8088"
+  },
+  {
+    "check": "large-export",
+    "exit_code": 0,
+    "elapsed_seconds": 15.914,
+    "base_url": "http://localhost:30088"
+  },
+  {
+    "check": "restore",
+    "exit_code": 0,
+    "elapsed_seconds": 24.144,
+    "base_url": "http://localhost:8088"
+  },
+  {
+    "check": "kafka",
+    "exit_code": 0,
+    "elapsed_seconds": 40.01,
+    "base_url": "http://localhost:8088"
+  },
+  {
+    "check": "postgres",
+    "exit_code": 0,
+    "elapsed_seconds": 1.316,
+    "base_url": "http://localhost:8088"
+  },
+  {
+    "check": "pod",
+    "exit_code": 0,
+    "elapsed_seconds": 7.911,
+    "base_url": "http://localhost:30088"
+  }
+]

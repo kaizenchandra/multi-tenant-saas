@@ -1,0 +1,110 @@
+{
+  "apiVersion": "v1",
+  "kind": "List",
+  "items": [
+    {
+      "apiVersion": "v1",
+      "kind": "Namespace",
+      "metadata": {
+        "name": "saas-isolation-dev",
+        "labels": {
+          "app.kubernetes.io/part-of": "multi-tenant-saas"
+        }
+      }
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "metadata": {
+        "name": "saas-postgres",
+        "namespace": "saas-isolation-dev"
+      },
+      "spec": {
+        "ports": [
+          {
+            "name": "tcp",
+            "port": 5432,
+            "targetPort": 5432
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "discovery.k8s.io/v1",
+      "kind": "EndpointSlice",
+      "metadata": {
+        "name": "saas-postgres-compose",
+        "namespace": "saas-isolation-dev",
+        "labels": {
+          "kubernetes.io/service-name": "saas-postgres",
+          "endpointslice.kubernetes.io/managed-by": "local-saas-dependencies"
+        }
+      },
+      "addressType": "IPv4",
+      "ports": [
+        {
+          "name": "tcp",
+          "protocol": "TCP",
+          "port": 5432
+        }
+      ],
+      "endpoints": [
+        {
+          "addresses": [
+            "192.168.107.5"
+          ],
+          "conditions": {
+            "ready": true
+          }
+        }
+      ]
+    },
+    {
+      "apiVersion": "v1",
+      "kind": "Service",
+      "metadata": {
+        "name": "saas-redis",
+        "namespace": "saas-isolation-dev"
+      },
+      "spec": {
+        "ports": [
+          {
+            "name": "tcp",
+            "port": 6379,
+            "targetPort": 6379
+          }
+        ]
+      }
+    },
+    {
+      "apiVersion": "discovery.k8s.io/v1",
+      "kind": "EndpointSlice",
+      "metadata": {
+        "name": "saas-redis-compose",
+        "namespace": "saas-isolation-dev",
+        "labels": {
+          "kubernetes.io/service-name": "saas-redis",
+          "endpointslice.kubernetes.io/managed-by": "local-saas-dependencies"
+        }
+      },
+      "addressType": "IPv4",
+      "ports": [
+        {
+          "name": "tcp",
+          "protocol": "TCP",
+          "port": 6379
+        }
+      ],
+      "endpoints": [
+        {
+          "addresses": [
+            "192.168.107.3"
+          ],
+          "conditions": {
+            "ready": true
+          }
+        }
+      ]
+    }
+  ]
+}

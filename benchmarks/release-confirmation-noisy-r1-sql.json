@@ -1,0 +1,5 @@
+{
+  "scope": "profiled run; nested SQL times overlap and cannot be added to top-level times",
+  "statements": [],
+  "errors": {}
+}

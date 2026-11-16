@@ -1,0 +1,10 @@
+[
+  {
+    "label": "reserved-cpu-mixed",
+    "exit_code": 1
+  },
+  {
+    "label": "reserved-cpu-noisy",
+    "exit_code": 1
+  }
+]

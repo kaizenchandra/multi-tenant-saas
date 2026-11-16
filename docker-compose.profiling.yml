@@ -1,0 +1,4 @@
+# Local diagnostics only; same durable WAL settings as the normal Compose stack.
+services:
+  postgres:
+    command: [ "postgres", "-c", "max_connections=192", "-c", "track_wal_io_timing=on", "-c", "track_io_timing=on", "-c", "commit_delay=1000", "-c", "shared_preload_libraries=pg_stat_statements", "-c", "pg_stat_statements.track=all" ]

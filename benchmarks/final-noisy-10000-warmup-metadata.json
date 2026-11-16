@@ -1,0 +1,78 @@
+{
+  "mode": "noisy",
+  "postgres_settings": {
+    "commit_delay": "0",
+    "commit_siblings": "5",
+    "fsync": "on",
+    "max_connections": "192",
+    "shared_buffers": "16384",
+    "synchronous_commit": "on",
+    "track_wal_io_timing": "on",
+    "wal_buffers": "512",
+    "wal_sync_method": "fdatasync"
+  },
+  "wal_before": {
+    "wal_records": 5975025,
+    "wal_bytes": 822803399,
+    "wal_buffers_full": 5811,
+    "wal_write": 517306,
+    "wal_sync": 510611,
+    "wal_write_time": 2793.538,
+    "wal_sync_time": 204231.929
+  },
+  "wal_after": {
+    "wal_records": 5987184,
+    "wal_bytes": 823892462,
+    "wal_buffers_full": 5811,
+    "wal_write": 518908,
+    "wal_sync": 512213,
+    "wal_write_time": 2814.747,
+    "wal_sync_time": 206553.474
+  },
+  "target_rps": 500,
+  "duration_seconds": 10,
+  "tenants": 249,
+  "principals": 32,
+  "write_ratio": 0.1,
+  "base_url": "http://192.168.194.157",
+  "started_unix": 1794723837.7714078,
+  "load_generator": "docker",
+  "generator_image_id": "sha256:3d8e5c7f1d53ec59408c2ffbd9943602a0985ffcbd4a2430ec00f3ffca89796e",
+  "generator_limits": {
+    "cpus": 4,
+    "memory": "1GiB"
+  },
+  "observed_k6_peak_rss_kib": null,
+  "preallocated_vus": 384,
+  "max_vus": 1280,
+  "exit_code": 0,
+  "successful_writes": 135,
+  "committed_version_delta": 135,
+  "summary_available": true,
+  "unacknowledged_commits": 0,
+  "write_commit_check": true,
+  "replicas": 2,
+  "container_resources": {
+    "limits": {
+      "cpu": "2500m",
+      "memory": "1Gi"
+    },
+    "requests": {
+      "cpu": "1",
+      "memory": "384Mi"
+    }
+  },
+  "deployment_env": {
+    "SAAS_QUOTAS_LEASED_READS": "true",
+    "SAAS_ADMISSION_GLOBAL_CAPACITY": "28",
+    "SAAS_ADMISSION_PRINCIPAL_RPS": "250",
+    "SAAS_ADMISSION_PER_TENANT": "6",
+    "SAAS_ADMISSION_WAIT_MS": "100",
+    "SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE": "30",
+    "SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE": "2"
+  },
+  "database_host": "saas-postgres",
+  "redis_host": "saas-redis",
+  "fixture": "one project/two tasks per tenant; fixed-name PATCH, detail and aggregate list; 100/s tenant rate policy unchanged",
+  "k6_version": "k6 v2.4.0 (commit/dd9395906d, go1.27.3, linux/arm64)"
+}

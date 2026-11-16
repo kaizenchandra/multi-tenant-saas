@@ -1,0 +1,14 @@
+[
+  {
+    "label": "release-confirmation-1000",
+    "exit_code": 0
+  },
+  {
+    "label": "release-confirmation-mixed",
+    "exit_code": 1
+  },
+  {
+    "label": "release-confirmation-noisy",
+    "exit_code": 1
+  }
+]

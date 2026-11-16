@@ -1,0 +1,191 @@
+{
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": {},
+    "checks": {}
+  },
+  "metrics": {
+    "business_latency{cohort:neighbor}": {
+      "avg": 25.731149700598817,
+      "min": 6.087,
+      "med": 17.124,
+      "max": 1042.72,
+      "p(90)": 43.626,
+      "p(95)": 61.468,
+      "p(99)": 106.461,
+      "thresholds": {
+        "p(99)<200": false
+      }
+    },
+    "vus_max": {
+      "value": 384,
+      "min": 384,
+      "max": 384
+    },
+    "dropped_iterations": {
+      "count": 0,
+      "rate": 0,
+      "thresholds": {
+        "count<5": false
+      }
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 0,
+      "p(90)": 0,
+      "p(95)": 0,
+      "p(99)": 0,
+      "avg": 0
+    },
+    "http_req_connecting": {
+      "avg": 0.02349250149970005,
+      "min": 0,
+      "med": 0,
+      "max": 2.753,
+      "p(90)": 0,
+      "p(95)": 0.217,
+      "p(99)": 0.39
+    },
+    "business_failed{cohort:neighbor}": {
+      "passes": 0,
+      "fails": 501,
+      "thresholds": {
+        "rate<0.01": false
+      },
+      "value": 0
+    },
+    "business_failed": {
+      "passes": 3464,
+      "fails": 1537,
+      "value": 0.6926614677064588
+    },
+    "business_success": {
+      "count": 1537,
+      "rate": 152.8896390461636
+    },
+    "http_req_duration{expected_response:true}": {
+      "p(90)": 233.3854,
+      "p(95)": 298.89359999999994,
+      "p(99)": 524.4213999999998,
+      "avg": 93.23409368900465,
+      "min": 3.493,
+      "med": 48.371,
+      "max": 1042.72
+    },
+    "http_req_waiting": {
+      "max": 1042.22,
+      "p(90)": 187.256,
+      "p(95)": 252.071,
+      "p(99)": 435.764,
+      "avg": 90.27364947010584,
+      "min": 0.892,
+      "med": 81.085
+    },
+    "http_req_failed": {
+      "passes": 3464,
+      "fails": 1537,
+      "value": 0.6926614677064588
+    },
+    "http_req_sending": {
+      "avg": 0.015716856628674558,
+      "min": 0.003,
+      "med": 0.013,
+      "max": 0.507,
+      "p(90)": 0.024,
+      "p(95)": 0.033,
+      "p(99)": 0.054
+    },
+    "quota_rejections": {
+      "count": 1633,
+      "rate": 162.4390244387672
+    },
+    "admission_rejections": {
+      "count": 1831,
+      "rate": 182.1346318110121
+    },
+    "vus": {
+      "value": 36,
+      "min": 10,
+      "max": 77
+    },
+    "http_reqs": {
+      "rate": 497.4632952959429,
+      "count": 5001
+    },
+    "throttled": {
+      "count": 3464,
+      "rate": 344.5736562497793
+    },
+    "http_req_blocked": {
+      "min": 0.001,
+      "med": 0.004,
+      "max": 4.247,
+      "p(90)": 0.009,
+      "p(95)": 0.272,
+      "p(99)": 0.474,
+      "avg": 0.03340271945610528
+    },
+    "http_req_receiving": {
+      "med": 0.245,
+      "max": 22.215,
+      "p(90)": 0.959,
+      "p(95)": 1.674,
+      "p(99)": 3.973,
+      "avg": 0.47187242551489605,
+      "min": 0.008
+    },
+    "http_req_duration": {
+      "p(95)": 252.451,
+      "p(99)": 436.112,
+      "avg": 90.76123875224964,
+      "min": 0.969,
+      "med": 81.745,
+      "max": 1042.72,
+      "p(90)": 187.418
+    },
+    "write_success": {
+      "count": 186,
+      "rate": 18.50193419816944
+    },
+    "data_sent": {
+      "count": 7090051,
+      "rate": 705266.973460567
+    },
+    "iterations": {
+      "count": 5001,
+      "rate": 497.4632952959429
+    },
+    "business_latency": {
+      "p(90)": 187.418,
+      "p(95)": 252.451,
+      "p(99)": 436.112,
+      "avg": 90.76123875224964,
+      "min": 0.969,
+      "med": 81.745,
+      "max": 1042.72
+    },
+    "isolation_violations": {
+      "count": 0,
+      "rate": 0,
+      "thresholds": {
+        "count==0": false
+      }
+    },
+    "iteration_duration": {
+      "avg": 90.99469693181393,
+      "min": 1.060542,
+      "med": 82.0205,
+      "max": 1043.299791,
+      "p(90)": 187.620834,
+      "p(95)": 252.676209,
+      "p(99)": 436.315917
+    },
+    "data_received": {
+      "rate": 285798.5817770073,
+      "count": 2873134
+    }
+  }
+}

@@ -1,0 +1,3097 @@
+{
+  "scope": "Local shared-host measurements. Cohort RPS includes drain time. No retries; warmups are separate. Zero performance leakage counters are not adversarial isolation proof.",
+  "runs": [
+    {
+      "label": "allocated-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 5.584518784972028,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:2d40893708d9d9141916dffe6bd617517e373bec206728c488659aa2065643e8"
+      ],
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 147350,
+      "http_rps": 7317.663089192305,
+      "successful_rps": 2547.500261189669,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.651869697997964,
+      "cohort_p99_ms": 192.24568207999997,
+      "cohort_successful_rps": 2547.500261189669,
+      "dropped_iterations": 52408,
+      "acknowledged_writes": 5092,
+      "committed_version_delta": 5092,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "allocated-mixed-3000",
+      "mode": "mixed",
+      "target_rps": 3000,
+      "wal_mean_sync_ms": 9.585522739726041,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:2d40893708d9d9141916dffe6bd617517e373bec206728c488659aa2065643e8"
+      ],
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 53064,
+      "http_rps": 2605.2082257081356,
+      "successful_rps": 1011.2708999158785,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.6118272274988693,
+      "cohort_p99_ms": 430.1549520699999,
+      "cohort_successful_rps": 1011.2708999158785,
+      "dropped_iterations": 6989,
+      "acknowledged_writes": 2042,
+      "committed_version_delta": 2042,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "allocated-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 1.7306179642293538,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 193367,
+      "http_rps": 9649.539302430881,
+      "successful_rps": 1016.518411055232,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.00015060997038003916,
+      "cohort_p99_ms": 155.21376712,
+      "cohort_successful_rps": 993.8625760714777,
+      "dropped_iterations": 6674,
+      "acknowledged_writes": 2042,
+      "committed_version_delta": 2042,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "atomic-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 32767,
+      "http_rps": 1575.5143897974638,
+      "successful_rps": 305.65950425557656,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.8059938352610858,
+      "cohort_p99_ms": 1253.9281199999991,
+      "cohort_successful_rps": 305.65950425557656,
+      "dropped_iterations": 167234,
+      "acknowledged_writes": 603,
+      "committed_version_delta": 603,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "atomic-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 42107,
+      "http_rps": 2038.5814625760509,
+      "successful_rps": 410.74702848683626,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.4836011153897225,
+      "cohort_p99_ms": 1176.7803299999998,
+      "cohort_successful_rps": 376.56652375891235,
+      "dropped_iterations": 157895,
+      "acknowledged_writes": 832,
+      "committed_version_delta": 832,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "balanced-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 1.7639999999992142,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:8080",
+      "http_requests": 7168,
+      "http_rps": 317.0130359935791,
+      "successful_rps": null,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 1,
+      "cohort_p99_ms": 0,
+      "cohort_successful_rps": 0.0,
+      "dropped_iterations": 192852,
+      "acknowledged_writes": 0,
+      "committed_version_delta": 0,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": 7168,
+      "isolation_violations": 0,
+      "capacity_evidence": false,
+      "note": "Incorrect Service port; API idle, not capacity evidence"
+    },
+    {
+      "label": "baseline-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 33648,
+      "http_rps": 1538.2596134025532,
+      "successful_rps": 521.576436320427,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.6609308131241084,
+      "cohort_p99_ms": 3004.43667,
+      "cohort_successful_rps": 521.576436320427,
+      "dropped_iterations": 159969,
+      "acknowledged_writes": 1049,
+      "committed_version_delta": 1059,
+      "unacknowledged_commits": null,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "budget16-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 13.734665103817818,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 76435,
+      "http_rps": 3330.3803539671244,
+      "successful_rps": 242.5620125666904,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.927166873814352,
+      "cohort_p99_ms": 2735.695139999997,
+      "cohort_successful_rps": 242.5620125666904,
+      "dropped_iterations": 123568,
+      "acknowledged_writes": 531,
+      "committed_version_delta": 552,
+      "unacknowledged_commits": 21,
+      "unexpected_responses": 751,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "budget16-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 25.73988126649076,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 84675,
+      "http_rps": 3792.444644080582,
+      "successful_rps": 136.55935895839025,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.8573780941251461,
+      "cohort_p99_ms": 2056.939999999999,
+      "cohort_successful_rps": 120.25643778395468,
+      "dropped_iterations": 115335,
+      "acknowledged_writes": 326,
+      "committed_version_delta": 335,
+      "unacknowledged_commits": 9,
+      "unexpected_responses": 412,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "controlled-base-a",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.9112840213312277,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 53.15525423728813,
+        "external_cpu_percent_max": 140.48,
+        "complete_sweeps": 59,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-f7d6bd458-fb56m_saas-isolation-dev_6bf7ffe5-532f-4780-b2e0-202ebe5e0359_0": 257.92360655737707,
+          "k8s_app_saas-f7d6bd458-xcjjp_saas-isolation-dev_632b4ca0-16e6-44cd-a3b0-c5e59ce5512c_0": 257.4304918032787,
+          "multi-tenant-saas-postgres-1": 93.97049180327869,
+          "multi-tenant-saas-keycloak-1": 0.2736065573770492,
+          "multi-tenant-saas-redis-1": 0.4019672131147541,
+          "multi-tenant-saas-kafka-1": 2.2537704918032784,
+          "saas-load-controlled-base-a": 91.87083333333334
+        }
+      },
+      "jfr_profiled": true,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": "controlled-base-a-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 82861,
+      "http_rps": 2734.1540748872917,
+      "successful_rps": 926.0243052538221,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.6613123182196691,
+      "cohort_p99_ms": 1841.2726583999995,
+      "cohort_successful_rps": 926.0243052538221,
+      "dropped_iterations": 217126,
+      "acknowledged_writes": 2775,
+      "committed_version_delta": 2781,
+      "unacknowledged_commits": 6,
+      "unexpected_responses": 75,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "controlled-fixed-profile",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 5.8771645137703965,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 161.86825396825398,
+        "external_cpu_percent_max": 422.43,
+        "complete_sweeps": 63,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-7c4bfdc85b-s8dxt_saas-isolation-dev_588f6e57-629a-4c2b-aeac-7395d14151c3_0": 239.94125,
+          "k8s_app_saas-7c4bfdc85b-zpwcx_saas-isolation-dev_c7c86b44-e7d0-469f-80f1-99af6762305d_0": 235.585,
+          "multi-tenant-saas-postgres-1": 69.57761904761905,
+          "multi-tenant-saas-keycloak-1": 0.38625,
+          "multi-tenant-saas-redis-1": 0.5578461538461538,
+          "multi-tenant-saas-kafka-1": 2.726,
+          "saas-load-controlled-fixed-profile": 67.94793650793652
+        }
+      },
+      "jfr_profiled": true,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:5ff36d68b94e31365d521bb8028e07846b8ec95855c1402aa4f67c9ff5a0fb73"
+      ],
+      "conditions_file": "controlled-fixed-profile-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 42345,
+      "http_rps": 1285.2934479363523,
+      "successful_rps": 463.7012162976421,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.6392254103199906,
+      "cohort_p99_ms": 2989.80941656,
+      "cohort_successful_rps": 463.7012162976421,
+      "dropped_iterations": 257636,
+      "acknowledged_writes": 1541,
+      "committed_version_delta": 1580,
+      "unacknowledged_commits": 39,
+      "unexpected_responses": 575,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "cpu3-final-noisy-r1",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.4045168378624324,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 62.96362068965517,
+        "external_cpu_percent_max": 125.51,
+        "complete_sweeps": 58,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-659f7ffb65-6wgk4_saas-isolation-dev_8698730e-a1dc-4546-b1eb-1a3fd2213d2c_0": 169.77383333333333,
+          "k8s_app_saas-659f7ffb65-d7smv_saas-isolation-dev_0ca24bb7-2486-434e-905c-5f8ee35162dd_0": 159.93699999999998,
+          "saas-perf-redis": 2.2783333333333333,
+          "multi-tenant-saas-postgres-1": 88.63616666666667,
+          "multi-tenant-saas-keycloak-1": 0.26483333333333337,
+          "multi-tenant-saas-redis-1": 0.44033333333333335,
+          "multi-tenant-saas-kafka-1": 1.4771666666666665,
+          "saas-load-cpu3-final-noisy-r1": 215.89915254237286
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:4e52e9b5f168a68ae1970b4931f9ff3a96b96571d492f48b6a088888eff7a747"
+      ],
+      "conditions_file": "cpu3-final-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 275266,
+      "http_rps": 9174.133502454124,
+      "successful_rps": 1016.5782192201568,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.0008167154427278295,
+      "cohort_p99_ms": 190.99029464999998,
+      "cohort_successful_rps": 978.584016547841,
+      "dropped_iterations": 24735,
+      "acknowledged_writes": 3043,
+      "committed_version_delta": 3043,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "cpu3-final-noisy-r2",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.408676776763926,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 52.89775862068966,
+        "external_cpu_percent_max": 109.02,
+        "complete_sweeps": 58,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-659f7ffb65-6wgk4_saas-isolation-dev_8698730e-a1dc-4546-b1eb-1a3fd2213d2c_0": 157.5584745762712,
+          "k8s_app_saas-659f7ffb65-d7smv_saas-isolation-dev_0ca24bb7-2486-434e-905c-5f8ee35162dd_0": 159.69133333333332,
+          "saas-perf-redis": 2.3868333333333336,
+          "multi-tenant-saas-postgres-1": 84.994,
+          "multi-tenant-saas-keycloak-1": 0.25966101694915256,
+          "multi-tenant-saas-redis-1": 0.3835593220338983,
+          "multi-tenant-saas-kafka-1": 1.4663333333333335,
+          "saas-load-cpu3-final-noisy-r2": 223.18758620689653
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:4e52e9b5f168a68ae1970b4931f9ff3a96b96571d492f48b6a088888eff7a747"
+      ],
+      "conditions_file": "cpu3-final-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 264271,
+      "http_rps": 8795.229027879039,
+      "successful_rps": 980.7273934466494,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.008424008424008424,
+      "cohort_p99_ms": 301.25773210999995,
+      "cohort_successful_rps": 940.1910161825657,
+      "dropped_iterations": 35737,
+      "acknowledged_writes": 2969,
+      "committed_version_delta": 2969,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "diagnostic-mixed-1000",
+      "mode": "mixed",
+      "target_rps": 1000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "PASS",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 15000,
+      "http_rps": 999.6841664490131,
+      "successful_rps": 996.2185946719899,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.0034666666666666665,
+      "cohort_p99_ms": 142.82732999999988,
+      "cohort_successful_rps": 996.2185946719899,
+      "dropped_iterations": 0,
+      "acknowledged_writes": 1493,
+      "committed_version_delta": 1493,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "direct-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 49999,
+      "http_rps": 2447.0915979387246,
+      "successful_rps": 2127.0545580195,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.13078261565231306,
+      "cohort_p99_ms": 1173.9551,
+      "cohort_successful_rps": 2127.0545580195,
+      "dropped_iterations": 150002,
+      "acknowledged_writes": 4315,
+      "committed_version_delta": 4315,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "file-linux-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 12.271798843187657,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 49128,
+      "http_rps": 2424.622534580716,
+      "successful_rps": 454.8881676687522,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.8123880475492591,
+      "cohort_p99_ms": 630.9158344699996,
+      "cohort_successful_rps": 454.8881676687522,
+      "dropped_iterations": 150353,
+      "acknowledged_writes": 927,
+      "committed_version_delta": 927,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "file-linux-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.347679012345679,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 153396,
+      "http_rps": 7661.84209589749,
+      "successful_rps": 1049.3600914802887,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.018271910808299784,
+      "cohort_p99_ms": 269.48885777,
+      "cohort_successful_rps": 950.0132771647909,
+      "dropped_iterations": 46609,
+      "acknowledged_writes": 2107,
+      "committed_version_delta": 2107,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "final-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 4.608176513317192,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 94914,
+      "http_rps": 4122.608365062616,
+      "successful_rps": 1043.3134514276505,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.7469287987019828,
+      "cohort_p99_ms": 692.8653426699999,
+      "cohort_successful_rps": 1043.3134514276508,
+      "dropped_iterations": 105083,
+      "acknowledged_writes": 2395,
+      "committed_version_delta": 2398,
+      "unacknowledged_commits": 3,
+      "unexpected_responses": 48,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "final-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 4.27768673883626,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 117232,
+      "http_rps": 5077.126699161399,
+      "successful_rps": 662.011726519902,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.11803453800961368,
+      "cohort_p99_ms": 708.2107709999997,
+      "cohort_successful_rps": 643.6489781197687,
+      "dropped_iterations": 81998,
+      "acknowledged_writes": 1518,
+      "committed_version_delta": 1520,
+      "unacknowledged_commits": 2,
+      "unexpected_responses": 82,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "g1-private-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 44770,
+      "http_rps": 2205.185382354616,
+      "successful_rps": 1733.8559447010239,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.213736877373241,
+      "cohort_p99_ms": 700.56247,
+      "cohort_successful_rps": 1733.855944701024,
+      "dropped_iterations": 155230,
+      "acknowledged_writes": 3513,
+      "committed_version_delta": 3514,
+      "unacknowledged_commits": 1,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "groupcommit-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.402917982679572,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 179750,
+      "http_rps": 8954.250089570483,
+      "successful_rps": 4546.417739497857,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.4922614742698192,
+      "cohort_p99_ms": 101.97367169,
+      "cohort_successful_rps": 4546.417739497857,
+      "dropped_iterations": 20252,
+      "acknowledged_writes": 9061,
+      "committed_version_delta": 9061,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "groupcommit-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.3442127222982228,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157",
+      "http_requests": 191398,
+      "http_rps": 9561.16033312852,
+      "successful_rps": 1010.8260239963616,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.001105583195135434,
+      "cohort_p99_ms": 153.45948701999987,
+      "cohort_successful_rps": 992.9423710884942,
+      "dropped_iterations": 8598,
+      "acknowledged_writes": 2020,
+      "committed_version_delta": 2020,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "guarded-final-diagnostic",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.420676936619757,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 31.44282051282051,
+        "external_cpu_percent_max": 72.89,
+        "complete_sweeps": 39,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-bf8ddd99c-6l77d_saas-isolation-dev_6cf5058a-ad6b-4231-b983-56551fec7e4d_0": 260.51625,
+          "k8s_app_saas-bf8ddd99c-65gd4_saas-isolation-dev_7f635cd6-649d-4bbc-8446-19c53bb3696e_0": 260.61350000000004,
+          "saas-perf-redis": 1.80625,
+          "multi-tenant-saas-postgres-1": 78.68724999999999,
+          "multi-tenant-saas-keycloak-1": 0.6980000000000001,
+          "multi-tenant-saas-redis-1": 0.3545,
+          "multi-tenant-saas-kafka-1": 1.44275,
+          "saas-load-guarded-final-diagnostic": 75.67999999999999
+        }
+      },
+      "jfr_profiled": true,
+      "telemetry": true,
+      "sql_tracking": "all",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "guarded-final-diagnostic-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 51407,
+      "http_rps": 2537.724723556631,
+      "successful_rps": 888.8231884303138,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.6497558698231758,
+      "cohort_p99_ms": 2107.9862709,
+      "cohort_successful_rps": 888.8231884303138,
+      "dropped_iterations": 148693,
+      "acknowledged_writes": 1809,
+      "committed_version_delta": 1812,
+      "unacknowledged_commits": 3,
+      "unexpected_responses": 50,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-base-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.4412028601695117,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 1.4661538461538461,
+        "external_cpu_percent_max": 3.5,
+        "complete_sweeps": 39,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-56746d6975-c7wwr_saas-isolation-dev_b735670e-6098-462b-8e3b-5ca004984d45_0": 221.6625,
+          "k8s_app_saas-56746d6975-l52r9_saas-isolation-dev_1639b983-ba07-45c4-97aa-077547af495d_0": 224.1995,
+          "saas-perf-redis": 5.4079999999999995,
+          "multi-tenant-saas-postgres-1": 164.16400000000002,
+          "multi-tenant-saas-keycloak-1": 1.4065,
+          "multi-tenant-saas-redis-1": 0.34950000000000003,
+          "multi-tenant-saas-kafka-1": 0.9487500000000001,
+          "saas-load-isolated-base-mixed-r1": 203.65076923076924
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": "isolated-base-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 189019,
+      "http_rps": 9427.170950658556,
+      "successful_rps": 4489.775013729754,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.5237409995820526,
+      "cohort_p99_ms": 118.14807094,
+      "cohort_successful_rps": 4489.775013729754,
+      "dropped_iterations": 10993,
+      "acknowledged_writes": 8906,
+      "committed_version_delta": 8906,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-base-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.0195548947849833,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 1.3715384615384616,
+        "external_cpu_percent_max": 3.23,
+        "complete_sweeps": 39,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-56746d6975-c7wwr_saas-isolation-dev_b735670e-6098-462b-8e3b-5ca004984d45_0": 210.04850000000002,
+          "k8s_app_saas-56746d6975-l52r9_saas-isolation-dev_1639b983-ba07-45c4-97aa-077547af495d_0": 214.53400000000002,
+          "saas-perf-redis": 7.2345,
+          "multi-tenant-saas-postgres-1": 177.18699999999998,
+          "multi-tenant-saas-keycloak-1": 0.18325,
+          "multi-tenant-saas-redis-1": 0.32575,
+          "multi-tenant-saas-kafka-1": 1.134,
+          "saas-load-isolated-base-mixed-r2": 203.16974358974358
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": "isolated-base-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 190786,
+      "http_rps": 9523.177945882593,
+      "successful_rps": 5234.887712276775,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.45030033650267837,
+      "cohort_p99_ms": 94.71149324999993,
+      "cohort_successful_rps": 5234.887712276775,
+      "dropped_iterations": 9215,
+      "acknowledged_writes": 10371,
+      "committed_version_delta": 10371,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-fixed-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 4.226164676304198,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 2.2386842105263156,
+        "external_cpu_percent_max": 5.84,
+        "complete_sweeps": 38,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-546956f55d-46msc_saas-isolation-dev_bc6c866e-8f4f-40da-b9f3-c9de11e45eac_0": 218.9625,
+          "k8s_app_saas-546956f55d-v5rfn_saas-isolation-dev_8244ec60-9a91-4503-b059-5894a2da26ab_0": 224.82225,
+          "saas-perf-redis": 5.815250000000001,
+          "multi-tenant-saas-postgres-1": 170.13825,
+          "multi-tenant-saas-keycloak-1": 0.17675000000000002,
+          "multi-tenant-saas-redis-1": 0.36724999999999997,
+          "multi-tenant-saas-kafka-1": 1.3904999999999998,
+          "saas-load-isolated-fixed-mixed-r1": 208.51358974358973
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "isolated-fixed-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 189446,
+      "http_rps": 9455.0667146158,
+      "successful_rps": 4802.247180095289,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.4920980120984344,
+      "cohort_p99_ms": 115.25733504999994,
+      "cohort_successful_rps": 4802.247180095289,
+      "dropped_iterations": 10586,
+      "acknowledged_writes": 9453,
+      "committed_version_delta": 9453,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-fixed-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.671950413223094,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 1.6363157894736842,
+        "external_cpu_percent_max": 5.510000000000001,
+        "complete_sweeps": 38,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-546956f55d-46msc_saas-isolation-dev_bc6c866e-8f4f-40da-b9f3-c9de11e45eac_0": 219.3985,
+          "k8s_app_saas-546956f55d-v5rfn_saas-isolation-dev_8244ec60-9a91-4503-b059-5894a2da26ab_0": 210.73225000000002,
+          "saas-perf-redis": 7.5032499999999995,
+          "multi-tenant-saas-postgres-1": 182.91375,
+          "multi-tenant-saas-keycloak-1": 0.40149999999999997,
+          "multi-tenant-saas-redis-1": 0.37875000000000003,
+          "multi-tenant-saas-kafka-1": 1.3195000000000001,
+          "saas-load-isolated-fixed-mixed-r2": 207.58743589743588
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "isolated-fixed-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 180141,
+      "http_rps": 8976.409535461942,
+      "successful_rps": 5041.540985951904,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.43835662064715974,
+      "cohort_p99_ms": 148.22124099999996,
+      "cohort_successful_rps": 5041.540985951904,
+      "dropped_iterations": 19762,
+      "acknowledged_writes": 10143,
+      "committed_version_delta": 10143,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-wide-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 5.802550525464838,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 2.257906976744186,
+        "external_cpu_percent_max": 9.65,
+        "complete_sweeps": 43,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-94db9d46d-74z8b_saas-isolation-dev_90ff7ed3-d85d-4f6c-865a-192a776d8c45_0": 190.554,
+          "k8s_app_saas-94db9d46d-bc26m_saas-isolation-dev_89541e65-f8b7-4b82-a96c-700d783a3554_0": 201.25488888888887,
+          "saas-perf-redis": 10.563555555555556,
+          "multi-tenant-saas-postgres-1": 208.33533333333332,
+          "multi-tenant-saas-keycloak-1": 0.878,
+          "multi-tenant-saas-redis-1": 0.42844444444444446,
+          "multi-tenant-saas-kafka-1": 1.4886666666666666,
+          "saas-load-isolated-wide-mixed-r1": 162.93863636363636
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "isolated-wide-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 122549,
+      "http_rps": 5415.405212022488,
+      "successful_rps": 5413.460864624068,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.0003590400574464092,
+      "cohort_p99_ms": 416.4956319999999,
+      "cohort_successful_rps": 5413.460864624068,
+      "dropped_iterations": 76856,
+      "acknowledged_writes": 12249,
+      "committed_version_delta": 12255,
+      "unacknowledged_commits": 6,
+      "unexpected_responses": 44,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-wide-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 5.693774691358012,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 3.8243181818181813,
+        "external_cpu_percent_max": 21.47,
+        "complete_sweeps": 44,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-94db9d46d-74z8b_saas-isolation-dev_90ff7ed3-d85d-4f6c-865a-192a776d8c45_0": 182.3771739130435,
+          "k8s_app_saas-94db9d46d-bc26m_saas-isolation-dev_89541e65-f8b7-4b82-a96c-700d783a3554_0": 185.6291304347826,
+          "saas-perf-redis": 12.816304347826087,
+          "multi-tenant-saas-postgres-1": 211.80695652173915,
+          "multi-tenant-saas-keycloak-1": 0.265,
+          "multi-tenant-saas-redis-1": 0.4191304347826087,
+          "multi-tenant-saas-kafka-1": 1.6115217391304346,
+          "saas-load-isolated-wide-mixed-r2": 160.1091111111111
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "isolated-wide-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 119737,
+      "http_rps": 5202.481111901065,
+      "successful_rps": 5200.873490187306,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.0003090105815245079,
+      "cohort_p99_ms": 518.72525888,
+      "cohort_successful_rps": 5200.873490187306,
+      "dropped_iterations": 80256,
+      "acknowledged_writes": 11971,
+      "committed_version_delta": 11973,
+      "unacknowledged_commits": 2,
+      "unexpected_responses": 28,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-wide-noisy-r1",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 1.9172434932580753,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 13.716410256410255,
+        "external_cpu_percent_max": 38.2,
+        "complete_sweeps": 39,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-976db9488-df2rd_saas-isolation-dev_747069bb-fb06-467c-9bdd-169c723cbb5c_0": 118.59675,
+          "k8s_app_saas-976db9488-tqhbr_saas-isolation-dev_c0af0a15-2e64-40df-8c7f-2d2c5096b321_0": 116.2655,
+          "saas-perf-redis": 2.16775,
+          "multi-tenant-saas-postgres-1": 78.83975000000001,
+          "multi-tenant-saas-keycloak-1": 0.33825,
+          "multi-tenant-saas-redis-1": 0.35,
+          "multi-tenant-saas-kafka-1": 1.37775,
+          "saas-load-isolated-wide-noisy-r1": 209.32384615384615
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "isolated-wide-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 186518,
+      "http_rps": 9320.974488090189,
+      "successful_rps": 1018.81162616313,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.0009282178217821782,
+      "cohort_p99_ms": 260.17918444,
+      "cohort_successful_rps": 968.1883771660607,
+      "dropped_iterations": 13484,
+      "acknowledged_writes": 2064,
+      "committed_version_delta": 2064,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "isolated-wide-noisy-r2",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.285938640973613,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 21.338048780487807,
+        "external_cpu_percent_max": 75.04,
+        "complete_sweeps": 41,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-976db9488-df2rd_saas-isolation-dev_747069bb-fb06-467c-9bdd-169c723cbb5c_0": 122.67714285714285,
+          "k8s_app_saas-976db9488-tqhbr_saas-isolation-dev_c0af0a15-2e64-40df-8c7f-2d2c5096b321_0": 123.19214285714285,
+          "saas-perf-redis": 2.55,
+          "multi-tenant-saas-postgres-1": 87.5002380952381,
+          "multi-tenant-saas-keycloak-1": 0.23904761904761906,
+          "multi-tenant-saas-redis-1": 0.38785714285714284,
+          "multi-tenant-saas-kafka-1": 1.5145238095238096,
+          "saas-load-isolated-wide-noisy-r2": 225.961
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "isolated-wide-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 188204,
+      "http_rps": 9309.194706807046,
+      "successful_rps": 1023.940190567749,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0,
+      "cohort_p99_ms": 206.05594385,
+      "cohort_successful_rps": 971.2617546006629,
+      "dropped_iterations": 11489,
+      "acknowledged_writes": 2072,
+      "committed_version_delta": 2072,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "learned-final-noisy-r1",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 4.949107254860933,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 99.0546875,
+        "external_cpu_percent_max": 328.99,
+        "complete_sweeps": 64,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-59677bf8f7-h4rfm_saas-isolation-dev_204307ad-5901-425c-9289-0998e94896d2_0": 128.30870967741936,
+          "k8s_app_saas-59677bf8f7-vch5q_saas-isolation-dev_2253444f-6707-4d79-9dfb-4ece16ef41a2_0": 122.04453125,
+          "saas-perf-redis": 2.186,
+          "multi-tenant-saas-postgres-1": 83.502,
+          "multi-tenant-saas-keycloak-1": 0.3663076923076923,
+          "multi-tenant-saas-redis-1": 0.5367692307692308,
+          "multi-tenant-saas-kafka-1": 2.0696923076923075,
+          "saas-load-learned-final-noisy-r1": 220.75031746031746
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "learned-final-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 218120,
+      "http_rps": 6663.602881655587,
+      "successful_rps": 742.0941573367681,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.08047328005014888,
+      "cohort_p99_ms": 457.3969876799999,
+      "cohort_successful_rps": 717.0124685148387,
+      "dropped_iterations": 81812,
+      "acknowledged_writes": 2414,
+      "committed_version_delta": 2417,
+      "unacknowledged_commits": 3,
+      "unexpected_responses": 10,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "learned-final-noisy-r2",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 9.327626547987549,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 260.06171875,
+        "external_cpu_percent_max": 518.32,
+        "complete_sweeps": 64,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-59677bf8f7-h4rfm_saas-isolation-dev_204307ad-5901-425c-9289-0998e94896d2_0": 99.04206349206349,
+          "k8s_app_saas-59677bf8f7-vch5q_saas-isolation-dev_2253444f-6707-4d79-9dfb-4ece16ef41a2_0": 96.70968253968255,
+          "saas-perf-redis": 2.169016393442623,
+          "multi-tenant-saas-postgres-1": 82.22967741935483,
+          "multi-tenant-saas-keycloak-1": 0.8128571428571428,
+          "multi-tenant-saas-redis-1": 0.6617460317460317,
+          "multi-tenant-saas-kafka-1": 3.3693650793650796,
+          "saas-load-learned-final-noisy-r2": 144.80459016393442
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "learned-final-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 94203,
+      "http_rps": 2854.274592462127,
+      "successful_rps": 449.7611758702782,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.2636143818334735,
+      "cohort_p99_ms": 761.9805304599995,
+      "cohort_successful_rps": 424.46135224782586,
+      "dropped_iterations": 205798,
+      "acknowledged_writes": 1488,
+      "committed_version_delta": 1492,
+      "unacknowledged_commits": 4,
+      "unexpected_responses": 192,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "linux-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.3412068965518644,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": false,
+      "base_url": "http://192.168.194.157",
+      "http_requests": null,
+      "http_rps": null,
+      "successful_rps": null,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": null,
+      "cohort_p99_ms": null,
+      "cohort_successful_rps": null,
+      "dropped_iterations": null,
+      "acknowledged_writes": null,
+      "committed_version_delta": 0,
+      "unacknowledged_commits": null,
+      "unexpected_responses": null,
+      "isolation_violations": null,
+      "capacity_evidence": false,
+      "note": "Generator failed to launch; no request totals inferred"
+    },
+    {
+      "label": "linux-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": false,
+      "base_url": "http://192.168.194.157",
+      "http_requests": null,
+      "http_rps": null,
+      "successful_rps": null,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": null,
+      "cohort_p99_ms": null,
+      "cohort_successful_rps": null,
+      "dropped_iterations": null,
+      "acknowledged_writes": null,
+      "committed_version_delta": 0,
+      "unacknowledged_commits": null,
+      "unexpected_responses": null,
+      "isolation_violations": null,
+      "capacity_evidence": false,
+      "note": "Generator failed to launch; no request totals inferred"
+    },
+    {
+      "label": "no-sql-profile-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 7.057583418107849,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 96.74763157894736,
+        "external_cpu_percent_max": 158.65,
+        "complete_sweeps": 38,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-75599996d9-9pp27_saas-isolation-dev_b1ce1cab-b541-4730-a007-f161a3b9abf8_0": 189.0195,
+          "k8s_app_saas-75599996d9-c6sgf_saas-isolation-dev_8fa35cdc-58ea-4aa7-a603-35610f25a531_0": 196.68025,
+          "saas-perf-redis": 9.3515,
+          "multi-tenant-saas-postgres-1": 197.762,
+          "multi-tenant-saas-keycloak-1": 0.28175,
+          "multi-tenant-saas-redis-1": 0.38675000000000004,
+          "multi-tenant-saas-kafka-1": 2.00775,
+          "saas-load-no-sql-profile-mixed-r1": 146.05153846153846
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "no-sql-profile-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 92129,
+      "http_rps": 4547.338242087656,
+      "successful_rps": 4545.857490671026,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.00032563036611707495,
+      "cohort_p99_ms": 412.40315748,
+      "cohort_successful_rps": 4545.857490671026,
+      "dropped_iterations": 107872,
+      "acknowledged_writes": 9208,
+      "committed_version_delta": 9213,
+      "unacknowledged_commits": 5,
+      "unexpected_responses": 30,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "no-sql-profile-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 6.2857163984340865,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 208.8845238095238,
+        "external_cpu_percent_max": 299.55,
+        "complete_sweeps": 42,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-75599996d9-9pp27_saas-isolation-dev_b1ce1cab-b541-4730-a007-f161a3b9abf8_0": 171.55093023255816,
+          "k8s_app_saas-75599996d9-c6sgf_saas-isolation-dev_8fa35cdc-58ea-4aa7-a603-35610f25a531_0": 164.37790697674419,
+          "saas-perf-redis": 10.210697674418604,
+          "multi-tenant-saas-postgres-1": 179.35302325581395,
+          "multi-tenant-saas-keycloak-1": 0.22069767441860466,
+          "multi-tenant-saas-redis-1": 0.4004651162790697,
+          "multi-tenant-saas-kafka-1": 1.2006976744186046,
+          "saas-load-no-sql-profile-mixed-r2": 131.6054761904762
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "3",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+      ],
+      "conditions_file": "no-sql-profile-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 87221,
+      "http_rps": 4066.5257492370342,
+      "successful_rps": 4065.220298474275,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.0003210236067002213,
+      "cohort_p99_ms": 409.448699,
+      "cohort_successful_rps": 4065.220298474275,
+      "dropped_iterations": 112748,
+      "acknowledged_writes": 8722,
+      "committed_version_delta": 8723,
+      "unacknowledged_commits": 1,
+      "unexpected_responses": 28,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "optimized-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 34661,
+      "http_rps": 1665.825127242587,
+      "successful_rps": 336.90413265544953,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.7977554023253801,
+      "cohort_p99_ms": 1297.4031999999997,
+      "cohort_successful_rps": 336.90413265544953,
+      "dropped_iterations": 165341,
+      "acknowledged_writes": 684,
+      "committed_version_delta": 687,
+      "unacknowledged_commits": 3,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "private-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": null,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": null,
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://localhost:30088",
+      "http_requests": 39416,
+      "http_rps": 1912.050062958042,
+      "successful_rps": 1158.6006622612613,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.3940531763750761,
+      "cohort_p99_ms": 796.6899999999999,
+      "cohort_successful_rps": 1158.6006622612613,
+      "dropped_iterations": 160585,
+      "acknowledged_writes": 2369,
+      "committed_version_delta": 2369,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "profile-baseline-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 7.243413726993856,
+      "cpu_context": {},
+      "jfr_profiled": true,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 19495,
+      "http_rps": 901.7618643797686,
+      "successful_rps": 331.2858924179483,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.6326237496794049,
+      "cohort_p99_ms": 2608.5186778799994,
+      "cohort_successful_rps": 331.2858924179483,
+      "dropped_iterations": 170628,
+      "acknowledged_writes": 750,
+      "committed_version_delta": 754,
+      "unacknowledged_commits": 4,
+      "unexpected_responses": 134,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-confirmation-1000",
+      "mode": "mixed",
+      "target_rps": 1000,
+      "wal_mean_sync_ms": 1.4509709078932764,
+      "cpu_context": {},
+      "jfr_profiled": false,
+      "telemetry": false,
+      "sql_tracking": "all",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": null,
+      "result": "PASS",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 20000,
+      "http_rps": 999.5927748998407,
+      "successful_rps": 999.5927748998407,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0,
+      "cohort_p99_ms": 37.12503625999997,
+      "cohort_successful_rps": 999.5927748998407,
+      "dropped_iterations": 0,
+      "acknowledged_writes": 2000,
+      "committed_version_delta": 2000,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-confirmation-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 22.91767207792208,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 560.4546,
+        "external_cpu_percent_max": 844.3100000000001,
+        "complete_sweeps": 50,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-65c468f6d-m8b57_saas-isolation-dev_7b746dcb-f738-4d98-b84c-6718c4080dca_0": 70.04916666666666,
+          "k8s_app_saas-65c468f6d-msfqd_saas-isolation-dev_47955264-e160-4a00-a057-74845cabcbe3_0": 69.19065217391304,
+          "saas-perf-redis": 1.3746808510638298,
+          "multi-tenant-saas-postgres-1": 50.028695652173916,
+          "multi-tenant-saas-keycloak-1": 0.6097872340425532,
+          "multi-tenant-saas-redis-1": 0.5816666666666667,
+          "multi-tenant-saas-kafka-1": 3.4895744680851064,
+          "saas-load-release-confirmation-mixed-r1": 68.2205
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "release-confirmation-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 25189,
+      "http_rps": 1163.349358620464,
+      "successful_rps": 239.8839401593827,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.7937988804636945,
+      "cohort_p99_ms": 1407.0991270799998,
+      "cohort_successful_rps": 239.8839401593827,
+      "dropped_iterations": 166844,
+      "acknowledged_writes": 513,
+      "committed_version_delta": 513,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": 7,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-confirmation-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 5.826856492027313,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 234.2061224489796,
+        "external_cpu_percent_max": 456.35,
+        "complete_sweeps": 49,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-65c468f6d-m8b57_saas-isolation-dev_7b746dcb-f738-4d98-b84c-6718c4080dca_0": 115.9136,
+          "k8s_app_saas-65c468f6d-msfqd_saas-isolation-dev_47955264-e160-4a00-a057-74845cabcbe3_0": 116.311,
+          "saas-perf-redis": 1.6772,
+          "multi-tenant-saas-postgres-1": 78.4504,
+          "multi-tenant-saas-keycloak-1": 0.45419999999999994,
+          "multi-tenant-saas-redis-1": 0.4251020408163265,
+          "multi-tenant-saas-kafka-1": 3.2736,
+          "saas-load-release-confirmation-mixed-r2": 134.2917391304348
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "release-confirmation-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 88077,
+      "http_rps": 3824.3003876466787,
+      "successful_rps": 812.1704730057918,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.787629006437549,
+      "cohort_p99_ms": 525.8284830799998,
+      "cohort_successful_rps": 812.1704730057918,
+      "dropped_iterations": 111886,
+      "acknowledged_writes": 1826,
+      "committed_version_delta": 1827,
+      "unacknowledged_commits": 1,
+      "unexpected_responses": 22,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-confirmation-noisy-r1",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 4.412197639308246,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 86.42934782608695,
+        "external_cpu_percent_max": 175.33,
+        "complete_sweeps": 46,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-699b4dcc56-52j8g_saas-isolation-dev_3823b473-668a-49fd-a8c8-9322e23d62ee_0": 121.62021276595743,
+          "k8s_app_saas-699b4dcc56-dckr7_saas-isolation-dev_4678c85f-4ddb-4cc0-a133-8800b15294bd_0": 125.52702127659576,
+          "saas-perf-redis": 2.4744680851063827,
+          "multi-tenant-saas-postgres-1": 87.00851063829788,
+          "multi-tenant-saas-keycloak-1": 0.40425531914893614,
+          "multi-tenant-saas-redis-1": 0.5159574468085106,
+          "multi-tenant-saas-kafka-1": 3.675531914893617,
+          "saas-load-release-confirmation-noisy-r1": 223.2988888888889
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "release-confirmation-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 162207,
+      "http_rps": 6982.881950085399,
+      "successful_rps": 798.1322097972547,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.042668237057658334,
+      "cohort_p99_ms": 349.65360071999993,
+      "cohort_successful_rps": 769.8058347138355,
+      "dropped_iterations": 37781,
+      "acknowledged_writes": 1849,
+      "committed_version_delta": 1849,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": 5,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-confirmation-noisy-r2",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 7.690185571903244,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 108.20837209302326,
+        "external_cpu_percent_max": 189.22000000000003,
+        "complete_sweeps": 43,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-699b4dcc56-52j8g_saas-isolation-dev_3823b473-668a-49fd-a8c8-9322e23d62ee_0": 118.99522727272728,
+          "k8s_app_saas-699b4dcc56-dckr7_saas-isolation-dev_4678c85f-4ddb-4cc0-a133-8800b15294bd_0": 117.72139534883722,
+          "saas-perf-redis": 2.566046511627907,
+          "multi-tenant-saas-postgres-1": 82.5939534883721,
+          "multi-tenant-saas-keycloak-1": 0.6241860465116279,
+          "multi-tenant-saas-redis-1": 0.4633333333333334,
+          "multi-tenant-saas-kafka-1": 3.411627906976744,
+          "saas-load-release-confirmation-noisy-r2": 219.93052631578948
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "250m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "release-confirmation-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 155350,
+      "http_rps": 7712.282384153827,
+      "successful_rps": 871.6591831411193,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.05621909893894784,
+      "cohort_p99_ms": 419.38836,
+      "cohort_successful_rps": 843.4114285445082,
+      "dropped_iterations": 44450,
+      "acknowledged_writes": 1760,
+      "committed_version_delta": 1760,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-mixed-1000",
+      "mode": "mixed",
+      "target_rps": 1000,
+      "wal_mean_sync_ms": 2.3123280482671613,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": null,
+      "result": "PASS",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 20000,
+      "http_rps": 999.7177398432902,
+      "successful_rps": 992.6697297773951,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.00705,
+      "cohort_p99_ms": 143.38155526,
+      "cohort_successful_rps": 992.6697297773951,
+      "dropped_iterations": 0,
+      "acknowledged_writes": 1985,
+      "committed_version_delta": 1985,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-mixed-10000",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 9.347997486173936,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 48457,
+      "http_rps": 2104.7198834285946,
+      "successful_rps": 348.2167551735981,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.8345543471531461,
+      "cohort_p99_ms": 812.2002139199999,
+      "cohort_successful_rps": 348.2167551735981,
+      "dropped_iterations": 151674,
+      "acknowledged_writes": 798,
+      "committed_version_delta": 800,
+      "unacknowledged_commits": 2,
+      "unexpected_responses": 54,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "release-noisy-10000",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 7.656008539325845,
+      "cpu_context": {},
+      "jfr_profiled": null,
+      "telemetry": null,
+      "sql_tracking": "not recorded",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": null,
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 100660,
+      "http_rps": 4309.187229516037,
+      "successful_rps": 581.3079017444692,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.21590841686932796,
+      "cohort_p99_ms": 559.7616287599998,
+      "cohort_successful_rps": 565.8965426879843,
+      "dropped_iterations": 95782,
+      "acknowledged_writes": 1336,
+      "committed_version_delta": 1338,
+      "unacknowledged_commits": 2,
+      "unexpected_responses": 60,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "reserved-cpu-1000",
+      "mode": "mixed",
+      "target_rps": 1000,
+      "wal_mean_sync_ms": 1.2729877800407086,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 35.599230769230765,
+        "external_cpu_percent_max": 60.15,
+        "complete_sweeps": 39,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-7f7d7f56d6-sg7q8_saas-isolation-dev_29743e17-68f3-471a-9361-3b8c9801e2ae_0": 44.81675,
+          "k8s_app_saas-7f7d7f56d6-tscpm_saas-isolation-dev_ff046761-2a9c-4fdb-832e-92b51df4d694_0": 42.69525,
+          "multi-tenant-saas-app-1": 5.82625,
+          "saas-perf-redis": 0.31124999999999997,
+          "multi-tenant-saas-postgres-1": 63.2245,
+          "multi-tenant-saas-keycloak-1": 0.26875,
+          "multi-tenant-saas-redis-1": 1.84775,
+          "multi-tenant-saas-kafka-1": 3.321,
+          "saas-load-reserved-cpu-1000": 30.60871794871795
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "all",
+      "foreground_only": null,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "2500m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": null,
+      "result": "PASS",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 20000,
+      "http_rps": 999.7337638505635,
+      "successful_rps": 999.7337638505635,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0,
+      "cohort_p99_ms": 21.884775839999968,
+      "cohort_successful_rps": 999.7337638505635,
+      "dropped_iterations": 0,
+      "acknowledged_writes": 2000,
+      "committed_version_delta": 2000,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "reserved-cpu-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.7967152223488774,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 58.472307692307695,
+        "external_cpu_percent_max": 194.07999999999998,
+        "complete_sweeps": 39,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-68655b54d8-g585r_saas-isolation-dev_cd379955-bbb8-4fa6-841e-92b084fca337_0": 198.449,
+          "k8s_app_saas-68655b54d8-n729k_saas-isolation-dev_551f0556-78df-4d13-9ef3-c18678fd8876_0": 190.432,
+          "saas-perf-redis": 4.594250000000001,
+          "multi-tenant-saas-postgres-1": 154.675,
+          "multi-tenant-saas-keycloak-1": 0.24700000000000003,
+          "multi-tenant-saas-redis-1": 0.3295,
+          "multi-tenant-saas-kafka-1": 1.40575,
+          "saas-load-reserved-cpu-mixed-r1": 191.0497435897436
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "2500m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "reserved-cpu-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 172731,
+      "http_rps": 8617.421513495976,
+      "successful_rps": 4200.8252351975125,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.5125194666851925,
+      "cohort_p99_ms": 149.26723819999995,
+      "cohort_successful_rps": 4200.8252351975125,
+      "dropped_iterations": 27216,
+      "acknowledged_writes": 8442,
+      "committed_version_delta": 8442,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "reserved-cpu-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.9293505419280774,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 64.51488372093023,
+        "external_cpu_percent_max": 267.4,
+        "complete_sweeps": 43,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-68655b54d8-g585r_saas-isolation-dev_cd379955-bbb8-4fa6-841e-92b084fca337_0": 190.51113636363635,
+          "k8s_app_saas-68655b54d8-n729k_saas-isolation-dev_551f0556-78df-4d13-9ef3-c18678fd8876_0": 177.28795454545454,
+          "saas-perf-redis": 5.399545454545454,
+          "multi-tenant-saas-postgres-1": 155.01636363636365,
+          "multi-tenant-saas-keycloak-1": 0.425,
+          "multi-tenant-saas-redis-1": 0.4454545454545454,
+          "multi-tenant-saas-kafka-1": 2.546818181818182,
+          "saas-load-reserved-cpu-mixed-r2": 197.5139534883721
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "2500m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "reserved-cpu-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 176587,
+      "http_rps": 8456.001725067448,
+      "successful_rps": 4042.5632783382644,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.5219297003743197,
+      "cohort_p99_ms": 137.21068176,
+      "cohort_successful_rps": 4042.563278338264,
+      "dropped_iterations": 21394,
+      "acknowledged_writes": 8380,
+      "committed_version_delta": 8380,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "reserved-cpu-noisy-r1",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.905192701664534,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 70.75333333333333,
+        "external_cpu_percent_max": 119.12,
+        "complete_sweeps": 39,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-c8c9f46cd-qpfsk_saas-isolation-dev_2f356c91-3f52-49fd-b718-2c90fc2f5442_0": 138.76575,
+          "k8s_app_saas-c8c9f46cd-h9mcf_saas-isolation-dev_73257c0e-6666-447a-baae-e7eba28d069e_0": 133.60325,
+          "saas-perf-redis": 2.4202500000000002,
+          "multi-tenant-saas-postgres-1": 93.74674999999999,
+          "multi-tenant-saas-keycloak-1": 0.41025,
+          "multi-tenant-saas-redis-1": 0.437,
+          "multi-tenant-saas-kafka-1": 2.1975000000000002,
+          "saas-load-reserved-cpu-noisy-r1": 243.37846153846155
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "2500m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "reserved-cpu-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 177334,
+      "http_rps": 8836.340023860776,
+      "successful_rps": 1004.9471934385067,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.008871090383738024,
+      "cohort_p99_ms": 190.70543041999997,
+      "cohort_successful_rps": 974.2526540117849,
+      "dropped_iterations": 22699,
+      "acknowledged_writes": 2024,
+      "committed_version_delta": 2024,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "reserved-cpu-noisy-r2",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.3157050968173207,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 74.72425,
+        "external_cpu_percent_max": 189.51,
+        "complete_sweeps": 40,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-c8c9f46cd-qpfsk_saas-isolation-dev_2f356c91-3f52-49fd-b718-2c90fc2f5442_0": 128.57874999999999,
+          "k8s_app_saas-c8c9f46cd-h9mcf_saas-isolation-dev_73257c0e-6666-447a-baae-e7eba28d069e_0": 136.4620512820513,
+          "saas-perf-redis": 2.724615384615385,
+          "multi-tenant-saas-postgres-1": 94.49205128205128,
+          "multi-tenant-saas-keycloak-1": 0.45025000000000004,
+          "multi-tenant-saas-redis-1": 0.49128205128205127,
+          "multi-tenant-saas-kafka-1": 2.1727499999999997,
+          "saas-load-reserved-cpu-noisy-r2": 242.58315789473684
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "none",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "2500m",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "conditions_file": "reserved-cpu-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 164713,
+      "http_rps": 8221.233947065928,
+      "successful_rps": 924.5787377769165,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.04260450160771704,
+      "cohort_p99_ms": 366.1942828899999,
+      "cohort_successful_rps": 891.6864149419463,
+      "dropped_iterations": 35288,
+      "acknowledged_writes": 1850,
+      "committed_version_delta": 1850,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-base-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 5.897253710830135,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 110.86830508474577,
+        "external_cpu_percent_max": 220.21,
+        "complete_sweeps": 59,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-586f7497b9-2n7s5_saas-isolation-dev_b4b50878-0f86-42de-ac71-ca23f85dcff2_0": 196.46101694915257,
+          "k8s_app_saas-586f7497b9-w7ftr_saas-isolation-dev_435216bc-faf7-44d0-a484-9f867e94f1ec_0": 189.84086206896552,
+          "saas-perf-redis": 3.133220338983051,
+          "multi-tenant-saas-postgres-1": 130.68457627118644,
+          "multi-tenant-saas-keycloak-1": 0.6006896551724139,
+          "multi-tenant-saas-redis-1": 0.46237288135593224,
+          "multi-tenant-saas-kafka-1": 1.8611864406779661,
+          "saas-load-steady-base-mixed-r1": 200.76362068965517
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": "steady-base-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 177216,
+      "http_rps": 5885.874226536593,
+      "successful_rps": 1579.2447273247815,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.731689012278801,
+      "cohort_p99_ms": 413.15962239999993,
+      "cohort_successful_rps": 1579.2447273247815,
+      "dropped_iterations": 122704,
+      "acknowledged_writes": 4783,
+      "committed_version_delta": 4783,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": 20,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-base-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.9299396310787995,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 89.21742424242424,
+        "external_cpu_percent_max": 164.32999999999998,
+        "complete_sweeps": 66,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-586f7497b9-2n7s5_saas-isolation-dev_b4b50878-0f86-42de-ac71-ca23f85dcff2_0": 177.74492537313432,
+          "k8s_app_saas-586f7497b9-w7ftr_saas-isolation-dev_435216bc-faf7-44d0-a484-9f867e94f1ec_0": 177.5020895522388,
+          "saas-perf-redis": 3.423283582089552,
+          "multi-tenant-saas-postgres-1": 130.70134328358208,
+          "multi-tenant-saas-keycloak-1": 0.23343283582089552,
+          "multi-tenant-saas-redis-1": 0.4002985074626866,
+          "multi-tenant-saas-kafka-1": 1.402686567164179,
+          "saas-load-steady-base-mixed-r2": 194.4809230769231
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": "steady-base-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 223908,
+      "http_rps": 6778.156220184961,
+      "successful_rps": 2292.6241276751516,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.6617628668917591,
+      "cohort_p99_ms": 259.02860266,
+      "cohort_successful_rps": 2292.6241276751516,
+      "dropped_iterations": 75877,
+      "acknowledged_writes": 7454,
+      "committed_version_delta": 7455,
+      "unacknowledged_commits": 1,
+      "unexpected_responses": 9,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-base-noisy-r1",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.1663513846153823,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 56.64603448275862,
+        "external_cpu_percent_max": 116.0,
+        "complete_sweeps": 58,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-579cc8d8f-99c5z_saas-isolation-dev_215bc821-67d8-45e8-96de-d745e044844c_0": 171.8595,
+          "k8s_app_saas-579cc8d8f-v8v9q_saas-isolation-dev_8d08ccf8-8813-4ac1-9afb-cf9b47d22c06_0": 169.292,
+          "saas-perf-redis": 2.182,
+          "multi-tenant-saas-postgres-1": 87.59033333333333,
+          "multi-tenant-saas-keycloak-1": 0.33699999999999997,
+          "multi-tenant-saas-redis-1": 0.3828333333333333,
+          "multi-tenant-saas-kafka-1": 1.2163333333333335,
+          "saas-load-steady-base-noisy-r1": 213.6957627118644
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": "steady-base-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 271729,
+      "http_rps": 9040.103221691043,
+      "successful_rps": 979.7667524585202,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.011876075731497418,
+      "cohort_p99_ms": 319.65868066999997,
+      "cohort_successful_rps": 954.9814814710295,
+      "dropped_iterations": 28326,
+      "acknowledged_writes": 2946,
+      "committed_version_delta": 2946,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-base-noisy-r2",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 7.705544996853388,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 195.08073529411763,
+        "external_cpu_percent_max": 661.75,
+        "complete_sweeps": 68,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-579cc8d8f-99c5z_saas-isolation-dev_215bc821-67d8-45e8-96de-d745e044844c_0": 141.28217391304347,
+          "k8s_app_saas-579cc8d8f-v8v9q_saas-isolation-dev_8d08ccf8-8813-4ac1-9afb-cf9b47d22c06_0": 146.97,
+          "saas-perf-redis": 2.2266176470588235,
+          "multi-tenant-saas-postgres-1": 84.45823529411764,
+          "multi-tenant-saas-keycloak-1": 0.4914492753623188,
+          "multi-tenant-saas-redis-1": 0.52,
+          "multi-tenant-saas-kafka-1": 2.8183823529411764,
+          "saas-load-steady-base-noisy-r2": 163.9445588235294
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043"
+      ],
+      "conditions_file": "steady-base-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 140132,
+      "http_rps": 4202.6682549829575,
+      "successful_rps": 566.5858524329777,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.2077871679889617,
+      "cohort_p99_ms": 706.2751852199999,
+      "cohort_successful_rps": 551.0206366054996,
+      "dropped_iterations": 158779,
+      "acknowledged_writes": 1865,
+      "committed_version_delta": 1870,
+      "unacknowledged_commits": 5,
+      "unexpected_responses": 257,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-final-mixed-r1",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 5.144625327053906,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 75.43810344827585,
+        "external_cpu_percent_max": 148.87,
+        "complete_sweeps": 58,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-6db466986f-bzvlr_saas-isolation-dev_4c99184e-f5e9-4d9a-9753-3ed89cd81563_0": 197.50533333333334,
+          "k8s_app_saas-6db466986f-dhp7m_saas-isolation-dev_2c9a8cd1-c1d1-44e9-bd85-3333d53a77fc_0": 200.03166666666667,
+          "saas-perf-redis": 4.471166666666666,
+          "multi-tenant-saas-postgres-1": 150.42733333333334,
+          "multi-tenant-saas-keycloak-1": 0.4821666666666667,
+          "multi-tenant-saas-redis-1": 0.4013333333333333,
+          "multi-tenant-saas-kafka-1": 1.7753333333333332,
+          "saas-load-steady-final-mixed-r1": 207.15627118644068
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:4e52e9b5f168a68ae1970b4931f9ff3a96b96571d492f48b6a088888eff7a747"
+      ],
+      "conditions_file": "steady-final-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 222451,
+      "http_rps": 7391.718170390523,
+      "successful_rps": 2959.8639149552314,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.5995702424354128,
+      "cohort_p99_ms": 220.41918149999995,
+      "cohort_successful_rps": 2959.8639149552314,
+      "dropped_iterations": 77234,
+      "acknowledged_writes": 8874,
+      "committed_version_delta": 8874,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-final-mixed-r2",
+      "mode": "mixed",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 4.904451644100589,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 83.08032786885245,
+        "external_cpu_percent_max": 163.79,
+        "complete_sweeps": 61,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-6db466986f-bzvlr_saas-isolation-dev_4c99184e-f5e9-4d9a-9753-3ed89cd81563_0": 182.04444444444442,
+          "k8s_app_saas-6db466986f-dhp7m_saas-isolation-dev_2c9a8cd1-c1d1-44e9-bd85-3333d53a77fc_0": 170.265873015873,
+          "saas-perf-redis": 4.455238095238095,
+          "multi-tenant-saas-postgres-1": 151.76619047619047,
+          "multi-tenant-saas-keycloak-1": 0.5976190476190476,
+          "multi-tenant-saas-redis-1": 0.4457142857142857,
+          "multi-tenant-saas-kafka-1": 1.8066666666666666,
+          "saas-load-steady-final-mixed-r2": 198.83274193548385
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:4e52e9b5f168a68ae1970b4931f9ff3a96b96571d492f48b6a088888eff7a747"
+      ],
+      "conditions_file": "steady-final-mixed-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 210696,
+      "http_rps": 6373.204815836465,
+      "successful_rps": 2655.834738368348,
+      "evaluated_cohort": "normal",
+      "cohort_error_rate": 0.5832811254129172,
+      "cohort_p99_ms": 247.25187755,
+      "cohort_successful_rps": 2655.834738368348,
+      "dropped_iterations": 87459,
+      "acknowledged_writes": 8751,
+      "committed_version_delta": 8752,
+      "unacknowledged_commits": 1,
+      "unexpected_responses": 8,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-final-noisy-r1",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 3.065930568079358,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 83.69172413793103,
+        "external_cpu_percent_max": 163.64000000000001,
+        "complete_sweeps": 58,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-64d988955c-6mwpm_saas-isolation-dev_a4e2516d-a780-40bd-b781-6e26aefd1e47_0": 166.12366666666668,
+          "k8s_app_saas-64d988955c-kpmlv_saas-isolation-dev_d425459b-063e-450b-b793-9fca904f89b7_0": 171.09733333333332,
+          "saas-perf-redis": 2.3975,
+          "multi-tenant-saas-postgres-1": 92.64983333333333,
+          "multi-tenant-saas-keycloak-1": 0.39149999999999996,
+          "multi-tenant-saas-redis-1": 0.3985,
+          "multi-tenant-saas-kafka-1": 1.7883333333333333,
+          "saas-load-steady-final-noisy-r1": 232.32220338983052
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:4e52e9b5f168a68ae1970b4931f9ff3a96b96571d492f48b6a088888eff7a747"
+      ],
+      "conditions_file": "steady-final-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 257273,
+      "http_rps": 8550.870194428138,
+      "successful_rps": 988.1230089451616,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.01137613417651911,
+      "cohort_p99_ms": 254.30316494999997,
+      "cohort_successful_rps": 956.0497259437461,
+      "dropped_iterations": 42821,
+      "acknowledged_writes": 3003,
+      "committed_version_delta": 3003,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    },
+    {
+      "label": "steady-final-noisy-r2",
+      "mode": "noisy",
+      "target_rps": 10000,
+      "wal_mean_sync_ms": 2.38974363177806,
+      "cpu_context": {
+        "scope": "Approximate Docker CPU percent; 100 percent is one core. Anonymous unrelated containers summed per complete stats sweep, excluding partial edges.",
+        "external_cpu_percent_mean": 62.85071428571428,
+        "external_cpu_percent_max": 102.15,
+        "complete_sweeps": 56,
+        "own_cpu_percent_mean": {
+          "k8s_app_saas-64d988955c-6mwpm_saas-isolation-dev_a4e2516d-a780-40bd-b781-6e26aefd1e47_0": 165.4108620689655,
+          "k8s_app_saas-64d988955c-kpmlv_saas-isolation-dev_d425459b-063e-450b-b793-9fca904f89b7_0": 158.71327586206897,
+          "saas-perf-redis": 2.526724137931035,
+          "multi-tenant-saas-postgres-1": 88.36862068965517,
+          "multi-tenant-saas-keycloak-1": 0.4081034482758621,
+          "multi-tenant-saas-redis-1": 0.3877586206896552,
+          "multi-tenant-saas-kafka-1": 1.6548275862068966,
+          "saas-load-steady-final-noisy-r2": 233.87105263157895
+        }
+      },
+      "jfr_profiled": false,
+      "telemetry": true,
+      "sql_tracking": "not recorded",
+      "foreground_only": true,
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "1",
+          "memory": "384Mi"
+        }
+      },
+      "api_image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:4e52e9b5f168a68ae1970b4931f9ff3a96b96571d492f48b6a088888eff7a747"
+      ],
+      "conditions_file": "steady-final-noisy-conditions.json",
+      "result": "FAIL",
+      "summary_available": true,
+      "base_url": "http://192.168.194.157:80",
+      "http_requests": 279108,
+      "http_rps": 9302.203334943653,
+      "successful_rps": 1012.8812558302612,
+      "evaluated_cohort": "neighbor",
+      "cohort_error_rate": 0.005314467537742874,
+      "cohort_p99_ms": 203.56202430999997,
+      "cohort_successful_rps": 979.352956552013,
+      "dropped_iterations": 20893,
+      "acknowledged_writes": 3059,
+      "committed_version_delta": 3059,
+      "unacknowledged_commits": 0,
+      "unexpected_responses": null,
+      "isolation_violations": 0,
+      "capacity_evidence": true,
+      "note": null
+    }
+  ]
+}

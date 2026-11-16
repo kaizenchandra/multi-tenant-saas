@@ -1,0 +1,8 @@
+{
+  "database": "saas_perf_seed",
+  "tenants": 256,
+  "projects": 256,
+  "tasks": 512,
+  "fixture_digest": "6621bab14e12c8532aa5c7ac17f5d747",
+  "synthetic_only": true
+}

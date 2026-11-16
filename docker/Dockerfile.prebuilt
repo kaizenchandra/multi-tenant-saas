@@ -1,0 +1,7 @@
+# For local/offline image assembly after `mvn verify`.
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY target/multi-tenant-saas-1.0.0.jar app.jar
+USER 10001:10001
+EXPOSE 8080
+ENTRYPOINT ["java","-XX:+UseG1GC","-XX:InitialRAMPercentage=30","-XX:MaxRAMPercentage=60","-XX:MaxGCPauseMillis=50","-jar","app.jar"]

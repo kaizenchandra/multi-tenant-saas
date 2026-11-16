@@ -1,0 +1,343 @@
+{
+  "unix": 1794728138.6902468,
+  "group": "other",
+  "cpu_percent": 0.01,
+  "memory": "260.9MiB / 768MiB",
+  "pids": "41"
+}
+{
+  "unix": 1794728138.690562,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "52KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.6905978,
+  "group": "other",
+  "cpu_percent": 0.01,
+  "memory": "258.2MiB / 768MiB",
+  "pids": "40"
+}
+{
+  "unix": 1794728138.690613,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "52KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.690624,
+  "group": "other",
+  "cpu_percent": 0.01,
+  "memory": "261.3MiB / 768MiB",
+  "pids": "40"
+}
+{
+  "unix": 1794728138.690633,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "36KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.6906419,
+  "group": "other",
+  "cpu_percent": 0.01,
+  "memory": "360.8MiB / 1GiB",
+  "pids": "57"
+}
+{
+  "unix": 1794728138.6906502,
+  "group": "k8s_app_saas-6c66ff6774-4gkgl_saas-isolation-dev_7a5c3ba8-4517-4a78-931c-131f6a2040e0_0",
+  "cpu_percent": 0.01,
+  "memory": "339.4MiB / 1GiB",
+  "pids": "58"
+}
+{
+  "unix": 1794728138.6906629,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "36KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.6906722,
+  "group": "k8s_app_saas-6c66ff6774-2g7rx_saas-isolation-dev_98af0fee-b557-4b13-9423-2ef40252d915_0",
+  "cpu_percent": 0.01,
+  "memory": "380MiB / 1GiB",
+  "pids": "58"
+}
+{
+  "unix": 1794728138.69068,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "328KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.690688,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "4.387MiB / 256MiB",
+  "pids": "6"
+}
+{
+  "unix": 1794728138.6906948,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "8.055MiB / 8.787GiB",
+  "pids": "11"
+}
+{
+  "unix": 1794728138.690702,
+  "group": "other",
+  "cpu_percent": 0.03,
+  "memory": "158.1MiB / 768MiB",
+  "pids": "36"
+}
+{
+  "unix": 1794728138.6907089,
+  "group": "other",
+  "cpu_percent": 0.02,
+  "memory": "141.6MiB / 768MiB",
+  "pids": "31"
+}
+{
+  "unix": 1794728138.6907158,
+  "group": "other",
+  "cpu_percent": 0.02,
+  "memory": "99.57MiB / 768MiB",
+  "pids": "34"
+}
+{
+  "unix": 1794728138.6907232,
+  "group": "other",
+  "cpu_percent": 0.02,
+  "memory": "140.6MiB / 768MiB",
+  "pids": "37"
+}
+{
+  "unix": 1794728138.69073,
+  "group": "other",
+  "cpu_percent": 0.01,
+  "memory": "69.57MiB / 768MiB",
+  "pids": "30"
+}
+{
+  "unix": 1794728138.690737,
+  "group": "other",
+  "cpu_percent": 0.03,
+  "memory": "166.8MiB / 768MiB",
+  "pids": "36"
+}
+{
+  "unix": 1794728138.690743,
+  "group": "other",
+  "cpu_percent": 0.02,
+  "memory": "97.43MiB / 8.787GiB",
+  "pids": "109"
+}
+{
+  "unix": 1794728138.69075,
+  "group": "other",
+  "cpu_percent": 0.02,
+  "memory": "39.34MiB / 8.787GiB",
+  "pids": "66"
+}
+{
+  "unix": 1794728138.690757,
+  "group": "other",
+  "cpu_percent": 0.04,
+  "memory": "344MiB / 8.787GiB",
+  "pids": "128"
+}
+{
+  "unix": 1794728138.690764,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "27.58MiB / 8.787GiB",
+  "pids": "17"
+}
+{
+  "unix": 1794728138.69077,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "4MiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.690777,
+  "group": "other",
+  "cpu_percent": 0.03,
+  "memory": "31.8MiB / 768MiB",
+  "pids": "15"
+}
+{
+  "unix": 1794728138.690783,
+  "group": "other",
+  "cpu_percent": 0.01,
+  "memory": "3.406MiB / 128MiB",
+  "pids": "2"
+}
+{
+  "unix": 1794728138.69079,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "36KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.690797,
+  "group": "multi-tenant-saas-postgres-1",
+  "cpu_percent": 0.16,
+  "memory": "90.38MiB / 8.787GiB",
+  "pids": "19"
+}
+{
+  "unix": 1794728138.690819,
+  "group": "multi-tenant-saas-app-1",
+  "cpu_percent": 0.02,
+  "memory": "452.8MiB / 8.787GiB",
+  "pids": "62"
+}
+{
+  "unix": 1794728138.690827,
+  "group": "other",
+  "cpu_percent": 0.36,
+  "memory": "218MiB / 2GiB",
+  "pids": "54"
+}
+{
+  "unix": 1794728138.6908338,
+  "group": "other",
+  "cpu_percent": 0.1,
+  "memory": "83.56MiB / 512MiB",
+  "pids": "5"
+}
+{
+  "unix": 1794728138.6908412,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "16KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.690848,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "8KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.690855,
+  "group": "other",
+  "cpu_percent": 0.05,
+  "memory": "80.89MiB / 8.787GiB",
+  "pids": "56"
+}
+{
+  "unix": 1794728138.690861,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "9.695MiB / 8.787GiB",
+  "pids": "2"
+}
+{
+  "unix": 1794728138.690878,
+  "group": "other",
+  "cpu_percent": 0.09,
+  "memory": "18.64MiB / 8.787GiB",
+  "pids": "22"
+}
+{
+  "unix": 1794728138.690885,
+  "group": "other",
+  "cpu_percent": 0.06,
+  "memory": "3.645MiB / 8.787GiB",
+  "pids": "6"
+}
+{
+  "unix": 1794728138.690891,
+  "group": "other",
+  "cpu_percent": 0.08,
+  "memory": "1.301MiB / 8.787GiB",
+  "pids": "6"
+}
+{
+  "unix": 1794728138.690897,
+  "group": "multi-tenant-saas-keycloak-1",
+  "cpu_percent": 0.17,
+  "memory": "348.5MiB / 8.787GiB",
+  "pids": "77"
+}
+{
+  "unix": 1794728138.6909041,
+  "group": "multi-tenant-saas-redis-1",
+  "cpu_percent": 0.06,
+  "memory": "728KiB / 8.787GiB",
+  "pids": "6"
+}
+{
+  "unix": 1794728138.6909099,
+  "group": "multi-tenant-saas-kafka-1",
+  "cpu_percent": 0.08,
+  "memory": "102.9MiB / 8.787GiB",
+  "pids": "109"
+}
+{
+  "unix": 1794728138.690916,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "262.8MiB / 768MiB",
+  "pids": "83"
+}
+{
+  "unix": 1794728138.690922,
+  "group": "other",
+  "cpu_percent": 0.34,
+  "memory": "15.36MiB / 8.787GiB",
+  "pids": "80"
+}
+{
+  "unix": 1794728138.6909282,
+  "group": "other",
+  "cpu_percent": 0.27,
+  "memory": "1.367MiB / 8.787GiB",
+  "pids": "6"
+}
+{
+  "unix": 1794728138.690934,
+  "group": "other",
+  "cpu_percent": 2.91,
+  "memory": "207.3MiB / 8.787GiB",
+  "pids": "38"
+}
+{
+  "unix": 1794728138.6909409,
+  "group": "other",
+  "cpu_percent": 0.04,
+  "memory": "7.09MiB / 8.787GiB",
+  "pids": "14"
+}
+{
+  "unix": 1794728138.690947,
+  "group": "other",
+  "cpu_percent": 0.08,
+  "memory": "11.95MiB / 340MiB",
+  "pids": "14"
+}
+{
+  "unix": 1794728138.690953,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "8KiB / 8.787GiB",
+  "pids": "1"
+}
+{
+  "unix": 1794728138.6909592,
+  "group": "other",
+  "cpu_percent": 0.0,
+  "memory": "8KiB / 8.787GiB",
+  "pids": "1"
+}

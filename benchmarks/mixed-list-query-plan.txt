@@ -1,0 +1,20 @@
+b9a3ea87-e9b6-41c8-b763-06508f5ef876
+Limit  (cost=0.72..12.79 rows=1 width=63) (actual time=0.192..0.192 rows=1 loops=1)
+  Buffers: shared hit=7
+  ->  GroupAggregate  (cost=0.72..12.79 rows=1 width=63) (actual time=0.191..0.192 rows=1 loops=1)
+        Group Key: p.id
+        Buffers: shared hit=7
+        ->  Nested Loop Left Join  (cost=0.72..12.78 rows=1 width=71) (actual time=0.186..0.188 rows=2 loops=1)
+              Buffers: shared hit=7
+              ->  Index Scan using projects_pkey on projects p  (cost=0.29..8.32 rows=1 width=55) (actual time=0.043..0.044 rows=1 loops=1)
+                    Index Cond: (tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)
+                    Filter: (strpos(lower((name)::text), ''::text) > 0)
+                    Buffers: shared hit=3
+              ->  Index Only Scan using tasks_project on tasks t  (cost=0.43..4.45 rows=1 width=48) (actual time=0.141..0.141 rows=2 loops=1)
+                    Index Cond: ((tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid) AND (project_id = p.id))
+                    Heap Fetches: 0
+                    Buffers: shared hit=4
+Planning:
+  Buffers: shared hit=169 dirtied=4
+Planning Time: 1.804 ms
+Execution Time: 0.247 ms

@@ -1,0 +1,273 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/mixed.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1024 max VUs, 50s max duration (incl. graceful stop):
+              * mixed: 10000.00 iterations/s for 20s (maxVUs: 512-1024, exec: mixed, gracefulStop: 30s)
+
+
+running (00.8s), 0640/0641 VUs, 42 complete and 0 interrupted iterations
+mixed   [   4% ] 0640/0641 VUs  00.8s/20s  10000.00 iters/s
+
+running (01.8s), 0699/0715 VUs, 180 complete and 0 interrupted iterations
+mixed   [   9% ] 0699/0715 VUs  01.8s/20s  10000.00 iters/s
+
+running (02.8s), 0968/0969 VUs, 550 complete and 0 interrupted iterations
+mixed   [  14% ] 0968/0969 VUs  02.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/9a100fdb-bdd7-4467-922d-b903b7ba0c11\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/92748db1-d54b-46e3-b8b3-8c2ec039d4d0\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/1a5022d9-d570-4c9a-b159-3a65e0df9a73\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/993d7de7-a4d2-4f72-89ef-c9316602ee5a\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/79b84a75-8f0d-4d18-bdf8-6b334d3c409e\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/b84847d1-917c-46d2-8f85-42200ea20773\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/8c1291a2-6be7-4cc9-b359-5206d32f3584\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/bae57f9f-fbe3-4ed2-80d3-e5c0e662ffc4\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/6375a372-08a2-450a-bd38-d20ccae8f7fa\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/d4a303c7-5443-45d5-ae02-33dbc540d0d0\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:18Z" level=warning msg="Insufficient VUs, reached 1024 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=mixed
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/df56cf73-18e6-45fd-baa7-1bef4dbd89f6\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/6f2c9b68-b6cf-4111-b63f-2aaea267932f\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/4b831f6d-ac79-4967-90eb-701c37c38e1b\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/2002aa47-ee73-4485-b280-9693444604cc\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/6540bde3-af19-4ed1-9238-ac12b05cbe17\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/158a0b2d-2a4b-4b89-8e4a-1deeb224df34\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:19Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (03.8s), 1023/1024 VUs, 970 complete and 0 interrupted iterations
+mixed   [  19% ] 1023/1024 VUs  03.8s/20s  10000.00 iters/s
+
+running (04.8s), 1024/1024 VUs, 1364 complete and 0 interrupted iterations
+mixed   [  24% ] 1024/1024 VUs  04.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/511ee4de-8713-4132-9f91-2a57616f16de\": request timeout"
+
+running (05.8s), 1015/1024 VUs, 1871 complete and 0 interrupted iterations
+mixed   [  29% ] 1015/1024 VUs  05.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/c8b19f46-ea16-43a5-b79b-10170b6955eb\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/7d150324-cd2c-4524-8749-3e69031ed9fa\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/ad4d536b-7169-407e-a79c-b9b16cd2c91d\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/75e04e1e-c369-4fca-9b51-aec1e1f2bc37\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:21Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/82ff10dc-b243-43f4-84a2-b96810ed9b90\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/284b5f63-e666-41d6-839c-6ca38c3f8994\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:22Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (06.8s), 1024/1024 VUs, 2559 complete and 0 interrupted iterations
+mixed   [  34% ] 1024/1024 VUs  06.8s/20s  10000.00 iters/s
+
+running (07.8s), 1018/1024 VUs, 3583 complete and 0 interrupted iterations
+mixed   [  39% ] 1018/1024 VUs  07.8s/20s  10000.00 iters/s
+
+running (08.8s), 1024/1024 VUs, 4668 complete and 0 interrupted iterations
+mixed   [  44% ] 1024/1024 VUs  08.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:25Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:25Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:25Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:25Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:25Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (09.8s), 1024/1024 VUs, 5935 complete and 0 interrupted iterations
+mixed   [  49% ] 1024/1024 VUs  09.8s/20s  10000.00 iters/s
+
+running (10.8s), 0931/1024 VUs, 7108 complete and 0 interrupted iterations
+mixed   [  54% ] 0931/1024 VUs  10.8s/20s  10000.00 iters/s
+
+running (11.8s), 1011/1024 VUs, 9129 complete and 0 interrupted iterations
+mixed   [  59% ] 1011/1024 VUs  11.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:28Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:28Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:28Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:28Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (12.8s), 0941/1024 VUs, 10553 complete and 0 interrupted iterations
+mixed   [  64% ] 0941/1024 VUs  12.8s/20s  10000.00 iters/s
+
+running (13.8s), 1024/1024 VUs, 12439 complete and 0 interrupted iterations
+mixed   [  69% ] 1024/1024 VUs  13.8s/20s  10000.00 iters/s
+
+running (14.8s), 1023/1024 VUs, 13259 complete and 0 interrupted iterations
+mixed   [  74% ] 1023/1024 VUs  14.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:31Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T07:16:31Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (15.8s), 1020/1024 VUs, 14231 complete and 0 interrupted iterations
+mixed   [  79% ] 1020/1024 VUs  15.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:31Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/b73b5194-f9dd-462c-87ec-13a100a1b213\": request timeout"
+
+running (16.8s), 0974/1024 VUs, 15720 complete and 0 interrupted iterations
+mixed   [  84% ] 0974/1024 VUs  16.8s/20s  10000.00 iters/s
+
+running (17.8s), 1011/1024 VUs, 16802 complete and 0 interrupted iterations
+mixed   [  89% ] 1011/1024 VUs  17.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:34Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (18.9s), 1021/1024 VUs, 17784 complete and 0 interrupted iterations
+mixed   [  94% ] 1021/1024 VUs  18.9s/20s  10000.00 iters/s
+
+running (19.8s), 0696/1024 VUs, 18236 complete and 0 interrupted iterations
+mixed   [  99% ] 0696/1024 VUs  19.8s/20s  10000.00 iters/s
+time="2026-11-15T07:16:36Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (20.8s), 0123/1024 VUs, 19372 complete and 0 interrupted iterations
+mixed ↓ [ 100% ] 0762/1024 VUs  20s  10000.00 iters/s
+time="2026-11-15T07:16:37Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:normal}
+    ✗ 'rate<0.01' rate=63.26%
+
+    business_latency{cohort:normal}
+    ✗ 'p(99)<200' p(99)=2.6s
+
+    cohort_requests{cohort:normal}
+    ✗ 'count>=199800' count=19495
+
+    dropped_iterations
+    ✗ 'count<200' count=170628
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    admission_rejections...........: 12199  564.27766/s
+    business_failed................: 63.26% 12333 out of 19495
+      { cohort:normal }............: 63.26% 12333 out of 19495
+    business_latency...............: avg=963.23ms min=704.83µs med=801.33ms max=4.22s p(90)=1.84s p(95)=2.24s p(99)=2.6s 
+      { cohort:normal }............: avg=963.23ms min=704.83µs med=801.33ms max=4.22s p(90)=1.84s p(95)=2.24s p(99)=2.6s 
+    business_success...............: 7162   331.285892/s
+    cohort_requests................: 19495  901.761864/s
+      { cohort:normal }............: 19495  901.761864/s
+    isolation_violations...........: 0      0/s
+    throttled......................: 12199  564.27766/s
+    unexpected_responses...........: 134    6.198312/s
+    write_attempts.................: 1950   90.199314/s
+    write_success..................: 750    34.692044/s
+
+    HTTP
+    http_req_duration..............: avg=963.23ms min=704.83µs med=801.33ms max=4.22s p(90)=1.84s p(95)=2.24s p(99)=2.6s 
+      { expected_response:true }...: avg=1.17s    min=34.82ms  med=1.01s    max=2.98s p(90)=2.19s p(95)=2.42s p(99)=2.67s
+    http_req_failed................: 63.26% 12333 out of 19495
+    http_reqs......................: 19495  901.761864/s
+
+    EXECUTION
+    dropped_iterations.............: 170628 7892.578784/s
+    iteration_duration.............: avg=1s       min=838.54µs med=813.54ms max=4.54s p(90)=1.96s p(95)=2.34s p(99)=2.85s
+    iterations.....................: 19495  901.761864/s
+    vus............................: 123    min=123            max=1024
+    vus_max........................: 1024   min=641            max=1024
+
+    NETWORK
+    data_received..................: 11 MB  498 kB/s
+    data_sent......................: 28 MB  1.3 MB/s
+
+
+
+
+running (21.6s), 0000/1024 VUs, 19495 complete and 0 interrupted iterations
+mixed ✓ [ 100% ] 0000/1024 VUs  20s  10000.00 iters/s
+time="2026-11-15T07:16:37Z" level=error msg="thresholds on metrics 'business_failed{cohort:normal}, business_latency{cohort:normal}, cohort_requests{cohort:normal}, dropped_iterations' have been crossed"

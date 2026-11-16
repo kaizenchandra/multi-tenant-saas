@@ -1,0 +1,68 @@
+server:
+  port: 8080
+  shutdown: graceful
+  tomcat:
+    threads:
+      max: 64
+      min-spare: 8
+    max-connections: 512
+    accept-count: 64
+  max-http-request-header-size: 16KB
+spring:
+  application.name: multi-tenant-saas
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5558/saas}
+    username: saas_runtime
+    password: ${DB_PASSWORD:local-runtime-only}
+    hikari:
+      maximum-pool-size: 16
+      minimum-idle: 2
+      connection-timeout: 2000
+      connection-init-sql: SET statement_timeout = '5s'
+      data-source-properties:
+        socketTimeout: '15'
+        connectTimeout: '3'
+        cancelSignalTimeout: '3'
+        tcpKeepAlive: 'true'
+  flyway:
+    user: ${MIGRATION_USER:saas_owner}
+    password: ${MIGRATION_PASSWORD:local-owner-only}
+  data.redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6388}
+    timeout: 200ms
+    connect-timeout: 200ms
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVERS:localhost:9099}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        max.block.ms: 2000
+        delivery.timeout.ms: 5000
+        request.timeout.ms: 2000
+        enable.idempotence: true
+    consumer:
+      group-id: saas-projections
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    listener.ack-mode: record
+  threads.virtual.enabled: ${VIRTUAL_THREADS_ENABLED:false}
+management:
+  server.port: ${MANAGEMENT_PORT:8080}
+  endpoints.web.exposure.include: health,prometheus
+  endpoint.health.probes.enabled: true
+  endpoint.health.group.readiness.include: readinessState,db
+  tracing.sampling.probability: 0.1
+saas:
+  issuer: ${OIDC_ISSUER:http://localhost:8188/realms/saas}
+  jwk-uri: ${OIDC_JWK_URI:http://localhost:8188/realms/saas/protocol/openid-connect/certs}
+  audience: saas-api
+  messaging: ${MESSAGING_ENABLED:false}
+  workers: ${WORKERS_ENABLED:true}
+  billing-secret: ${BILLING_SECRET:}
+
+logging:
+  structured.format.console: ecs

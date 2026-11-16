@@ -1,0 +1,146 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/load.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 35s max duration (incl. graceful stop):
+              * api: 1000.00 iterations/s for 5s (maxVUs: 100-1000, gracefulStop: 30s)
+
+
+running (01.0s), 0387/0388 VUs, 0 complete and 0 interrupted iterations
+api    [  19% ] 0387/0388 VUs  1.0s/5s  1000.00 iters/s
+
+running (02.0s), 0605/0605 VUs, 376 complete and 0 interrupted iterations
+api    [  39% ] 0605/0605 VUs  2.0s/5s  1000.00 iters/s
+
+running (03.0s), 0801/0802 VUs, 804 complete and 0 interrupted iterations
+api    [  59% ] 0801/0802 VUs  3.0s/5s  1000.00 iters/s
+
+running (04.0s), 0920/0943 VUs, 1416 complete and 0 interrupted iterations
+api    [  79% ] 0920/0943 VUs  4.0s/5s  1000.00 iters/s
+time="2026-11-14T19:55:33Z" level=warning msg="Insufficient VUs, reached 1000 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=api
+
+running (05.0s), 1000/1000 VUs, 2208 complete and 0 interrupted iterations
+api    [  99% ] 1000/1000 VUs  5.0s/5s  1000.00 iters/s
+
+running (06.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (07.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (08.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (09.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (10.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (11.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (12.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (13.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (14.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (15.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (16.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (17.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (18.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (19.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (20.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (21.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (22.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (23.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+
+running (24.0s), 0003/1000 VUs, 3209 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0998/1000 VUs  5s  1000.00 iters/s
+time="2026-11-14T19:55:52Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:55:52Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:55:52Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+
+
+  █ THRESHOLDS 
+
+    dropped_iterations
+    ✗ 'count==0' count=1789
+
+    http_req_duration
+    ✗ 'p(99)<200' p(99)=3.22s
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=98.47%
+
+    tenant_isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 3212   132.569705/s
+    checks_succeeded...: 1.52%  49 out of 3212
+    checks_failed......: 98.47% 3163 out of 3212
+
+    ✗ authorized list
+      ↳  1% — ✓ 49 / ✗ 3163
+
+    CUSTOM
+    authorized_responses...........: 49     2.02239/s
+    rate_limited_responses.........: 3160   130.423496/s
+    tenant_isolation_violations....: 0      0/s
+    unexpected_responses...........: 3      0.12382/s
+
+    HTTP
+    http_req_duration..............: avg=1.17s min=16.59ms  med=1.08s max=19.51s p(90)=1.45s p(95)=2.1s  p(99)=3.22s
+      { expected_response:true }...: avg=3.34s min=846.67ms med=3.44s max=5.72s  p(90)=5.7s  p(95)=5.71s p(99)=5.72s
+    http_req_failed................: 98.47% 3163 out of 3212
+    http_reqs......................: 3212   132.569705/s
+
+    EXECUTION
+    dropped_iterations.............: 1789   73.837859/s
+    iteration_duration.............: avg=1.17s min=16.71ms  med=1.08s max=19.51s p(90)=1.45s p(95)=2.1s  p(99)=3.22s
+    iterations.....................: 3212   132.569705/s
+    vus............................: 3      min=3            max=1000
+    vus_max........................: 1000   min=388          max=1000
+
+    NETWORK
+    data_received..................: 1.9 MB 77 kB/s
+    data_sent......................: 4.3 MB 178 kB/s
+
+
+
+
+running (24.2s), 0000/1000 VUs, 3212 complete and 0 interrupted iterations
+api  ✓ [ 100% ] 0000/1000 VUs  5s  1000.00 iters/s
+time="2026-11-14T19:55:52Z" level=error msg="thresholds on metrics 'dropped_iterations, http_req_duration, http_req_failed' have been crossed"

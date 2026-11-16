@@ -1,0 +1,23 @@
+{
+  "label": "controlled-base-a",
+  "mode": "mixed",
+  "database": "saas_perf_run_0583b3582b1e45e8ac26714ebf83a37d",
+  "image": "multi-tenant-saas-app:perf-baseline",
+  "foreground_only": true,
+  "seed": {
+    "database": "saas_perf_seed",
+    "tenants": 256,
+    "projects": 256,
+    "tasks": 512,
+    "fixture_digest": "6621bab14e12c8532aa5c7ac17f5d747",
+    "synthetic_only": true
+  },
+  "started_unix": 1794727967.026468,
+  "exit_code": 1,
+  "final_fixture_counts": {
+    "tenants": 256,
+    "projects": 256,
+    "tasks": 512
+  },
+  "live_deployment_restored": true
+}

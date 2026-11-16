@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "tenant": "7a778b7d-e684-44b0-9818-0b9ef2515aba",
+  "duplicate_grant_reserved_once": true,
+  "ordinary_user_status": 403,
+  "after_conservative_settlement": {
+    "api": 4,
+    "api_confirmed": 1,
+    "api_assumed": 3
+  },
+  "after_late_proof_replayed_twice": {
+    "api": 2,
+    "api_confirmed": 2,
+    "api_assumed": 0
+  },
+  "scope": "local simulated orphan; no automatic refund without positive unused-credit evidence"
+}

@@ -1,0 +1,86 @@
+{
+  "database": "saas_perf_run_9c997e1ff4324cbfb586925e42dab3d3",
+  "fixture_base_url": "http://localhost:30088",
+  "telemetry": true,
+  "profiled": false,
+  "workload_sha256": "90a69a081afc9214805069fbf06557ddff760fd4849a3eee285eb008d39149c0",
+  "api_image_ids": [
+    "docker-pullable://multi-tenant-saas-app@sha256:0290a55627248a7c207fe73499ddece8004300563d4bd339308224cf09b1a269"
+  ],
+  "mode": "mixed",
+  "postgres_settings": {
+    "commit_delay": "1000",
+    "commit_siblings": "5",
+    "fsync": "on",
+    "max_connections": "192",
+    "shared_buffers": "16384",
+    "synchronous_commit": "on",
+    "track_wal_io_timing": "on",
+    "wal_buffers": "512",
+    "wal_sync_method": "fdatasync"
+  },
+  "wal_before": {
+    "wal_records": 18966080,
+    "wal_bytes": 2489636922,
+    "wal_buffers_full": 19884,
+    "wal_write": 1076216,
+    "wal_sync": 1055177,
+    "wal_write_time": 19686.865,
+    "wal_sync_time": 1497421.943
+  },
+  "wal_after": {
+    "wal_records": 19286785,
+    "wal_bytes": 2521371224,
+    "wal_buffers_full": 19884,
+    "wal_write": 1078814,
+    "wal_sync": 1057769,
+    "wal_write_time": 19934.166,
+    "wal_sync_time": 1512180.207
+  },
+  "target_rps": 10000,
+  "duration_seconds": 20,
+  "tenants": 256,
+  "principals": 32,
+  "write_ratio": 0.1,
+  "base_url": "http://192.168.194.157:80",
+  "started_unix": 1794732884.9430249,
+  "load_generator": "docker",
+  "generator_image_id": "sha256:3d8e5c7f1d53ec59408c2ffbd9943602a0985ffcbd4a2430ec00f3ffca89796e",
+  "generator_limits": {
+    "cpus": 4,
+    "memory": "2GiB"
+  },
+  "observed_k6_peak_rss_kib": null,
+  "preallocated_vus": 512,
+  "max_vus": 1024,
+  "exit_code": 99,
+  "successful_writes": 11971,
+  "committed_version_delta": 11973,
+  "summary_available": true,
+  "unacknowledged_commits": 2,
+  "write_commit_check": true,
+  "replicas": 2,
+  "container_resources": {
+    "limits": {
+      "cpu": "3",
+      "memory": "1Gi"
+    },
+    "requests": {
+      "cpu": "1",
+      "memory": "384Mi"
+    }
+  },
+  "deployment_env": {
+    "SAAS_QUOTAS_LEASED_READS": "true",
+    "SAAS_ADMISSION_PRINCIPAL_RPS": "250",
+    "SAAS_ADMISSION_PER_TENANT": "6",
+    "SAAS_ADMISSION_WAIT_MS": "100",
+    "SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE": "48",
+    "SAAS_ADMISSION_GLOBAL_CAPACITY": "46",
+    "SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE": "2"
+  },
+  "database_host": "saas-postgres",
+  "redis_host": "saas-perf-redis",
+  "fixture": "one project/two tasks per tenant; fixed-name PATCH, detail and aggregate list; 100/s tenant rate policy unchanged",
+  "k6_version": "k6 v2.4.0 (commit/dd9395906d, go1.27.3, linux/arm64)"
+}

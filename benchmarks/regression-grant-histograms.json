@@ -1,0 +1,41 @@
+{
+  "note": "Retained rows sampled after the run; proven ledger rows expire after one hour. Not a complete count once retention has run.",
+  "runs": {
+    "groupcommit-mixed-10000": [
+      {
+        "granted": 1,
+        "grants": 1050,
+        "returned": 0
+      },
+      {
+        "granted": 16,
+        "grants": 11072,
+        "returned": 86936
+      }
+    ],
+    "release-mixed-10000": [
+      {
+        "granted": 1,
+        "grants": 5202,
+        "returned": 0
+      },
+      {
+        "granted": 16,
+        "grants": 1928,
+        "returned": 28010
+      }
+    ],
+    "profile-baseline-mixed-10000": [
+      {
+        "granted": 1,
+        "grants": 5266,
+        "returned": 0
+      },
+      {
+        "granted": 16,
+        "grants": 1492,
+        "returned": 21905
+      }
+    ]
+  }
+}

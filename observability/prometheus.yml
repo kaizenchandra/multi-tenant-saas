@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: saas
+    metrics_path: /actuator/prometheus
+    authorization:
+      credentials_file: /run/secrets/metrics-token
+    static_configs: [ { targets: [ 'app:8080' ] } ]
+rule_files: [ /etc/prometheus/alerts.yml ]

@@ -1,0 +1,614 @@
+{
+  "realm": "saas",
+  "enabled": true,
+  "roles": {
+    "realm": [
+      {
+        "name": "PLATFORM_ADMIN"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "saas-ui",
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "redirectUris": [
+        "http://localhost:8080/",
+        "http://localhost:8088/",
+        "http://localhost:30088/"
+      ],
+      "webOrigins": [
+        "http://localhost:8080",
+        "http://localhost:8088",
+        "http://localhost:30088"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "post.logout.redirect.uris": "http://localhost:8080/##http://localhost:8088/##http://localhost:30088/"
+      },
+      "protocolMappers": [
+        {
+          "name": "aud",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-audience-mapper",
+          "config": {
+            "included.custom.audience": "saas-api",
+            "access.token.claim": "true"
+          }
+        }
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "alice",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [],
+      "firstName": "Alice",
+      "lastName": "Demo",
+      "email": "alice@example.test",
+      "requiredActions": [],
+      "id": "dc66977c-4109-41b5-bb70-5edbee872f5d"
+    },
+    {
+      "username": "bob",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [],
+      "firstName": "Bob",
+      "lastName": "Demo",
+      "email": "bob@example.test",
+      "requiredActions": [],
+      "id": "6426c02f-6e45-4a03-8c5c-c8c4b97904f7"
+    },
+    {
+      "username": "platform",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "PLATFORM_ADMIN"
+      ],
+      "firstName": "Platform",
+      "lastName": "Demo",
+      "email": "platform@example.test",
+      "requiredActions": [],
+      "id": "b5f62e20-a090-4645-9c81-eb2a4f23ccac"
+    },
+    {
+      "id": "947d6748-b4d3-5f99-b561-e5546c375ec9",
+      "username": "load-user-00",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-00",
+      "email": "load-user-00@example.test"
+    },
+    {
+      "id": "5f92599d-7023-5f02-a97f-a4bf6d62b3ea",
+      "username": "load-user-01",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-01",
+      "email": "load-user-01@example.test"
+    },
+    {
+      "id": "f87bba60-2f92-55d8-8a52-650e31fafdb8",
+      "username": "load-user-02",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-02",
+      "email": "load-user-02@example.test"
+    },
+    {
+      "id": "9fb6eb4e-8fc7-5894-9c65-e8050f466637",
+      "username": "load-user-03",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-03",
+      "email": "load-user-03@example.test"
+    },
+    {
+      "id": "27752667-9cf1-5e66-911a-98c715697a47",
+      "username": "load-user-04",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-04",
+      "email": "load-user-04@example.test"
+    },
+    {
+      "id": "522cc323-f868-59ed-9f9e-abe764f27fe7",
+      "username": "load-user-05",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-05",
+      "email": "load-user-05@example.test"
+    },
+    {
+      "id": "af2d7fe1-038f-52ca-8a3d-b426373e3134",
+      "username": "load-user-06",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-06",
+      "email": "load-user-06@example.test"
+    },
+    {
+      "id": "ff9ed9e8-40a6-58a4-b882-4269de3b4cd4",
+      "username": "load-user-07",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-07",
+      "email": "load-user-07@example.test"
+    },
+    {
+      "id": "22760fd5-0b8e-5e24-bf9c-88a62eddfe02",
+      "username": "load-user-08",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-08",
+      "email": "load-user-08@example.test"
+    },
+    {
+      "id": "0b963fee-b4f2-5fc3-8b29-ad207f8cb9e1",
+      "username": "load-user-09",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-09",
+      "email": "load-user-09@example.test"
+    },
+    {
+      "id": "d4760e41-d11b-5651-9a46-490fb33dfc10",
+      "username": "load-user-10",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-10",
+      "email": "load-user-10@example.test"
+    },
+    {
+      "id": "e62a7919-7e6b-56f9-901e-cd16e502b4cc",
+      "username": "load-user-11",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-11",
+      "email": "load-user-11@example.test"
+    },
+    {
+      "id": "d0feb2f0-6c89-53c0-90ff-30ab3936baf9",
+      "username": "load-user-12",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-12",
+      "email": "load-user-12@example.test"
+    },
+    {
+      "id": "14ae8d99-fad6-5d01-af45-6339db043982",
+      "username": "load-user-13",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-13",
+      "email": "load-user-13@example.test"
+    },
+    {
+      "id": "07380bc5-0a04-5b33-a80c-16fe6b7094af",
+      "username": "load-user-14",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-14",
+      "email": "load-user-14@example.test"
+    },
+    {
+      "id": "5772b1cb-011e-5183-8a28-3c15711da1a9",
+      "username": "load-user-15",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-15",
+      "email": "load-user-15@example.test"
+    },
+    {
+      "id": "efe28b66-9685-5faf-a1e6-1be9c5ad4664",
+      "username": "load-user-16",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-16",
+      "email": "load-user-16@example.test"
+    },
+    {
+      "id": "da727e19-675d-58b2-8254-fb7762dbab14",
+      "username": "load-user-17",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-17",
+      "email": "load-user-17@example.test"
+    },
+    {
+      "id": "06297120-e306-5430-9d5f-a7ecc804688f",
+      "username": "load-user-18",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-18",
+      "email": "load-user-18@example.test"
+    },
+    {
+      "id": "e50b7a39-d891-551b-86a1-4a23f812b165",
+      "username": "load-user-19",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-19",
+      "email": "load-user-19@example.test"
+    },
+    {
+      "id": "050e26f5-aa1c-52db-b4d9-2b86c4db2221",
+      "username": "load-user-20",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-20",
+      "email": "load-user-20@example.test"
+    },
+    {
+      "id": "263251ee-c700-563a-93ab-a8b489110159",
+      "username": "load-user-21",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-21",
+      "email": "load-user-21@example.test"
+    },
+    {
+      "id": "6ed093f1-9f1f-5d46-a2fc-de513d9ea27b",
+      "username": "load-user-22",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-22",
+      "email": "load-user-22@example.test"
+    },
+    {
+      "id": "156755ed-73b6-5b23-9cbf-818dd327f1c9",
+      "username": "load-user-23",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-23",
+      "email": "load-user-23@example.test"
+    },
+    {
+      "id": "bd7aa971-7d47-5c91-8286-ff46fb6cc680",
+      "username": "load-user-24",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-24",
+      "email": "load-user-24@example.test"
+    },
+    {
+      "id": "dfa1947c-787b-5c86-b79b-fb9d6c1d73f4",
+      "username": "load-user-25",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-25",
+      "email": "load-user-25@example.test"
+    },
+    {
+      "id": "0638011f-208b-5f58-ba96-57b31e87e115",
+      "username": "load-user-26",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-26",
+      "email": "load-user-26@example.test"
+    },
+    {
+      "id": "7293ec37-9699-59d0-876d-a313964297da",
+      "username": "load-user-27",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-27",
+      "email": "load-user-27@example.test"
+    },
+    {
+      "id": "c150186b-f450-5303-abe1-b5a1f7da5c3c",
+      "username": "load-user-28",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-28",
+      "email": "load-user-28@example.test"
+    },
+    {
+      "id": "b322d715-e5bf-5488-bafb-17276712b8e8",
+      "username": "load-user-29",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-29",
+      "email": "load-user-29@example.test"
+    },
+    {
+      "id": "d0e07875-3f94-595a-a38a-725fa98a10db",
+      "username": "load-user-30",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-30",
+      "email": "load-user-30@example.test"
+    },
+    {
+      "id": "fbe9b741-39f9-51d9-b7ea-9906bc7d7523",
+      "username": "load-user-31",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "demo-password",
+          "temporary": false
+        }
+      ],
+      "firstName": "Local",
+      "lastName": "load-user-31",
+      "email": "load-user-31@example.test"
+    }
+  ]
+}

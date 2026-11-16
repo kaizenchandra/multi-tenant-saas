@@ -1,0 +1,627 @@
+app-1  | 2026-11-15 04:47:11
+app-1  | Full thread dump OpenJDK 64-Bit Server VM (21.0.13+9-LTS mixed mode, sharing)
+app-1  |                  JDK version: OpenJDK Runtime Environment Temurin-21.0.13+9 (21.0.13+9) (build 21.0.13+9-LTS)
+app-1  | 
+app-1  | Threads class SMR info:
+app-1  | _java_thread_list=0x0000fffe84155620, length=44, elements={
+app-1  | 0x0000ffff7834f150, 0x0000ffff78350750, 0x0000ffff78351f00, 0x0000ffff78353560,
+app-1  | 0x0000ffff78354b20, 0x0000ffff78356610, 0x0000ffff7835fce0, 0x0000ffff783692f0,
+app-1  | 0x0000ffff7836c1d0, 0x0000ffff783e4ba0, 0x0000ffff79a36d90, 0x0000ffff79a675e0,
+app-1  | 0x0000ffff79b1fb10, 0x0000ffff79b21160, 0x0000ffff79b22280, 0x0000ffff79cb7d00,
+app-1  | 0x0000ffff79e4d220, 0x0000ffff7a39a670, 0x0000ffff7a39b750, 0x0000ffff7a39c8d0,
+app-1  | 0x0000ffff7a39d9a0, 0x0000ffff7a39eb40, 0x0000ffff7a3a05f0, 0x0000ffff7a3a1630,
+app-1  | 0x0000ffff7a3a28c0, 0x0000ffff1400f220, 0x0000ffff7a3a50c0, 0x0000ffff7a3acb00,
+app-1  | 0x0000ffff7a56cf80, 0x0000ffff7a56e5a0, 0x0000ffff7a575130, 0x0000ffff7a57c1d0,
+app-1  | 0x0000ffff7a58b880, 0x0000fffe8c01dfc0, 0x0000fffe8c01f1b0, 0x0000ffff7802aad0,
+app-1  | 0x0000fffe70001eb0, 0x0000fffe8c022c00, 0x0000fffe8c024640, 0x0000fffe8c025210,
+app-1  | 0x0000fffe8c026470, 0x0000fffe881ea710, 0x0000fffe6c0448c0, 0x0000fffe6c046cc0
+app-1  | }
+app-1  | 
+app-1  | "Reference Handler" #9 [14] daemon prio=10 os_prio=0 cpu=7.69ms elapsed=329.53s tid=0x0000ffff7834f150 nid=14 waiting on condition  [0x0000ffff4dd11000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 	at java.lang.ref.Reference.waitForReferencePendingList(java.base@21.0.13/Native Method)
+app-1  | 	at java.lang.ref.Reference.processPendingReferences(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.Reference$ReferenceHandler.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "Finalizer" #10 [15] daemon prio=8 os_prio=0 cpu=0.61ms elapsed=329.53s tid=0x0000ffff78350750 nid=15 in Object.wait()  [0x0000ffff4db13000]
+app-1  |    java.lang.Thread.State: WAITING (on object monitor)
+app-1  | 	at java.lang.Object.wait0(java.base@21.0.13/Native Method)
+app-1  | 	- waiting on <0x0000000677410208> (a java.lang.ref.NativeReferenceQueue$Lock)
+app-1  | 	at java.lang.Object.wait(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Object.wait(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.NativeReferenceQueue.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.NativeReferenceQueue.remove(java.base@21.0.13/Unknown Source)
+app-1  | 	- locked <0x0000000677410208> (a java.lang.ref.NativeReferenceQueue$Lock)
+app-1  | 	at java.lang.ref.Finalizer$FinalizerThread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "Signal Dispatcher" #11 [16] daemon prio=9 os_prio=0 cpu=0.63ms elapsed=329.53s tid=0x0000ffff78351f00 nid=16 waiting on condition  [0x0000000000000000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 
+app-1  | "Service Thread" #12 [17] daemon prio=9 os_prio=0 cpu=22.64ms elapsed=329.53s tid=0x0000ffff78353560 nid=17 runnable  [0x0000000000000000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 
+app-1  | "Monitor Deflation Thread" #13 [18] daemon prio=9 os_prio=0 cpu=22.88ms elapsed=329.53s tid=0x0000ffff78354b20 nid=18 runnable  [0x0000000000000000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 
+app-1  | "C2 CompilerThread0" #14 [19] daemon prio=9 os_prio=0 cpu=9085.57ms elapsed=329.52s tid=0x0000ffff78356610 nid=19 waiting on condition  [0x0000000000000000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  |    No compile task
+app-1  | 
+app-1  | "C1 CompilerThread0" #17 [20] daemon prio=9 os_prio=0 cpu=3052.41ms elapsed=329.52s tid=0x0000ffff7835fce0 nid=20 waiting on condition  [0x0000000000000000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  |    No compile task
+app-1  | 
+app-1  | "Notification Thread" #18 [21] daemon prio=9 os_prio=0 cpu=40.02ms elapsed=329.52s tid=0x0000ffff783692f0 nid=21 runnable  [0x0000000000000000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 
+app-1  | "Common-Cleaner" #19 [22] daemon prio=8 os_prio=0 cpu=1.64ms elapsed=329.52s tid=0x0000ffff7836c1d0 nid=22 waiting on condition  [0x0000ffff4cd20000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x00000006772b5528> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.remove(java.base@21.0.13/Unknown Source)
+app-1  | 	at jdk.internal.ref.CleanerImpl.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at jdk.internal.misc.InnocuousThread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "Cleaner-0" #20 [23] daemon prio=8 os_prio=0 cpu=6.13ms elapsed=329.47s tid=0x0000ffff783e4ba0 nid=23 waiting on condition  [0x0000ffff4cb22000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x00000006772bfaf0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.remove(java.base@21.0.13/Unknown Source)
+app-1  | 	at jdk.internal.ref.CleanerImpl.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at jdk.internal.misc.InnocuousThread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "BatchSpanProcessor_WorkerThread-1" #34 [37] daemon prio=5 os_prio=0 cpu=29.92ms elapsed=327.81s tid=0x0000ffff79a36d90 nid=37 waiting on condition  [0x0000ffff03ffd000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677732958> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.poll(java.base@21.0.13/Unknown Source)
+app-1  | 	at io.opentelemetry.sdk.trace.export.BatchSpanProcessor$Worker.run(BatchSpanProcessor.java:266)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "BatchLogRecordProcessor_WorkerThread-1" #35 [38] daemon prio=5 os_prio=0 cpu=22.27ms elapsed=327.79s tid=0x0000ffff79a675e0 nid=38 waiting on condition  [0x0000ffff031ab000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677732b88> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.poll(java.base@21.0.13/Unknown Source)
+app-1  | 	at io.opentelemetry.sdk.logs.export.BatchLogRecordProcessor$Worker.run(BatchLogRecordProcessor.java:246)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "Catalina-utility-1" #36 [39] prio=1 os_prio=0 cpu=25.80ms elapsed=327.69s tid=0x0000ffff79b1fb10 nid=39 waiting on condition  [0x0000ffff02da0000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677732d48> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "Catalina-utility-2" #37 [40] prio=1 os_prio=0 cpu=35.70ms elapsed=327.69s tid=0x0000ffff79b21160 nid=40 waiting on condition  [0x0000ffff02ba1000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677732d48> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "container-0" #38 [41] prio=5 os_prio=0 cpu=2.06ms elapsed=327.69s tid=0x0000ffff79b22280 nid=41 waiting on condition  [0x0000ffff029a4000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (sleeping)
+app-1  | 	at java.lang.Thread.sleep0(java.base@21.0.13/Native Method)
+app-1  | 	at java.lang.Thread.sleep(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.catalina.core.StandardServer.await(StandardServer.java:518)
+app-1  | 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer$1.run(TomcatWebServer.java:219)
+app-1  | 
+app-1  | "Cleaner-1" #39 [42] daemon prio=8 os_prio=0 cpu=1.24ms elapsed=327.46s tid=0x0000ffff79cb7d00 nid=42 waiting on condition  [0x0000ffff027a5000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x00000006766a55b0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.remove0(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.ref.ReferenceQueue.remove(java.base@21.0.13/Unknown Source)
+app-1  | 	at jdk.internal.ref.CleanerImpl.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at jdk.internal.misc.InnocuousThread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "lettuce-timer-3-1" #40 [43] daemon prio=5 os_prio=0 cpu=145.06ms elapsed=327.28s tid=0x0000ffff79e4d220 nid=43 waiting on condition  [0x0000ffff025a8000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (sleeping)
+app-1  | 	at java.lang.Thread.sleep0(java.base@21.0.13/Native Method)
+app-1  | 	at java.lang.Thread.sleep(java.base@21.0.13/Unknown Source)
+app-1  | 	at io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:598)
+app-1  | 	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:494)
+app-1  | 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-1" #41 [44] daemon prio=5 os_prio=0 cpu=558.13ms elapsed=326.64s tid=0x0000ffff7a39a670 nid=44 waiting on condition  [0x0000ffff023a9000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-2" #42 [45] daemon prio=5 os_prio=0 cpu=502.45ms elapsed=326.64s tid=0x0000ffff7a39b750 nid=45 waiting on condition  [0x0000ffff021ab000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-3" #43 [46] daemon prio=5 os_prio=0 cpu=481.31ms elapsed=326.64s tid=0x0000ffff7a39c8d0 nid=46 waiting on condition  [0x0000ffff01fad000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-4" #44 [47] daemon prio=5 os_prio=0 cpu=475.09ms elapsed=326.64s tid=0x0000ffff7a39d9a0 nid=47 waiting on condition  [0x0000ffff01daf000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-5" #45 [48] daemon prio=5 os_prio=0 cpu=427.32ms elapsed=326.64s tid=0x0000ffff7a39eb40 nid=48 waiting on condition  [0x0000ffff01bb1000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-6" #46 [49] daemon prio=5 os_prio=0 cpu=415.75ms elapsed=326.64s tid=0x0000ffff7a3a05f0 nid=49 waiting on condition  [0x0000ffff019b3000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-7" #47 [50] daemon prio=5 os_prio=0 cpu=400.04ms elapsed=326.64s tid=0x0000ffff7a3a1630 nid=50 waiting on condition  [0x0000ffff017b5000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-exec-8" #48 [51] daemon prio=5 os_prio=0 cpu=418.04ms elapsed=326.64s tid=0x0000ffff7a3a28c0 nid=51 waiting on condition  [0x0000ffff015b7000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c0e8> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.LinkedBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:106)
+app-1  | 	at org.apache.tomcat.util.threads.TaskQueue.take(TaskQueue.java:31)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:913)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:960)
+app-1  | 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+app-1  | 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "prometheus-metrics-scheduler-0" #49 [52] daemon prio=9 os_prio=0 cpu=150.87ms elapsed=326.64s tid=0x0000ffff1400f220 nid=52 waiting on condition  [0x0000ffff013ba000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5c9e0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-Poller" #50 [53] daemon prio=5 os_prio=0 cpu=94.23ms elapsed=326.63s tid=0x0000ffff7a3a50c0 nid=53 runnable  [0x0000ffff011bc000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 	at sun.nio.ch.EPoll.wait(java.base@21.0.13/Native Method)
+app-1  | 	at sun.nio.ch.EPollSelectorImpl.doSelect(java.base@21.0.13/Unknown Source)
+app-1  | 	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.13/Unknown Source)
+app-1  | 	- locked <0x0000000678c5d418> (a sun.nio.ch.Util$2)
+app-1  | 	- locked <0x0000000678c5d3c8> (a sun.nio.ch.EPollSelectorImpl)
+app-1  | 	at sun.nio.ch.SelectorImpl.select(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.net.NioEndpoint$Poller.run(NioEndpoint.java:773)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "http-nio-8080-Acceptor" #51 [54] daemon prio=5 os_prio=0 cpu=96.89ms elapsed=326.63s tid=0x0000ffff7a3acb00 nid=54 runnable  [0x0000ffff00fbd000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 	at sun.nio.ch.Net.accept(java.base@21.0.13/Native Method)
+app-1  | 	at sun.nio.ch.ServerSocketChannelImpl.implAccept(java.base@21.0.13/Unknown Source)
+app-1  | 	at sun.nio.ch.ServerSocketChannelImpl.accept(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:535)
+app-1  | 	at org.apache.tomcat.util.net.NioEndpoint.serverSocketAccept(NioEndpoint.java:70)
+app-1  | 	at org.apache.tomcat.util.net.Acceptor.run(Acceptor.java:127)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "micrometer-kafka-metrics" #52 [55] daemon prio=5 os_prio=0 cpu=8.08ms elapsed=326.46s tid=0x0000ffff7a56cf80 nid=55 waiting on condition  [0x0000ffff00dc0000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5dd90> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "ThreadPoolTaskScheduler-1" #53 [56] prio=5 os_prio=0 cpu=1.72ms elapsed=326.46s tid=0x0000ffff7a56e5a0 nid=56 waiting on condition  [0x0000ffff00bc2000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c5ded0> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1" #54 [57] prio=5 os_prio=0 cpu=3136.22ms elapsed=326.46s tid=0x0000ffff7a575130 nid=57 runnable  [0x0000ffff009c3000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 	at sun.nio.ch.EPoll.wait(java.base@21.0.13/Native Method)
+app-1  | 	at sun.nio.ch.EPollSelectorImpl.doSelect(java.base@21.0.13/Unknown Source)
+app-1  | 	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.13/Unknown Source)
+app-1  | 	- locked <0x0000000678ca7258> (a sun.nio.ch.Util$2)
+app-1  | 	- locked <0x0000000678ca6018> (a sun.nio.ch.EPollSelectorImpl)
+app-1  | 	at sun.nio.ch.SelectorImpl.select(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.kafka.common.network.Selector.select(Selector.java:895)
+app-1  | 	at org.apache.kafka.common.network.Selector.poll(Selector.java:485)
+app-1  | 	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:596)
+app-1  | 	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:282)
+app-1  | 	at org.apache.kafka.clients.consumer.internals.ConsumerNetworkClient.poll(ConsumerNetworkClient.java:253)
+app-1  | 	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.pollForFetches(ClassicKafkaConsumer.java:692)
+app-1  | 	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:623)
+app-1  | 	at org.apache.kafka.clients.consumer.internals.ClassicKafkaConsumer.poll(ClassicKafkaConsumer.java:596)
+app-1  | 	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:874)
+app-1  | 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollConsumer(KafkaMessageListenerContainer.java:1719)
+app-1  | 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doPoll(KafkaMessageListenerContainer.java:1694)
+app-1  | 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.pollAndInvoke(KafkaMessageListenerContainer.java:1472)
+app-1  | 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1362)
+app-1  | 	at java.util.concurrent.CompletableFuture$AsyncRun.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "scheduling-1" #55 [58] prio=5 os_prio=0 cpu=2732.40ms elapsed=326.44s tid=0x0000ffff7a57c1d0 nid=58 waiting on condition  [0x0000ffff007c6000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677c06f50> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "HikariPool-1:housekeeper" #56 [59] daemon prio=5 os_prio=0 cpu=12.53ms elapsed=326.41s tid=0x0000ffff7a58b880 nid=59 waiting on condition  [0x0000ffff005c8000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000678c7ea10> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "saas-job-0" #58 [61] prio=5 os_prio=0 cpu=364.36ms elapsed=326.39s tid=0x0000fffe8c01dfc0 nid=61 waiting on condition  [0x0000fffe7fffd000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677a78d78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "outbox-0" #59 [62] prio=5 os_prio=0 cpu=1210.45ms elapsed=326.39s tid=0x0000fffe8c01f1b0 nid=62 waiting on condition  [0x0000fffe7fdff000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677a8b138> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "DestroyJavaVM" #60 [6] prio=5 os_prio=0 cpu=2906.56ms elapsed=326.39s tid=0x0000ffff7802aad0 nid=6 waiting on condition  [0x0000000000000000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 
+app-1  | "PostgreSQL-JDBC-SharedTimer-1" #61 [63] daemon prio=5 os_prio=0 cpu=358.78ms elapsed=326.38s tid=0x0000fffe70001eb0 nid=63 in Object.wait()  [0x0000fffe7fc02000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (on object monitor)
+app-1  | 	at java.lang.Object.wait0(java.base@21.0.13/Native Method)
+app-1  | 	- waiting on <no object reference available>
+app-1  | 	at java.lang.Object.wait(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.TimerThread.mainLoop(java.base@21.0.13/Unknown Source)
+app-1  | 	- locked <0x0000000678c609a0> (a java.util.TaskQueue)
+app-1  | 	at java.util.TimerThread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "saas-job-1" #62 [64] prio=5 os_prio=0 cpu=362.88ms elapsed=326.36s tid=0x0000fffe8c022c00 nid=64 waiting on condition  [0x0000fffe7fa03000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677a78d78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "outbox-1" #63 [65] prio=5 os_prio=0 cpu=1244.40ms elapsed=326.36s tid=0x0000fffe8c024640 nid=65 waiting on condition  [0x0000fffe7f805000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677a8b138> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "saas-job-2" #64 [66] prio=5 os_prio=0 cpu=355.60ms elapsed=326.36s tid=0x0000fffe8c025210 nid=66 waiting on condition  [0x0000fffe7f607000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677a78d78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "saas-job-3" #65 [67] prio=5 os_prio=0 cpu=353.75ms elapsed=326.35s tid=0x0000fffe8c026470 nid=67 waiting on condition  [0x0000fffe7f409000]
+app-1  |    java.lang.Thread.State: WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000677a78d78> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.park(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.unmanagedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ForkJoinPool.managedBlock(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ArrayBlockingQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "kafka-coordinator-heartbeat-thread | saas-projections" #66 [68] daemon prio=5 os_prio=0 cpu=248.82ms elapsed=326.13s tid=0x0000fffe881ea710 nid=68 in Object.wait()  [0x0000fffe7f20c000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (on object monitor)
+app-1  | 	at java.lang.Object.wait0(java.base@21.0.13/Native Method)
+app-1  | 	- waiting on <no object reference available>
+app-1  | 	at java.lang.Object.wait(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatThread.run(AbstractCoordinator.java:1527)
+app-1  | 	- locked <0x0000000678c8b378> (a org.apache.kafka.clients.consumer.internals.ConsumerCoordinator)
+app-1  | 
+app-1  | "kafka-producer-network-thread | multi-tenant-saas-producer-1" #69 [80] daemon prio=5 os_prio=0 cpu=1030.42ms elapsed=208.62s tid=0x0000fffe6c0448c0 nid=80 runnable  [0x0000ffff4c924000]
+app-1  |    java.lang.Thread.State: RUNNABLE
+app-1  | 	at sun.nio.ch.EPoll.wait(java.base@21.0.13/Native Method)
+app-1  | 	at sun.nio.ch.EPollSelectorImpl.doSelect(java.base@21.0.13/Unknown Source)
+app-1  | 	at sun.nio.ch.SelectorImpl.lockAndDoSelect(java.base@21.0.13/Unknown Source)
+app-1  | 	- locked <0x0000000679cd39b0> (a sun.nio.ch.Util$2)
+app-1  | 	- locked <0x0000000679cd3960> (a sun.nio.ch.EPollSelectorImpl)
+app-1  | 	at sun.nio.ch.SelectorImpl.select(java.base@21.0.13/Unknown Source)
+app-1  | 	at org.apache.kafka.common.network.Selector.select(Selector.java:895)
+app-1  | 	at org.apache.kafka.common.network.Selector.poll(Selector.java:485)
+app-1  | 	at org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:596)
+app-1  | 	at org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:354)
+app-1  | 	at org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:256)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "micrometer-kafka-metrics" #70 [82] daemon prio=5 os_prio=0 cpu=4.22ms elapsed=208.60s tid=0x0000fffe6c046cc0 nid=82 waiting on condition  [0x0000fffe7f00e000]
+app-1  |    java.lang.Thread.State: TIMED_WAITING (parking)
+app-1  | 	at jdk.internal.misc.Unsafe.park(java.base@21.0.13/Native Method)
+app-1  | 	- parking to wait for  <0x0000000679d90240> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+app-1  | 	at java.util.concurrent.locks.LockSupport.parkNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.getTask(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor.runWorker(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.runWith(java.base@21.0.13/Unknown Source)
+app-1  | 	at java.lang.Thread.run(java.base@21.0.13/Unknown Source)
+app-1  | 
+app-1  | "G1 Conc#1" os_prio=0 cpu=151.96ms elapsed=328.72s tid=0x0000ffff50000c80 nid=36 runnable  
+app-1  | 
+app-1  | "GC Thread#8" os_prio=0 cpu=71.39ms elapsed=328.76s tid=0x0000ffff34013a60 nid=34 runnable  
+app-1  | 
+app-1  | "GC Thread#7" os_prio=0 cpu=80.07ms elapsed=328.76s tid=0x0000ffff3400c1c0 nid=33 runnable  
+app-1  | 
+app-1  | "GC Thread#6" os_prio=0 cpu=57.44ms elapsed=328.76s tid=0x0000ffff3400b900 nid=32 runnable  
+app-1  | 
+app-1  | "GC Thread#5" os_prio=0 cpu=77.38ms elapsed=329.03s tid=0x0000ffff34011320 nid=31 runnable  
+app-1  | 
+app-1  | "GC Thread#4" os_prio=0 cpu=80.93ms elapsed=329.03s tid=0x0000ffff3400a6a0 nid=30 runnable  
+app-1  | 
+app-1  | "GC Thread#3" os_prio=0 cpu=93.80ms elapsed=329.04s tid=0x0000ffff340095e0 nid=29 runnable  
+app-1  | 
+app-1  | "GC Thread#2" os_prio=0 cpu=79.38ms elapsed=329.36s tid=0x0000ffff34008330 nid=27 runnable  
+app-1  | 
+app-1  | "GC Thread#1" os_prio=0 cpu=103.77ms elapsed=329.36s tid=0x0000ffff340077f0 nid=26 runnable  
+app-1  | 
+app-1  | "VM Thread" os_prio=0 cpu=60.47ms elapsed=329.54s tid=0x0000ffff78346070 nid=13 runnable  
+app-1  | 
+app-1  | "VM Periodic Task Thread" os_prio=0 cpu=169.87ms elapsed=329.54s tid=0x0000ffff78334030 nid=12 waiting on condition  
+app-1  | 
+app-1  | "G1 Service" os_prio=0 cpu=12.35ms elapsed=329.57s tid=0x0000ffff78201c80 nid=11 runnable  
+app-1  | 
+app-1  | "G1 Refine#0" os_prio=0 cpu=150.20ms elapsed=329.57s tid=0x0000ffff78200cb0 nid=10 runnable  
+app-1  | 
+app-1  | "G1 Conc#0" os_prio=0 cpu=130.69ms elapsed=329.57s tid=0x0000ffff781c2200 nid=9 runnable  
+app-1  | 
+app-1  | "G1 Main Marker" os_prio=0 cpu=4.02ms elapsed=329.57s tid=0x0000ffff781c1250 nid=8 runnable  
+app-1  | 
+app-1  | "GC Thread#0" os_prio=0 cpu=82.22ms elapsed=329.57s tid=0x0000ffff781b38c0 nid=7 runnable  
+app-1  | 
+app-1  | JNI global refs: 19, weak refs: 0
+app-1  | 
+app-1  | Heap
+app-1  |  garbage-first heap   total 139264K, used 56067K [0x0000000676400000, 0x0000000800000000)
+app-1  |   region size 4096K, 7 young (28672K), 2 survivors (8192K)
+app-1  |  Metaspace       used 85877K, committed 86912K, reserved 1179648K
+app-1  |   class space    used 10512K, committed 11008K, reserved 1048576K
+app-1  | 

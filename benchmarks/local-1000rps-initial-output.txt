@@ -1,0 +1,79 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/load.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 35s max duration (incl. graceful stop):
+              * api: 1000.00 iterations/s for 5s (maxVUs: 100-1000, gracefulStop: 30s)
+
+
+running (01.0s), 0307/0307 VUs, 306 complete and 0 interrupted iterations
+api    [  20% ] 0307/0307 VUs  1.0s/5s  1000.00 iters/s
+
+running (02.0s), 0464/0464 VUs, 836 complete and 0 interrupted iterations
+api    [  40% ] 0464/0464 VUs  2.0s/5s  1000.00 iters/s
+
+running (03.0s), 0495/0518 VUs, 1686 complete and 0 interrupted iterations
+api    [  60% ] 0495/0518 VUs  3.0s/5s  1000.00 iters/s
+
+running (04.0s), 0055/0518 VUs, 3126 complete and 0 interrupted iterations
+api    [  80% ] 0055/0518 VUs  4.0s/5s  1000.00 iters/s
+
+running (05.0s), 0053/0518 VUs, 4129 complete and 0 interrupted iterations
+api    [ 100% ] 0053/0518 VUs  5.0s/5s  1000.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    http_req_duration
+    ✗ 'p(99)<200' p(99)=701.09ms
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=97.26%
+
+    tenant_isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 4201   834.290373/s
+    checks_succeeded...: 2.73%  115 out of 4201
+    checks_failed......: 97.26% 4086 out of 4201
+
+    ✗ authorized list
+      ↳  2% — ✓ 115 / ✗ 4086
+
+    CUSTOM
+    tenant_isolation_violations....: 0      0/s
+
+    HTTP
+    http_req_duration..............: avg=317.33ms min=830.54µs med=331.81ms max=3.73s p(90)=616.91ms p(95)=675.1ms 
+      { expected_response:true }...: avg=464.23ms min=10.31ms  med=169.33ms max=3.73s p(90)=1.79s    p(95)=2.34s   
+    http_req_failed................: 97.26% 4086 out of 4201
+    http_reqs......................: 4201   834.290373/s
+
+    EXECUTION
+    dropped_iterations.............: 802    159.271811/s
+    iteration_duration.............: avg=317.54ms min=881.54µs med=331.89ms max=3.73s p(90)=617.23ms p(95)=675.32ms
+    iterations.....................: 4201   834.290373/s
+    vus............................: 53     min=53           max=495
+    vus_max........................: 518    min=308          max=518
+
+    NETWORK
+    data_received..................: 2.4 MB 484 kB/s
+    data_sent......................: 5.6 MB 1.1 MB/s
+
+
+
+
+running (05.0s), 0000/0518 VUs, 4201 complete and 0 interrupted iterations
+api  ✓ [ 100% ] 0000/0518 VUs  5s  1000.00 iters/s
+time="2026-11-14T19:44:08Z" level=error msg="thresholds on metrics 'http_req_duration, http_req_failed' have been crossed"

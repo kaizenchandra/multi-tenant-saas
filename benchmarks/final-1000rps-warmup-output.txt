@@ -1,0 +1,129 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/load.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 50s max duration (incl. graceful stop):
+              * api: 500.00 iterations/s for 20s (maxVUs: 100-1000, gracefulStop: 30s)
+
+
+running (01.0s), 0093/0118 VUs, 364 complete and 0 interrupted iterations
+api    [   5% ] 0093/0118 VUs  01.0s/20s  500.00 iters/s
+
+running (02.0s), 0124/0150 VUs, 785 complete and 0 interrupted iterations
+api    [  10% ] 0124/0150 VUs  02.0s/20s  500.00 iters/s
+
+running (03.0s), 0022/0150 VUs, 1386 complete and 0 interrupted iterations
+api    [  15% ] 0023/0150 VUs  03.0s/20s  500.00 iters/s
+
+running (04.0s), 0004/0150 VUs, 1905 complete and 0 interrupted iterations
+api    [  20% ] 0004/0150 VUs  04.0s/20s  500.00 iters/s
+
+running (05.0s), 0006/0150 VUs, 2402 complete and 0 interrupted iterations
+api    [  25% ] 0006/0150 VUs  05.0s/20s  500.00 iters/s
+
+running (06.0s), 0009/0150 VUs, 2899 complete and 0 interrupted iterations
+api    [  30% ] 0009/0150 VUs  06.0s/20s  500.00 iters/s
+
+running (07.0s), 0015/0150 VUs, 3394 complete and 0 interrupted iterations
+api    [  35% ] 0015/0150 VUs  07.0s/20s  500.00 iters/s
+
+running (08.0s), 0012/0150 VUs, 3897 complete and 0 interrupted iterations
+api    [  40% ] 0012/0150 VUs  08.0s/20s  500.00 iters/s
+
+running (09.0s), 0010/0150 VUs, 4399 complete and 0 interrupted iterations
+api    [  45% ] 0010/0150 VUs  09.0s/20s  500.00 iters/s
+
+running (10.0s), 0078/0150 VUs, 4832 complete and 0 interrupted iterations
+api    [  50% ] 0078/0150 VUs  10.0s/20s  500.00 iters/s
+
+running (11.0s), 0045/0150 VUs, 5363 complete and 0 interrupted iterations
+api    [  55% ] 0045/0150 VUs  11.0s/20s  500.00 iters/s
+
+running (12.0s), 0019/0150 VUs, 5890 complete and 0 interrupted iterations
+api    [  60% ] 0019/0150 VUs  12.0s/20s  500.00 iters/s
+
+running (13.0s), 0045/0150 VUs, 6363 complete and 0 interrupted iterations
+api    [  65% ] 0045/0150 VUs  13.0s/20s  500.00 iters/s
+
+running (14.0s), 0050/0150 VUs, 6857 complete and 0 interrupted iterations
+api    [  70% ] 0050/0150 VUs  14.0s/20s  500.00 iters/s
+
+running (15.0s), 0010/0150 VUs, 7399 complete and 0 interrupted iterations
+api    [  75% ] 0010/0150 VUs  15.0s/20s  500.00 iters/s
+
+running (16.0s), 0093/0150 VUs, 7810 complete and 0 interrupted iterations
+api    [  80% ] 0093/0150 VUs  16.0s/20s  500.00 iters/s
+
+running (17.0s), 0060/0150 VUs, 8349 complete and 0 interrupted iterations
+api    [  85% ] 0060/0150 VUs  17.0s/20s  500.00 iters/s
+
+running (18.0s), 0009/0150 VUs, 8900 complete and 0 interrupted iterations
+api    [  90% ] 0009/0150 VUs  18.0s/20s  500.00 iters/s
+
+running (19.0s), 0009/0150 VUs, 9400 complete and 0 interrupted iterations
+api    [  95% ] 0009/0150 VUs  19.0s/20s  500.00 iters/s
+
+running (20.0s), 0020/0150 VUs, 9889 complete and 0 interrupted iterations
+api    [ 100% ] 0020/0150 VUs  20.0s/20s  500.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    dropped_iterations
+    ✗ 'count<10' count=73
+
+    http_req_duration
+    ✗ 'p(99)<200' p(99)=414.59ms
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=10.13%
+
+    tenant_isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 9928   496.162939/s
+    checks_succeeded...: 89.86% 8922 out of 9928
+    checks_failed......: 10.13% 1006 out of 9928
+
+    ✗ authorized list
+      ↳  89% — ✓ 8922 / ✗ 1006
+
+    CUSTOM
+    authorized_responses...........: 8922   445.88696/s
+    rate_limited_responses.........: 1006   50.275979/s
+    tenant_isolation_violations....: 0      0/s
+
+    HTTP
+    http_req_duration..............: avg=85.24ms min=4.35ms med=42.04ms max=887.09ms p(90)=203.26ms p(95)=294.16ms p(99)=414.59ms
+      { expected_response:true }...: avg=73.66ms min=4.35ms med=32.61ms max=887.09ms p(90)=182.62ms p(95)=260.86ms p(99)=404.47ms
+    http_req_failed................: 10.13% 1006 out of 9928
+    http_reqs......................: 9928   496.162939/s
+
+    EXECUTION
+    dropped_iterations.............: 73     3.648257/s
+    iteration_duration.............: avg=85.66ms min=4.55ms med=42.33ms max=887.44ms p(90)=204.73ms p(95)=295.09ms p(99)=414.67ms
+    iterations.....................: 9928   496.162939/s
+    vus............................: 20     min=4            max=124
+    vus_max........................: 150    min=118          max=150
+
+    NETWORK
+    data_received..................: 5.6 MB 281 kB/s
+    data_sent......................: 13 MB  663 kB/s
+
+
+
+
+running (20.0s), 0000/0150 VUs, 9928 complete and 0 interrupted iterations
+api  ✓ [ 100% ] 0000/0150 VUs  20s  500.00 iters/s
+time="2026-11-14T20:18:42Z" level=error msg="thresholds on metrics 'dropped_iterations, http_req_duration, http_req_failed' have been crossed"

@@ -1,0 +1,16 @@
+{
+  "label": "controlled-baseline-mixed",
+  "mode": "mixed",
+  "database": "saas_perf_run_83e5a481d89c42e89d98b5a682ebed99",
+  "image": "multi-tenant-saas-app:perf-baseline",
+  "foreground_only": true,
+  "seed": {
+    "database": "saas_perf_seed",
+    "tenants": 256,
+    "projects": 256,
+    "tasks": 512,
+    "fixture_digest": "6621bab14e12c8532aa5c7ac17f5d747",
+    "synthetic_only": true
+  },
+  "live_deployment_restored": true
+}

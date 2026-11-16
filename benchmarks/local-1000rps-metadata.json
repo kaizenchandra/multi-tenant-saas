@@ -1,0 +1,8 @@
+{
+  "rate_target": 1000,
+  "duration": "5s",
+  "tenants": 8,
+  "image_id": "sha256:3d8e5c7f1d53ec59408c2ffbd9943602a0985ffcbd4a2430ec00f3ffca89796e",
+  "exit_code": 99,
+  "scope": "local single-node Kubernetes with two API replicas; read-only project listing; no saturation/capacity claim"
+}

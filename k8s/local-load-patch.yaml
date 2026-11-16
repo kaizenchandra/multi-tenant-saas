@@ -1,0 +1,16 @@
+# Local mixed-load profile: two wider API replicas reduce duplicated caches/JIT work.
+# Apply after local-orbstack.yaml with --type=strategic --patch-file=...
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+        - name: app
+          resources:
+            requests: { cpu: '1', memory: 384Mi }
+            limits: { cpu: '2500m', memory: 1Gi }
+          env:
+            - { name: SAAS_ADMISSION_GLOBAL_CAPACITY, value: '28' }
+            - { name: SAAS_ADMISSION_PRINCIPAL_RPS, value: '250' }
+            - { name: SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE, value: '30' }
+            - { name: SPRING_DATASOURCE_HIKARI_MINIMUM_IDLE, value: '2' }

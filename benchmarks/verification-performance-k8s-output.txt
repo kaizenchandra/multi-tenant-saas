@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Volumes/KaizenChandra/Workspace/01-Interview/system-design/system-design/multi-tenant-saas/scripts/demo.py", line 34, in <module>
+    job=api(token,'/tenants/'+t+'/export','POST',expected=202)
+  File "/Volumes/KaizenChandra/Workspace/01-Interview/system-design/system-design/multi-tenant-saas/scripts/demo.py", line 17, in api
+    assert status==expected,(path,status,body)
+           ^^^^^^^^^^^^^^^^
+AssertionError: ('/tenants/9bad1e2e-85de-4e1c-b27b-c2b247ddccea/export', 429, {'type': 'about:blank', 'title': 'Too Many Requests', 'status': 429, 'detail': 'Quota configuration changed; retry with backoff', 'instance': '/api/v1/tenants/9bad1e2e-85de-4e1c-b27b-c2b247ddccea/export'})

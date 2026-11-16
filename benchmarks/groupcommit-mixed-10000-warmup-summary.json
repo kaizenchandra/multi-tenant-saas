@@ -1,0 +1,194 @@
+{
+  "metrics": {
+    "http_req_receiving": {
+      "min": 0.006125,
+      "med": 0.071833,
+      "max": 3.153754,
+      "p(90)": 0.189834,
+      "p(95)": 0.361292,
+      "p(99)": 0.678084,
+      "avg": 0.10566394401119798
+    },
+    "data_sent": {
+      "count": 7089903,
+      "rate": 708748.2669319568
+    },
+    "business_failed": {
+      "passes": 0,
+      "fails": 5001,
+      "value": 0
+    },
+    "cohort_requests{cohort:normal}": {
+      "count": 5001,
+      "rate": 499.929277301356,
+      "thresholds": {
+        "count>=4995": false
+      }
+    },
+    "http_req_duration": {
+      "med": 2.732711,
+      "max": 29.203452,
+      "p(90)": 5.11834,
+      "p(95)": 6.400633,
+      "p(99)": 11.947556,
+      "avg": 3.358546921815647,
+      "min": 1.450668
+    },
+    "http_req_tls_handshaking": {
+      "min": 0,
+      "med": 0,
+      "max": 0,
+      "p(90)": 0,
+      "p(95)": 0,
+      "p(99)": 0,
+      "avg": 0
+    },
+    "http_req_failed": {
+      "passes": 0,
+      "fails": 5001,
+      "value": 0
+    },
+    "data_received": {
+      "count": 2829434,
+      "rate": 282846.8095964577
+    },
+    "http_req_sending": {
+      "min": 0.002625,
+      "med": 0.00525,
+      "max": 6.324216,
+      "p(90)": 0.012167,
+      "p(95)": 0.01825,
+      "p(99)": 0.065917,
+      "avg": 0.009997901219756002
+    },
+    "iterations": {
+      "count": 5001,
+      "rate": 499.929277301356
+    },
+    "http_reqs": {
+      "count": 5001,
+      "rate": 499.929277301356
+    },
+    "http_req_connecting": {
+      "p(95)": 0.042625,
+      "p(99)": 0.192458,
+      "avg": 0.008370244751049792,
+      "min": 0,
+      "med": 0,
+      "max": 1.351835,
+      "p(90)": 0
+    },
+    "http_req_waiting": {
+      "avg": 3.242885076584687,
+      "min": 1.414044,
+      "med": 2.638878,
+      "max": 29.132952,
+      "p(90)": 4.981881,
+      "p(95)": 6.241674,
+      "p(99)": 11.366013
+    },
+    "iteration_duration": {
+      "max": 30.600162,
+      "p(90)": 5.348214,
+      "p(95)": 6.59855,
+      "p(99)": 12.82514,
+      "avg": 3.506959883223358,
+      "min": 1.532835,
+      "med": 2.856253
+    },
+    "write_success": {
+      "count": 500,
+      "rate": 49.98293114390682
+    },
+    "business_latency": {
+      "min": 1.450668,
+      "med": 2.732711,
+      "max": 29.203452,
+      "p(90)": 5.11834,
+      "p(95)": 6.400633,
+      "p(99)": 11.947556,
+      "avg": 3.358546921815647
+    },
+    "vus": {
+      "min": 1,
+      "max": 3,
+      "value": 2
+    },
+    "dropped_iterations": {
+      "count": 0,
+      "rate": 0,
+      "thresholds": {
+        "count<5": false
+      }
+    },
+    "write_attempts": {
+      "rate": 49.98293114390682,
+      "count": 500
+    },
+    "isolation_violations": {
+      "rate": 0,
+      "count": 0,
+      "thresholds": {
+        "count==0": false
+      }
+    },
+    "business_success": {
+      "count": 5001,
+      "rate": 499.929277301356
+    },
+    "vus_max": {
+      "value": 256,
+      "min": 256,
+      "max": 256
+    },
+    "cohort_requests": {
+      "count": 5001,
+      "rate": 499.929277301356
+    },
+    "http_req_duration{expected_response:true}": {
+      "p(99)": 11.947556,
+      "avg": 3.358546921815647,
+      "min": 1.450668,
+      "med": 2.732711,
+      "max": 29.203452,
+      "p(90)": 5.11834,
+      "p(95)": 6.400633
+    },
+    "http_req_blocked": {
+      "p(90)": 0.003833,
+      "p(95)": 0.063334,
+      "p(99)": 0.265708,
+      "avg": 0.012901116976604553,
+      "min": 0.000666,
+      "med": 0.001667,
+      "max": 2.098628
+    },
+    "business_failed{cohort:normal}": {
+      "passes": 0,
+      "fails": 5001,
+      "thresholds": {
+        "rate<0.01": false
+      },
+      "value": 0
+    },
+    "business_latency{cohort:normal}": {
+      "p(90)": 5.11834,
+      "p(95)": 6.400633,
+      "p(99)": 11.947556,
+      "avg": 3.358546921815647,
+      "min": 1.450668,
+      "med": 2.732711,
+      "max": 29.203452,
+      "thresholds": {
+        "p(99)<200": false
+      }
+    }
+  },
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": {},
+    "checks": {}
+  }
+}

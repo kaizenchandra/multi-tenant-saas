@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "tenant": "faf0a296-7aa0-44c1-a2ab-9dcc8dcf415c",
+  "api_commit_during_outage_seconds": 0.017,
+  "durable_attempts_observed": 1,
+  "report_completed_during_outage": true,
+  "published_after_restart": true,
+  "projection_count": 1,
+  "scope": "local Compose broker stopped and restarted; API and PostgreSQL remain running"
+}

@@ -1,0 +1,131 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /Volumes/KaizenChandra/Workspace/01-Interview/system-design/system-design/multi-tenant-saas/benchmarks/mixed.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1024 max VUs, 40s max duration (incl. graceful stop):
+              * mixed: 500.00 iterations/s for 10s (maxVUs: 256-1024, exec: mixed, gracefulStop: 30s)
+
+
+running (01.0s), 0374/0374 VUs, 0 complete and 0 interrupted iterations
+mixed   [  10% ] 0374/0374 VUs  01.0s/10s  500.00 iters/s
+
+running (02.0s), 0459/0489 VUs, 295 complete and 0 interrupted iterations
+mixed   [  20% ] 0459/0489 VUs  02.0s/10s  500.00 iters/s
+
+running (03.0s), 0159/0489 VUs, 1095 complete and 0 interrupted iterations
+mixed   [  30% ] 0159/0489 VUs  03.0s/10s  500.00 iters/s
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/1ca62fad-2f26-4597-b7b8-353089334a1a\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/82ff10dc-b243-43f4-84a2-b96810ed9b90\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/e80924b8-2f67-4b65-a56e-5f699bb51233\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/fdb50f42-d742-4383-bf1f-ef58a797f66f\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/a7ec7e8d-f2d5-4c3a-84a9-fa2d154d21a4\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/e6f162b2-0b3c-4402-aeb9-84a6d9e046e4\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/7107c07a-93a7-4c9a-b2fe-680aa1a6d8b6\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/f8c4b1ad-0e93-4256-bed9-51fe60e1d9fd\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/ebd2e6e9-50d0-422b-b960-1553909f2220\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/491e80ac-5dd5-41bb-a7b6-2692f870013d\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/e1aa07d1-ef62-4475-913d-e2d639dfd61b\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/5e2a9847-2a50-41d8-ab72-9b8bd534b25a\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/ae7399b8-5995-4f9f-92a6-5d5ba5448a2d\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/87c41448-eb3c-42e9-b755-86648da424e8\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/a304044d-7114-44c7-8061-116a57bff4fc\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/a9a9dd56-08eb-4e87-87b3-36fe0f80c0dd\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/930e7480-9ea0-4a02-a903-a3be09b14684\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/b6f9a503-7700-446d-8edb-01ad95a9abae\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/b1db8bcd-74dc-4cc7-a3c3-c95a3fb2c38f\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/79b84a75-8f0d-4d18-bdf8-6b334d3c409e\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/77b65fb7-5dd7-4de4-bf08-802b57dbee80\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/87041e48-a0f4-49df-8d06-8335ff0b033e\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/f5c185fa-cabc-40ac-8a2b-595e5ed86c56\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/9a100fdb-bdd7-4467-922d-b903b7ba0c11\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/341d28f8-a807-4d4c-bab2-78a9d20cf2bc\": request timeout"
+time="2026-11-15T10:13:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/d435dbc2-1aa6-42dc-a909-66aa70eaee7a\": request timeout"
+time="2026-11-15T10:13:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/bfa2ed7e-c665-4aed-b2ed-788b68d57947\": request timeout"
+time="2026-11-15T10:13:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/d4a303c7-5443-45d5-ae02-33dbc540d0d0\": request timeout"
+time="2026-11-15T10:13:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/92748db1-d54b-46e3-b8b3-8c2ec039d4d0\": request timeout"
+time="2026-11-15T10:13:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/2333c8ae-80db-47b9-b6c4-dce4f4efb6eb\": request timeout"
+
+running (04.0s), 0107/0489 VUs, 1647 complete and 0 interrupted iterations
+mixed   [  40% ] 0107/0489 VUs  04.0s/10s  500.00 iters/s
+time="2026-11-15T10:13:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/6375a372-08a2-450a-bd38-d20ccae8f7fa\": request timeout"
+time="2026-11-15T10:13:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/a2ab83ab-4707-413c-8eff-a361391bb659\": request timeout"
+time="2026-11-15T10:13:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/df56cf73-18e6-45fd-baa7-1bef4dbd89f6\": request timeout"
+
+running (05.0s), 0128/0489 VUs, 2126 complete and 0 interrupted iterations
+mixed   [  50% ] 0128/0489 VUs  05.0s/10s  500.00 iters/s
+
+running (06.0s), 0100/0489 VUs, 2654 complete and 0 interrupted iterations
+mixed   [  60% ] 0100/0489 VUs  06.0s/10s  500.00 iters/s
+
+running (07.0s), 0074/0489 VUs, 3180 complete and 0 interrupted iterations
+mixed   [  70% ] 0074/0489 VUs  07.0s/10s  500.00 iters/s
+
+running (08.0s), 0077/0489 VUs, 3677 complete and 0 interrupted iterations
+mixed   [  80% ] 0077/0489 VUs  08.0s/10s  500.00 iters/s
+
+running (09.0s), 0033/0489 VUs, 4221 complete and 0 interrupted iterations
+mixed   [  90% ] 0033/0489 VUs  09.0s/10s  500.00 iters/s
+
+running (10.0s), 0058/0489 VUs, 4696 complete and 0 interrupted iterations
+mixed   [ 100% ] 0058/0489 VUs  10.0s/10s  500.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:normal}
+    ✗ 'rate<0.01' rate=42.48%
+
+    business_latency{cohort:normal}
+    ✗ 'p(99)<200' p(99)=2.19s
+
+    dropped_iterations
+    ✗ 'count<5' count=239
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    admission_rejections...........: 1990   195.477246/s
+    business_failed................: 42.48% 2023 out of 4762
+      { cohort:normal }............: 42.48% 2023 out of 4762
+    business_latency...............: avg=336.53ms min=14.73ms med=172.94ms max=3s    p(90)=858.61ms p(95)=1.32s    p(99)=2.19s
+      { cohort:normal }............: avg=336.53ms min=14.73ms med=172.94ms max=3s    p(90)=858.61ms p(95)=1.32s    p(99)=2.19s
+    business_success...............: 2739   269.051345/s
+    isolation_violations...........: 0      0/s
+    throttled......................: 1990   195.477246/s
+    write_success..................: 279    27.406106/s
+
+    HTTP
+    http_req_duration..............: avg=336.53ms min=14.73ms med=172.94ms max=3s    p(90)=858.61ms p(95)=1.32s    p(99)=2.19s
+      { expected_response:true }...: avg=233.09ms min=14.73ms med=148.87ms max=2.89s p(90)=460.11ms p(95)=786.47ms p(99)=1.59s
+    http_req_failed................: 42.48% 2023 out of 4762
+    http_reqs......................: 4762   467.770173/s
+
+    EXECUTION
+    dropped_iterations.............: 239    23.476915/s
+    iteration_duration.............: avg=336.85ms min=14.99ms med=173.21ms max=3s    p(90)=858.86ms p(95)=1.32s    p(99)=2.19s
+    iterations.....................: 4762   467.770173/s
+    vus............................: 58     min=33           max=459
+    vus_max........................: 489    min=374          max=489
+
+    NETWORK
+    data_received..................: 2.7 MB 267 kB/s
+    data_sent......................: 6.8 MB 663 kB/s
+
+
+
+
+running (10.2s), 0000/0489 VUs, 4762 complete and 0 interrupted iterations
+mixed ✓ [ 100% ] 0000/0489 VUs  10s  500.00 iters/s
+time="2026-11-15T10:13:50+05:30" level=error msg="thresholds on metrics 'business_failed{cohort:normal}, business_latency{cohort:normal}, dropped_iterations' have been crossed"

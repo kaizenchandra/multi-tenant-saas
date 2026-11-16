@@ -1,0 +1,24 @@
+{
+  "rate_target": 1000,
+  "duration_seconds": 5,
+  "tenant_count": 8,
+  "tenant_ids": [
+    "b03439d9-d15c-4ff8-b788-5f4fe0ab3154",
+    "44128000-46a9-4fb9-8500-515b2c4be8f2",
+    "079a7877-5c72-49a2-8d76-1005e9292a3f",
+    "76416fad-0324-4370-a3c7-a4cc0d5a4479",
+    "0d99470a-1822-4f37-92f3-2de569d31776",
+    "faf0a296-7aa0-44c1-a2ab-9dcc8dcf415c",
+    "848f8de7-9193-4237-baef-e6511dab9b20",
+    "cf25b052-5643-4439-a059-ef4e671423ae"
+  ],
+  "seeded": false,
+  "fixture": "one project and two tasks per seeded tenant",
+  "image_id": "sha256:3d8e5c7f1d53ec59408c2ffbd9943602a0985ffcbd4a2430ec00f3ffca89796e",
+  "k6_version": "k6 v2.4.0 (commit/dd9395906d, go1.27.3, linux/arm64)",
+  "exit_code": 99,
+  "rate_policy_per_tenant": 100,
+  "pods": 2,
+  "pool_connections_per_pod": 12,
+  "scope": "local single-node Kubernetes; project listing with joins; global iteration round robin; no foreign-ID probes"
+}

@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "outage_api_status": 503,
+  "liveness_during_outage": 200,
+  "readiness_during_outage": 503,
+  "cached_tenant_data_not_served": true,
+  "recovery_api_status": 200,
+  "scope": "local PostgreSQL stopped/restarted; no primary/replica failover or DR RTO claim"
+}

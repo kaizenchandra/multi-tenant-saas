@@ -1,0 +1,46 @@
+TAP version 13
+# Subtest: expired token refresh is shared across simultaneous requests
+ok 1 - expired token refresh is shared across simultaneous requests
+  ---
+  duration_ms: 3.094166
+  type: 'test'
+  ...
+# Subtest: tenant selection is explicit on each request and writes get idempotency keys
+ok 2 - tenant selection is explicit on each request and writes get idempotency keys
+  ---
+  duration_ms: 5.285042
+  type: 'test'
+  ...
+# Subtest: rejected refresh clears tokens and never sends a business request
+ok 3 - rejected refresh clears tokens and never sends a business request
+  ---
+  duration_ms: 1.735875
+  type: 'test'
+  ...
+# Subtest: sign out clears local tokens and ends the configured identity-provider session
+ok 4 - sign out clears local tokens and ends the configured identity-provider session
+  ---
+  duration_ms: 1.497125
+  type: 'test'
+  ...
+# Subtest: large exports stream to a chosen file without allocating a blob
+ok 5 - large exports stream to a chosen file without allocating a blob
+  ---
+  duration_ms: 1.034125
+  type: 'test'
+  ...
+# Subtest: unsupported browsers cancel large responses rather than buffering them
+ok 6 - unsupported browsers cancel large responses rather than buffering them
+  ---
+  duration_ms: 0.563167
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 86.260292

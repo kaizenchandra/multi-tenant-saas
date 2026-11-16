@@ -1,0 +1,38 @@
+{
+  "label": "release-confirmation-mixed",
+  "mode": "mixed",
+  "database": "saas_perf_run_c6206709a66844039e7c671f5369b8eb",
+  "image": "multi-tenant-saas-app:perf-release",
+  "foreground_only": true,
+  "api_cpu_override": null,
+  "pool_size_override": null,
+  "commit_delay_override": null,
+  "sql_tracking": "none",
+  "seed": {
+    "database": "saas_perf_seed",
+    "tenants": 256,
+    "projects": 256,
+    "tasks": 512,
+    "fixture_digest": "6621bab14e12c8532aa5c7ac17f5d747",
+    "synthetic_only": true
+  },
+  "phases": [
+    {
+      "label": "release-confirmation-mixed-r1",
+      "started_unix": 1794735725.18659,
+      "exit_code": 1
+    },
+    {
+      "label": "release-confirmation-mixed-r2",
+      "started_unix": 1794735830.0144,
+      "exit_code": 1
+    }
+  ],
+  "exit_code": 1,
+  "final_fixture_counts": {
+    "tenants": 256,
+    "projects": 256,
+    "tasks": 512
+  },
+  "live_deployment_restored": true
+}

@@ -1,0 +1,994 @@
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728136.968701,
+  "activity": [
+    {
+      "state": "active",
+      "sessions": 1,
+      "operation": "other",
+      "wait_event": null,
+      "wait_event_type": null
+    },
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.080208,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.187282,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.291388,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.395197,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle in transaction",
+      "sessions": 1,
+      "operation": "other",
+      "wait_event": null,
+      "wait_event_type": null
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.499630,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.604006,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.708536,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.813811,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728137.928909,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.035708,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.147737,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.255002,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.365728,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.485568,
+  "activity": [
+    {
+      "state": "active",
+      "sessions": 1,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 3,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 2,
+      "operation": "commit",
+      "wait_event": null,
+      "wait_event_type": null
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.591353,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.699653,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.806120,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728138.910556,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728139.013493,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}
+{
+  "wal": {
+    "wal_fpi": 112534,
+    "wal_sync": 692656,
+    "wal_bytes": 1547460882,
+    "wal_write": 712367,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "wal_records": 9911557,
+    "wal_sync_time": 695979.898,
+    "wal_write_time": 8783.083,
+    "wal_buffers_full": 18728
+  },
+  "unix": 1794728139.117545,
+  "activity": [
+    {
+      "state": "idle",
+      "sessions": 6,
+      "operation": "commit",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    },
+    {
+      "state": "idle",
+      "sessions": 5,
+      "operation": "other",
+      "wait_event": "ClientRead",
+      "wait_event_type": "Client"
+    }
+  ],
+  "pressure": {
+    "io": null,
+    "cpu": null,
+    "memory": null
+  },
+  "checkpointer": {
+    "num_timed": 75,
+    "sync_time": 3195,
+    "write_time": 5463203,
+    "stats_reset": "2026-11-14T18:48:37.923032+00:00",
+    "num_requested": 20,
+    "buffers_written": 143942,
+    "restartpoints_req": 0,
+    "restartpoints_done": 0,
+    "restartpoints_timed": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "Mock transport only; fake tokens, empty lists, echoed IDs. No SaaS/security/database proof.",
+  "route": "private Docker IP, omits Kubernetes Service",
+  "started_unix": 1794734944.408139,
+  "target_rps": 10000,
+  "duration_seconds": 20,
+  "exit_code": 99,
+  "generator_image_id": "sha256:3d8e5c7f1d53ec59408c2ffbd9943602a0985ffcbd4a2430ec00f3ffca89796e",
+  "server_image_id": "sha256:a8b39bd9cf0f83869a2162827a0caf6137ddf759d50a171451b335cecc87d236",
+  "generator_limits": {
+    "cpus": 4,
+    "memory": "2GiB"
+  },
+  "server_limits": {
+    "cpus": 1,
+    "memory": "128MiB"
+  },
+  "workload_sha256": "90a69a081afc9214805069fbf06557ddff760fd4849a3eee285eb008d39149c0"
+}

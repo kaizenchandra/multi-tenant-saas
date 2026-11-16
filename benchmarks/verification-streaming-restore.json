@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "snapshot_sha256": "2e4aa27d6d3551471497f1d6f88d4d7774bdf486efa0ffbba69086cd68936e0b",
+  "tables": {
+    "projects": 1,
+    "tasks": 1,
+    "project_members": 0,
+    "task_assignments": 0,
+    "invitations": 0,
+    "usage": 1,
+    "audit": 8,
+    "outbox": 3,
+    "inbox": 1,
+    "jobs": 1,
+    "feature_flags": 0,
+    "idempotency": 0,
+    "billing_history": 1,
+    "event_projection": 1,
+    "usage_storage": 1,
+    "api_budgets": 2,
+    "export_chunks": 5
+  },
+  "row_content_digests_match": true,
+  "scratch_database_dropped": true,
+  "source_neighbor_unchanged": true,
+  "restore_seconds": 10.942,
+  "scope": "tenant-only consistent snapshot restored into a disposable local database; no live import or DR RTO claim"
+}

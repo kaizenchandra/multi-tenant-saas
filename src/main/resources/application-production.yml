@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    password: ${DB_PASSWORD}
+  flyway.enabled: false
+  data.redis:
+    host: ${REDIS_HOST}
+    password: ${REDIS_PASSWORD}
+    ssl.enabled: true
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVERS}
+    properties:
+      security.protocol: SASL_SSL
+      sasl.mechanism: SCRAM-SHA-512
+      sasl.jaas.config: ${KAFKA_SASL_JAAS_CONFIG}
+      ssl.endpoint.identification.algorithm: https
+saas:
+  issuer: ${OIDC_ISSUER}
+  jwk-uri: ${OIDC_JWK_URI}
+  messaging: true
+
+management:
+  server.port: 8081
+saas.billing.sandbox-enabled: false
+
+saas.quotas.leased-reads: true

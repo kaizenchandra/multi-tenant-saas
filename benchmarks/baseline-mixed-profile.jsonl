@@ -1,0 +1,144 @@
+{
+  "time": 1794716428.724798,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 51713074\nuser_usec 40535399\nsystem_usec 11177675\nnice_usec 0\nnr_periods 1190\nnr_throttled 206\nthrottled_usec 24020037\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 54765222\nuser_usec 43609660\nsystem_usec 11155561\nnice_usec 0\nnr_periods 1248\nnr_throttled 226\nthrottled_usec 27331806\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":31}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":17}]\n"
+}
+{
+  "time": 1794716430.962112,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 56055795\nuser_usec 43440228\nsystem_usec 12615567\nnice_usec 0\nnr_periods 1211\nnr_throttled 227\nthrottled_usec 25889323\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 58642221\nuser_usec 46101546\nsystem_usec 12540675\nnice_usec 0\nnr_periods 1268\nnr_throttled 245\nthrottled_usec 28688558\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":30}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":18}]\n"
+}
+{
+  "time": 1794716432.956301,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 59427773\nuser_usec 45634120\nsystem_usec 13793653\nnice_usec 0\nnr_periods 1229\nnr_throttled 237\nthrottled_usec 26368806\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 61904944\nuser_usec 48323541\nsystem_usec 13581402\nnice_usec 0\nnr_periods 1285\nnr_throttled 257\nthrottled_usec 29099162\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":\"IO\",\"wait_event\":\"WalSync\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":2}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":33}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":12}]\n"
+}
+{
+  "time": 1794716434.510721,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 62587932\nuser_usec 47570405\nsystem_usec 15017526\nnice_usec 0\nnr_periods 1245\nnr_throttled 247\nthrottled_usec 26746080\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 65015541\nuser_usec 50399855\nsystem_usec 14615686\nnice_usec 0\nnr_periods 1301\nnr_throttled 269\nthrottled_usec 29810554\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":\"IO\",\"wait_event\":\"WalSync\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":\"LWLock\",\"wait_event\":\"WALWrite\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":29}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":17}]\n"
+}
+{
+  "time": 1794716436.047937,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "unavailable",
+    "saas-7c79f5c894-xwjzl": "unavailable"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":28}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":20}]\n"
+}
+{
+  "time": 1794716437.7693598,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 66509722\nuser_usec 50247746\nsystem_usec 16261975\nnice_usec 0\nnr_periods 1276\nnr_throttled 257\nthrottled_usec 27315394\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 68989726\nuser_usec 53125310\nsystem_usec 15864416\nnice_usec 0\nnr_periods 1331\nnr_throttled 277\nthrottled_usec 30665307\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}
+{
+  "time": 1794716439.0747688,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 66533724\nuser_usec 50254891\nsystem_usec 16278833\nnice_usec 0\nnr_periods 1288\nnr_throttled 257\nthrottled_usec 27315394\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 69011189\nuser_usec 53138414\nsystem_usec 15872774\nnice_usec 0\nnr_periods 1343\nnr_throttled 277\nthrottled_usec 30665307\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":\"IO\",\"wait_event\":\"WalSync\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":\"LWLock\",\"wait_event\":\"WALWrite\",\"count\":8}, {\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":23}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":15}, {\"state\":\"idle in transaction\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}]\n"
+}
+{
+  "time": 1794716440.5509582,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 69060664\nuser_usec 52175133\nsystem_usec 16885531\nnice_usec 0\nnr_periods 1304\nnr_throttled 262\nthrottled_usec 27706809\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 71669479\nuser_usec 55151667\nsystem_usec 16517812\nnice_usec 0\nnr_periods 1360\nnr_throttled 283\nthrottled_usec 30949705\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":\"IO\",\"wait_event\":\"WalSync\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":27}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":20}]\n"
+}
+{
+  "time": 1794716442.3238258,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 71422669\nuser_usec 53677838\nsystem_usec 17744831\nnice_usec 0\nnr_periods 1322\nnr_throttled 264\nthrottled_usec 27719122\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 74234814\nuser_usec 56869916\nsystem_usec 17364898\nnice_usec 0\nnr_periods 1378\nnr_throttled 283\nthrottled_usec 30949705\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":\"IO\",\"wait_event\":\"WalSync\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":\"Lock\",\"wait_event\":\"advisory\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":\"LWLock\",\"wait_event\":\"WALWrite\",\"count\":4}, {\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":3}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":31}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":9}]\n"
+}
+{
+  "time": 1794716444.342653,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 74387916\nuser_usec 55521057\nsystem_usec 18866859\nnice_usec 0\nnr_periods 1341\nnr_throttled 265\nthrottled_usec 27719122\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 77359389\nuser_usec 58813159\nsystem_usec 18546229\nnice_usec 0\nnr_periods 1397\nnr_throttled 288\nthrottled_usec 31246944\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":\"IO\",\"wait_event\":\"WalSync\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":\"LWLock\",\"wait_event\":\"WALWrite\",\"count\":5}, {\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":28}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":14}]\n"
+}
+{
+  "time": 1794716446.048291,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 77399204\nuser_usec 57499437\nsystem_usec 19899766\nnice_usec 0\nnr_periods 1359\nnr_throttled 266\nthrottled_usec 27719122\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 79760814\nuser_usec 60366093\nsystem_usec 19394720\nnice_usec 0\nnr_periods 1413\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}
+{
+  "time": 1794716447.548724,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 78349689\nuser_usec 58159441\nsystem_usec 20190248\nnice_usec 0\nnr_periods 1372\nnr_throttled 266\nthrottled_usec 27719122\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 80734057\nuser_usec 61039784\nsystem_usec 19694272\nnice_usec 0\nnr_periods 1425\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}
+{
+  "time": 1794716449.285457,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 78414551\nuser_usec 58200227\nsystem_usec 20214324\nnice_usec 0\nnr_periods 1381\nnr_throttled 266\nthrottled_usec 27719122\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 80753354\nuser_usec 61052744\nsystem_usec 19700609\nnice_usec 0\nnr_periods 1434\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}
+{
+  "time": 1794716450.673712,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 79095358\nuser_usec 58671489\nsystem_usec 20423869\nnice_usec 0\nnr_periods 1394\nnr_throttled 266\nthrottled_usec 27719122\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 81421000\nuser_usec 61421012\nsystem_usec 19999988\nnice_usec 0\nnr_periods 1447\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":\"IO\",\"wait_event\":\"WalSync\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":\"Lock\",\"wait_event\":\"advisory\",\"count\":5}, {\"state\":\"active\",\"wait_event_type\":\"LWLock\",\"wait_event\":\"WALWrite\",\"count\":1}, {\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":2}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":25}, {\"state\":\"idle in transaction\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":14}, {\"state\":\"idle in transaction\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}]\n"
+}
+{
+  "time": 1794716452.238966,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 79648338\nuser_usec 59056294\nsystem_usec 20592043\nnice_usec 0\nnr_periods 1406\nnr_throttled 267\nthrottled_usec 27726966\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 81790198\nuser_usec 61623807\nsystem_usec 20166391\nnice_usec 0\nnr_periods 1460\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}
+{
+  "time": 1794716453.634735,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 79668725\nuser_usec 59070798\nsystem_usec 20597926\nnice_usec 0\nnr_periods 1413\nnr_throttled 267\nthrottled_usec 27726966\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 81817171\nuser_usec 61642518\nsystem_usec 20174652\nnice_usec 0\nnr_periods 1467\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}
+{
+  "time": 1794716455.144769,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 79681228\nuser_usec 59078410\nsystem_usec 20602817\nnice_usec 0\nnr_periods 1418\nnr_throttled 267\nthrottled_usec 27726966\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 81828341\nuser_usec 61650393\nsystem_usec 20177947\nnice_usec 0\nnr_periods 1473\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}
+{
+  "time": 1794716456.6399128,
+  "pods": {
+    "saas-7c79f5c894-bgdrp": "usage_usec 79698152\nuser_usec 59086526\nsystem_usec 20611626\nnice_usec 0\nnr_periods 1427\nnr_throttled 267\nthrottled_usec 27726966\nnr_bursts 0\nburst_usec 0\n",
+    "saas-7c79f5c894-xwjzl": "usage_usec 81847982\nuser_usec 61663096\nsystem_usec 20184886\nnice_usec 0\nnr_periods 1481\nnr_throttled 293\nthrottled_usec 31404810\nnr_bursts 0\nburst_usec 0\n"
+  },
+  "postgres": "[{\"state\":\"active\",\"wait_event_type\":null,\"wait_event\":null,\"count\":1}, {\"state\":\"idle\",\"wait_event_type\":\"Client\",\"wait_event\":\"ClientRead\",\"count\":48}]\n"
+}

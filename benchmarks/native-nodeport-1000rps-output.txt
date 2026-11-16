@@ -1,0 +1,162 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /Volumes/KaizenChandra/Workspace/01-Interview/system-design/system-design/multi-tenant-saas/benchmarks/load.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 1m0s max duration (incl. graceful stop):
+              * api: 1000.00 iterations/s for 30s (maxVUs: 256-1000, gracefulStop: 30s)
+
+
+running (0m01.0s), 0009/0256 VUs, 972 complete and 0 interrupted iterations
+api    [   3% ] 0009/0256 VUs  01.0s/30s  1000.00 iters/s
+
+running (0m02.0s), 0006/0256 VUs, 1975 complete and 0 interrupted iterations
+api    [   7% ] 0006/0256 VUs  02.0s/30s  1000.00 iters/s
+
+running (0m03.0s), 0005/0256 VUs, 2976 complete and 0 interrupted iterations
+api    [  10% ] 0005/0256 VUs  03.0s/30s  1000.00 iters/s
+
+running (0m04.0s), 0009/0256 VUs, 3972 complete and 0 interrupted iterations
+api    [  13% ] 0009/0256 VUs  04.0s/30s  1000.00 iters/s
+
+running (0m05.0s), 0003/0256 VUs, 4978 complete and 0 interrupted iterations
+api    [  17% ] 0003/0256 VUs  05.0s/30s  1000.00 iters/s
+
+running (0m06.0s), 0006/0256 VUs, 5975 complete and 0 interrupted iterations
+api    [  20% ] 0006/0256 VUs  06.0s/30s  1000.00 iters/s
+
+running (0m07.0s), 0004/0256 VUs, 6977 complete and 0 interrupted iterations
+api    [  23% ] 0004/0256 VUs  07.0s/30s  1000.00 iters/s
+
+running (0m08.0s), 0024/0256 VUs, 7957 complete and 0 interrupted iterations
+api    [  27% ] 0024/0256 VUs  08.0s/30s  1000.00 iters/s
+
+running (0m09.0s), 0136/0256 VUs, 8845 complete and 0 interrupted iterations
+api    [  30% ] 0136/0256 VUs  09.0s/30s  1000.00 iters/s
+
+running (0m10.0s), 0016/0256 VUs, 9965 complete and 0 interrupted iterations
+api    [  33% ] 0016/0256 VUs  10.0s/30s  1000.00 iters/s
+
+running (0m11.0s), 0129/0256 VUs, 10852 complete and 0 interrupted iterations
+api    [  37% ] 0129/0256 VUs  11.0s/30s  1000.00 iters/s
+
+running (0m12.0s), 0012/0256 VUs, 11969 complete and 0 interrupted iterations
+api    [  40% ] 0012/0256 VUs  12.0s/30s  1000.00 iters/s
+
+running (0m13.0s), 0029/0256 VUs, 12951 complete and 0 interrupted iterations
+api    [  43% ] 0029/0256 VUs  13.0s/30s  1000.00 iters/s
+
+running (0m14.0s), 0010/0256 VUs, 13971 complete and 0 interrupted iterations
+api    [  47% ] 0010/0256 VUs  14.0s/30s  1000.00 iters/s
+
+running (0m15.0s), 0019/0256 VUs, 14962 complete and 0 interrupted iterations
+api    [  50% ] 0019/0256 VUs  15.0s/30s  1000.00 iters/s
+
+running (0m16.0s), 0010/0256 VUs, 15970 complete and 0 interrupted iterations
+api    [  53% ] 0010/0256 VUs  16.0s/30s  1000.00 iters/s
+
+running (0m17.0s), 0005/0256 VUs, 16976 complete and 0 interrupted iterations
+api    [  57% ] 0005/0256 VUs  17.0s/30s  1000.00 iters/s
+
+running (0m18.0s), 0004/0256 VUs, 17976 complete and 0 interrupted iterations
+api    [  60% ] 0004/0256 VUs  18.0s/30s  1000.00 iters/s
+
+running (0m19.0s), 0023/0256 VUs, 18958 complete and 0 interrupted iterations
+api    [  63% ] 0023/0256 VUs  19.0s/30s  1000.00 iters/s
+
+running (0m20.0s), 0009/0256 VUs, 19972 complete and 0 interrupted iterations
+api    [  67% ] 0009/0256 VUs  20.0s/30s  1000.00 iters/s
+
+running (0m21.0s), 0012/0256 VUs, 20969 complete and 0 interrupted iterations
+api    [  70% ] 0012/0256 VUs  21.0s/30s  1000.00 iters/s
+
+running (0m22.0s), 0008/0256 VUs, 21973 complete and 0 interrupted iterations
+api    [  73% ] 0008/0256 VUs  22.0s/30s  1000.00 iters/s
+
+running (0m23.0s), 0010/0256 VUs, 22971 complete and 0 interrupted iterations
+api    [  77% ] 0010/0256 VUs  23.0s/30s  1000.00 iters/s
+
+running (0m24.0s), 0007/0256 VUs, 23974 complete and 0 interrupted iterations
+api    [  80% ] 0007/0256 VUs  24.0s/30s  1000.00 iters/s
+
+running (0m25.0s), 0038/0256 VUs, 24943 complete and 0 interrupted iterations
+api    [  83% ] 0038/0256 VUs  25.0s/30s  1000.00 iters/s
+
+running (0m26.0s), 0109/0256 VUs, 25872 complete and 0 interrupted iterations
+api    [  87% ] 0109/0256 VUs  26.0s/30s  1000.00 iters/s
+
+running (0m27.0s), 0008/0256 VUs, 26973 complete and 0 interrupted iterations
+api    [  90% ] 0008/0256 VUs  27.0s/30s  1000.00 iters/s
+
+running (0m28.0s), 0006/0256 VUs, 27975 complete and 0 interrupted iterations
+api    [  93% ] 0006/0256 VUs  28.0s/30s  1000.00 iters/s
+time="2026-11-15T02:18:01+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": read tcp 127.0.0.1:61529->127.0.0.1:30088: read: connection reset by peer"
+time="2026-11-15T02:18:01+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": read tcp 127.0.0.1:61683->127.0.0.1:30088: read: connection reset by peer"
+
+running (0m29.0s), 0007/0256 VUs, 28974 complete and 0 interrupted iterations
+api    [  97% ] 0007/0256 VUs  29.0s/30s  1000.00 iters/s
+
+running (0m30.0s), 0004/0256 VUs, 29976 complete and 0 interrupted iterations
+api    [ 100% ] 0004/0256 VUs  30.0s/30s  1000.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    dropped_iterations
+    ✓ 'count<30' count=0
+
+    http_req_duration
+    ✓ 'p(99)<200' p(99)=159.95ms
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=1.87%
+
+    tenant_isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 30001  999.896714/s
+    checks_succeeded...: 98.12% 29437 out of 30001
+    checks_failed......: 1.87%  564 out of 30001
+
+    ✗ authorized list
+      ↳  98% — ✓ 29437 / ✗ 564
+
+    CUSTOM
+    authorized_responses...........: 29437 981.099282/s
+    rate_limited_responses.........: 562   18.730774/s
+    tenant_isolation_violations....: 0     0/s
+    unexpected_responses...........: 2     0.066658/s
+
+    HTTP
+    http_req_duration..............: avg=25.65ms min=2.05ms med=9.35ms max=3.06s    p(90)=88.08ms p(95)=112.96ms p(99)=159.95ms
+      { expected_response:true }...: avg=23.83ms min=2.05ms med=9.19ms max=550.38ms p(90)=71.61ms p(95)=110.34ms p(99)=160.32ms
+    http_req_failed................: 1.87% 564 out of 30001
+    http_reqs......................: 30001 999.896714/s
+
+    EXECUTION
+    dropped_iterations.............: 0     0/s
+    iteration_duration.............: avg=25.76ms min=2.13ms med=9.48ms max=3.06s    p(90)=88.16ms p(95)=113.1ms  p(99)=160.17ms
+    iterations.....................: 30001 999.896714/s
+    vus............................: 5     min=3            max=136
+    vus_max........................: 256   min=256          max=256
+
+    NETWORK
+    data_received..................: 17 MB 565 kB/s
+    data_sent......................: 40 MB 1.3 MB/s
+
+
+
+
+running (0m30.0s), 0000/0256 VUs, 30001 complete and 0 interrupted iterations
+api  ✓ [ 100% ] 0000/0256 VUs  30s  1000.00 iters/s
+time="2026-11-15T02:18:03+05:30" level=error msg="thresholds on metrics 'http_req_failed' have been crossed"

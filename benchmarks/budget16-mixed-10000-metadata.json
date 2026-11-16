@@ -1,0 +1,59 @@
+{
+  "mode": "mixed",
+  "wal_before": {
+    "wal_records": 4972282,
+    "wal_bytes": 613944811,
+    "wal_buffers_full": 5551,
+    "wal_write": 458956,
+    "wal_sync": 452558,
+    "wal_write_time": 262.573,
+    "wal_sync_time": 16321.443
+  },
+  "wal_after": {
+    "wal_records": 5031757,
+    "wal_bytes": 619857243,
+    "wal_buffers_full": 5551,
+    "wal_write": 460450,
+    "wal_sync": 454051,
+    "wal_write_time": 497.589,
+    "wal_sync_time": 36827.298
+  },
+  "target_rps": 10000,
+  "duration_seconds": 20,
+  "tenants": 256,
+  "principals": 32,
+  "write_ratio": 0.1,
+  "base_url": "http://localhost:30088",
+  "started_unix": 1794719194.3106182,
+  "observed_k6_peak_rss_kib": 476592,
+  "preallocated_vus": 256,
+  "max_vus": 1024,
+  "exit_code": 99,
+  "successful_writes": 531,
+  "committed_version_delta": 552,
+  "unacknowledged_commits": 21,
+  "write_commit_check": true,
+  "replicas": 4,
+  "container_resources": {
+    "limits": {
+      "cpu": "2",
+      "memory": "1Gi"
+    },
+    "requests": {
+      "cpu": "250m",
+      "memory": "384Mi"
+    }
+  },
+  "deployment_env": {
+    "SAAS_ADMISSION_PRINCIPAL_RPS": "250",
+    "SAAS_QUOTAS_LEASED_READS": "true",
+    "SAAS_ADMISSION_GLOBAL_CAPACITY": "14",
+    "SAAS_ADMISSION_PER_TENANT": "6",
+    "SAAS_ADMISSION_WAIT_MS": "100",
+    "SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE": "16"
+  },
+  "database_host": "saas-postgres",
+  "redis_host": "saas-redis",
+  "fixture": "one project/two tasks per tenant; fixed-name PATCH, detail and aggregate list; 100/s tenant rate policy unchanged",
+  "k6_version": "k6 v2.4.0 (commit/devel, go1.27.4, darwin/arm64)"
+}

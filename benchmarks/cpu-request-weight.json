@@ -1,0 +1,38 @@
+{
+  "before": {
+    "request": "250m",
+    "limit": "2500m",
+    "cpu.weight": 35,
+    "cpu.max": "250000 100000"
+  },
+  "after": [
+    {
+      "pod": "saas-7f7d7f56d6-5x9v6",
+      "cpu_cgroup": "208\n250000 100000\n",
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "2500m",
+          "memory": "384Mi"
+        }
+      }
+    },
+    {
+      "pod": "saas-7f7d7f56d6-b8x7f",
+      "cpu_cgroup": "208\n250000 100000\n",
+      "resources": {
+        "limits": {
+          "cpu": "2500m",
+          "memory": "1Gi"
+        },
+        "requests": {
+          "cpu": "2500m",
+          "memory": "384Mi"
+        }
+      }
+    }
+  ]
+}

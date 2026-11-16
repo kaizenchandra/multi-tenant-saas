@@ -1,0 +1,165 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/mixed.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1024 max VUs, 50s max duration (incl. graceful stop):
+              * mixed: 10000.00 iterations/s for 20s (maxVUs: 512-1024, exec: mixed, gracefulStop: 30s)
+
+
+running (00.9s), 0524/0669 VUs, 2189 complete and 0 interrupted iterations
+mixed   [   4% ] 0524/0669 VUs  00.9s/20s  10000.00 iters/s
+
+running (01.9s), 0606/0904 VUs, 6417 complete and 0 interrupted iterations
+mixed   [   9% ] 0606/0904 VUs  01.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:26Z" level=warning msg="Insufficient VUs, reached 1024 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=mixed
+
+running (02.9s), 1003/1024 VUs, 11780 complete and 0 interrupted iterations
+mixed   [  14% ] 1003/1024 VUs  02.9s/20s  10000.00 iters/s
+
+running (03.9s), 1005/1024 VUs, 16328 complete and 0 interrupted iterations
+mixed   [  19% ] 1005/1024 VUs  03.9s/20s  10000.00 iters/s
+
+running (04.9s), 0877/1024 VUs, 22386 complete and 0 interrupted iterations
+mixed   [  24% ] 0877/1024 VUs  04.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Patch \"http://192.168.194.157:80/api/v1/projects/d471bc83-e8d4-4685-acc3-37833314bdc6\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/9c46aba4-727b-4a02-ad83-08c1343a0c84\": request timeout"
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (05.9s), 0975/1024 VUs, 26938 complete and 0 interrupted iterations
+mixed   [  29% ] 0975/1024 VUs  05.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:29Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (06.9s), 0923/1024 VUs, 31308 complete and 0 interrupted iterations
+mixed   [  34% ] 0923/1024 VUs  06.9s/20s  10000.00 iters/s
+
+running (07.9s), 1024/1024 VUs, 37214 complete and 0 interrupted iterations
+mixed   [  39% ] 1024/1024 VUs  07.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:32Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:32Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:32Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:32Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:32Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/a3c8fb9b-5d24-4582-a9a6-4d0e35edc8e9\": request timeout"
+
+running (08.9s), 0857/1024 VUs, 40506 complete and 0 interrupted iterations
+mixed   [  44% ] 0857/1024 VUs  08.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:32Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:32Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (09.9s), 0816/1024 VUs, 44786 complete and 0 interrupted iterations
+mixed   [  49% ] 0816/1024 VUs  09.9s/20s  10000.00 iters/s
+
+running (10.9s), 0879/1024 VUs, 48809 complete and 0 interrupted iterations
+mixed   [  54% ] 0879/1024 VUs  10.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:35Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:35Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (11.9s), 0983/1024 VUs, 53269 complete and 0 interrupted iterations
+mixed   [  59% ] 0983/1024 VUs  11.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:35Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+time="2026-11-15T09:19:35Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (13.0s), 0986/1024 VUs, 56866 complete and 0 interrupted iterations
+mixed   [  65% ] 0986/1024 VUs  13.0s/20s  10000.00 iters/s
+
+running (14.0s), 0629/1024 VUs, 61415 complete and 0 interrupted iterations
+mixed   [  70% ] 0629/1024 VUs  14.0s/20s  10000.00 iters/s
+
+running (14.9s), 0927/1024 VUs, 64441 complete and 0 interrupted iterations
+mixed   [  74% ] 0927/1024 VUs  14.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:39Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (15.9s), 0668/1024 VUs, 69024 complete and 0 interrupted iterations
+mixed   [  79% ] 0669/1024 VUs  15.9s/20s  10000.00 iters/s
+
+running (16.9s), 0892/1024 VUs, 74057 complete and 0 interrupted iterations
+mixed   [  84% ] 0892/1024 VUs  16.9s/20s  10000.00 iters/s
+
+running (17.9s), 0887/1024 VUs, 77477 complete and 0 interrupted iterations
+mixed   [  89% ] 0887/1024 VUs  17.9s/20s  10000.00 iters/s
+time="2026-11-15T09:19:42Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+running (18.9s), 0889/1024 VUs, 80860 complete and 0 interrupted iterations
+mixed   [  94% ] 0889/1024 VUs  18.9s/20s  10000.00 iters/s
+
+running (19.9s), 0930/1024 VUs, 85617 complete and 0 interrupted iterations
+mixed   [  99% ] 0930/1024 VUs  19.9s/20s  10000.00 iters/s
+
+running (20.9s), 0001/1024 VUs, 87220 complete and 0 interrupted iterations
+mixed ↓ [ 100% ] 0941/1024 VUs  20s  10000.00 iters/s
+time="2026-11-15T09:19:45Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects\": request timeout"
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:normal}
+    ✓ 'rate<0.01' rate=0.03%
+
+    business_latency{cohort:normal}
+    ✗ 'p(99)<200' p(99)=409.44ms
+
+    cohort_requests{cohort:normal}
+    ✗ 'count>=199800' count=87221
+
+    dropped_iterations
+    ✗ 'count<200' count=112748
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    business_failed................: 0.03%  28 out of 87221
+      { cohort:normal }............: 0.03%  28 out of 87221
+    business_latency...............: avg=182.34ms min=1.57ms med=178.24ms max=3.13s    p(90)=297.66ms p(95)=335.65ms p(99)=409.44ms
+      { cohort:normal }............: avg=182.34ms min=1.57ms med=178.24ms max=3.13s    p(90)=297.66ms p(95)=335.65ms p(99)=409.44ms
+    business_success...............: 87193  4065.220298/s
+    cohort_requests................: 87221  4066.525749/s
+      { cohort:normal }............: 87221  4066.525749/s
+    isolation_violations...........: 0      0/s
+    unexpected_responses...........: 28     1.305451/s
+    write_attempts.................: 8723   406.694536/s
+    write_success..................: 8722   406.647913/s
+
+    HTTP
+    http_req_duration..............: avg=182.34ms min=1.57ms med=178.24ms max=3.13s    p(90)=297.66ms p(95)=335.65ms p(99)=409.44ms
+      { expected_response:true }...: avg=181.43ms min=1.57ms med=178.2ms  max=627.15ms p(90)=297.43ms p(95)=335.4ms  p(99)=408.74ms
+    http_req_failed................: 0.03%  28 out of 87221
+    http_reqs......................: 87221  4066.525749/s
+
+    EXECUTION
+    dropped_iterations.............: 112748 5256.677236/s
+    iteration_duration.............: avg=203.35ms min=7.49ms med=195.03ms max=3.24s    p(90)=324.95ms p(95)=372.57ms p(99)=449.75ms
+    iterations.....................: 87221  4066.525749/s
+    vus............................: 1      min=1           max=1013
+    vus_max........................: 1024   min=671         max=1024
+
+    NETWORK
+    data_received..................: 49 MB  2.3 MB/s
+    data_sent......................: 124 MB 5.8 MB/s
+
+
+
+
+running (21.4s), 0000/1024 VUs, 87221 complete and 0 interrupted iterations
+mixed ✓ [ 100% ] 0000/1024 VUs  20s  10000.00 iters/s
+time="2026-11-15T09:19:45Z" level=error msg="thresholds on metrics 'business_latency{cohort:normal}, cohort_requests{cohort:normal}, dropped_iterations' have been crossed"

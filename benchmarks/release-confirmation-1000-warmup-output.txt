@@ -1,0 +1,260 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/mixed.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1024 max VUs, 1m30s max duration (incl. graceful stop):
+              * mixed: 1000.00 iterations/s for 1m0s (maxVUs: 512-1024, exec: mixed, gracefulStop: 30s)
+
+
+running (0m00.9s), 0520/0536 VUs, 287 complete and 0 interrupted iterations
+mixed   [   1% ] 0520/0536 VUs  0m00.9s/1m0s  1000.00 iters/s
+
+running (0m01.9s), 0393/0541 VUs, 1398 complete and 0 interrupted iterations
+mixed   [   3% ] 0393/0541 VUs  0m01.9s/1m0s  1000.00 iters/s
+
+running (0m02.9s), 0046/0541 VUs, 2743 complete and 0 interrupted iterations
+mixed   [   5% ] 0046/0541 VUs  0m02.9s/1m0s  1000.00 iters/s
+time="2026-11-15T09:40:20Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/1ca62fad-2f26-4597-b7b8-353089334a1a\": request timeout"
+time="2026-11-15T09:40:20Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/a7ec7e8d-f2d5-4c3a-84a9-fa2d154d21a4\": request timeout"
+time="2026-11-15T09:40:20Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/a304044d-7114-44c7-8061-116a57bff4fc\": request timeout"
+time="2026-11-15T09:40:20Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/930e7480-9ea0-4a02-a903-a3be09b14684\": request timeout"
+time="2026-11-15T09:40:20Z" level=warning msg="Request Failed" error="Get \"http://192.168.194.157:80/api/v1/projects/b1db8bcd-74dc-4cc7-a3c3-c95a3fb2c38f\": request timeout"
+
+running (0m03.9s), 0069/0541 VUs, 3719 complete and 0 interrupted iterations
+mixed   [   6% ] 0069/0541 VUs  0m03.9s/1m0s  1000.00 iters/s
+
+running (0m04.9s), 0008/0541 VUs, 4783 complete and 0 interrupted iterations
+mixed   [   8% ] 0008/0541 VUs  0m04.9s/1m0s  1000.00 iters/s
+
+running (0m05.9s), 0004/0541 VUs, 5786 complete and 0 interrupted iterations
+mixed   [  10% ] 0004/0541 VUs  0m05.9s/1m0s  1000.00 iters/s
+
+running (0m06.9s), 0007/0541 VUs, 6783 complete and 0 interrupted iterations
+mixed   [  11% ] 0007/0541 VUs  0m06.9s/1m0s  1000.00 iters/s
+
+running (0m07.9s), 0007/0541 VUs, 7782 complete and 0 interrupted iterations
+mixed   [  13% ] 0007/0541 VUs  0m07.9s/1m0s  1000.00 iters/s
+
+running (0m08.9s), 0003/0541 VUs, 8788 complete and 0 interrupted iterations
+mixed   [  15% ] 0003/0541 VUs  0m08.9s/1m0s  1000.00 iters/s
+
+running (0m09.9s), 0000/0541 VUs, 9789 complete and 0 interrupted iterations
+mixed   [  16% ] 0000/0541 VUs  0m09.9s/1m0s  1000.00 iters/s
+
+running (0m10.9s), 0003/0541 VUs, 10787 complete and 0 interrupted iterations
+mixed   [  18% ] 0003/0541 VUs  0m10.9s/1m0s  1000.00 iters/s
+
+running (0m11.9s), 0005/0541 VUs, 11784 complete and 0 interrupted iterations
+mixed   [  20% ] 0005/0541 VUs  0m11.9s/1m0s  1000.00 iters/s
+
+running (0m12.9s), 0005/0541 VUs, 12784 complete and 0 interrupted iterations
+mixed   [  21% ] 0005/0541 VUs  0m12.9s/1m0s  1000.00 iters/s
+
+running (0m13.9s), 0004/0541 VUs, 13785 complete and 0 interrupted iterations
+mixed   [  23% ] 0004/0541 VUs  0m13.9s/1m0s  1000.00 iters/s
+
+running (0m14.9s), 0002/0541 VUs, 14787 complete and 0 interrupted iterations
+mixed   [  25% ] 0002/0541 VUs  0m14.9s/1m0s  1000.00 iters/s
+
+running (0m15.9s), 0002/0541 VUs, 15789 complete and 0 interrupted iterations
+mixed   [  26% ] 0002/0541 VUs  0m15.9s/1m0s  1000.00 iters/s
+
+running (0m16.9s), 0002/0541 VUs, 16785 complete and 0 interrupted iterations
+mixed   [  28% ] 0002/0541 VUs  0m16.9s/1m0s  1000.00 iters/s
+
+running (0m17.9s), 0004/0541 VUs, 17787 complete and 0 interrupted iterations
+mixed   [  30% ] 0004/0541 VUs  0m17.9s/1m0s  1000.00 iters/s
+
+running (0m18.9s), 0005/0541 VUs, 18782 complete and 0 interrupted iterations
+mixed   [  31% ] 0005/0541 VUs  0m18.9s/1m0s  1000.00 iters/s
+
+running (0m19.9s), 0003/0541 VUs, 19786 complete and 0 interrupted iterations
+mixed   [  33% ] 0003/0541 VUs  0m19.9s/1m0s  1000.00 iters/s
+
+running (0m20.9s), 0009/0541 VUs, 20780 complete and 0 interrupted iterations
+mixed   [  35% ] 0009/0541 VUs  0m20.9s/1m0s  1000.00 iters/s
+
+running (0m21.9s), 0015/0541 VUs, 21771 complete and 0 interrupted iterations
+mixed   [  36% ] 0015/0541 VUs  0m21.9s/1m0s  1000.00 iters/s
+
+running (0m22.9s), 0012/0541 VUs, 22780 complete and 0 interrupted iterations
+mixed   [  38% ] 0012/0541 VUs  0m22.9s/1m0s  1000.00 iters/s
+
+running (0m23.9s), 0004/0541 VUs, 23785 complete and 0 interrupted iterations
+mixed   [  40% ] 0004/0541 VUs  0m23.9s/1m0s  1000.00 iters/s
+
+running (0m24.9s), 0006/0541 VUs, 24783 complete and 0 interrupted iterations
+mixed   [  41% ] 0006/0541 VUs  0m24.9s/1m0s  1000.00 iters/s
+
+running (0m25.9s), 0005/0541 VUs, 25783 complete and 0 interrupted iterations
+mixed   [  43% ] 0005/0541 VUs  0m25.9s/1m0s  1000.00 iters/s
+
+running (0m26.9s), 0116/0541 VUs, 26669 complete and 0 interrupted iterations
+mixed   [  45% ] 0116/0541 VUs  0m26.9s/1m0s  1000.00 iters/s
+
+running (0m27.9s), 0019/0541 VUs, 27769 complete and 0 interrupted iterations
+mixed   [  46% ] 0019/0541 VUs  0m27.9s/1m0s  1000.00 iters/s
+
+running (0m28.9s), 0008/0541 VUs, 28783 complete and 0 interrupted iterations
+mixed   [  48% ] 0008/0541 VUs  0m28.9s/1m0s  1000.00 iters/s
+
+running (0m29.9s), 0006/0541 VUs, 29781 complete and 0 interrupted iterations
+mixed   [  50% ] 0006/0541 VUs  0m29.9s/1m0s  1000.00 iters/s
+
+running (0m30.9s), 0011/0541 VUs, 30778 complete and 0 interrupted iterations
+mixed   [  51% ] 0011/0541 VUs  0m30.9s/1m0s  1000.00 iters/s
+
+running (0m31.9s), 0004/0541 VUs, 31786 complete and 0 interrupted iterations
+mixed   [  53% ] 0004/0541 VUs  0m31.9s/1m0s  1000.00 iters/s
+
+running (0m32.9s), 0005/0541 VUs, 32789 complete and 0 interrupted iterations
+mixed   [  55% ] 0005/0541 VUs  0m32.9s/1m0s  1000.00 iters/s
+
+running (0m33.9s), 0007/0541 VUs, 33782 complete and 0 interrupted iterations
+mixed   [  56% ] 0007/0541 VUs  0m33.9s/1m0s  1000.00 iters/s
+
+running (0m34.9s), 0007/0541 VUs, 34780 complete and 0 interrupted iterations
+mixed   [  58% ] 0007/0541 VUs  0m34.9s/1m0s  1000.00 iters/s
+
+running (0m35.9s), 0011/0541 VUs, 35779 complete and 0 interrupted iterations
+mixed   [  60% ] 0011/0541 VUs  0m35.9s/1m0s  1000.00 iters/s
+
+running (0m36.9s), 0006/0541 VUs, 36783 complete and 0 interrupted iterations
+mixed   [  61% ] 0006/0541 VUs  0m36.9s/1m0s  1000.00 iters/s
+
+running (0m37.9s), 0004/0541 VUs, 37780 complete and 0 interrupted iterations
+mixed   [  63% ] 0004/0541 VUs  0m37.9s/1m0s  1000.00 iters/s
+
+running (0m38.9s), 0003/0541 VUs, 38786 complete and 0 interrupted iterations
+mixed   [  65% ] 0003/0541 VUs  0m38.9s/1m0s  1000.00 iters/s
+
+running (0m39.9s), 0012/0541 VUs, 39777 complete and 0 interrupted iterations
+mixed   [  66% ] 0012/0541 VUs  0m39.9s/1m0s  1000.00 iters/s
+
+running (0m40.9s), 0018/0541 VUs, 40771 complete and 0 interrupted iterations
+mixed   [  68% ] 0018/0541 VUs  0m40.9s/1m0s  1000.00 iters/s
+
+running (0m41.9s), 0094/0541 VUs, 41684 complete and 0 interrupted iterations
+mixed   [  70% ] 0094/0541 VUs  0m41.9s/1m0s  1000.00 iters/s
+
+running (0m42.9s), 0007/0541 VUs, 42782 complete and 0 interrupted iterations
+mixed   [  71% ] 0007/0541 VUs  0m42.9s/1m0s  1000.00 iters/s
+
+running (0m43.9s), 0012/0541 VUs, 43770 complete and 0 interrupted iterations
+mixed   [  73% ] 0012/0541 VUs  0m43.9s/1m0s  1000.00 iters/s
+
+running (0m44.9s), 0004/0541 VUs, 44785 complete and 0 interrupted iterations
+mixed   [  75% ] 0004/0541 VUs  0m44.9s/1m0s  1000.00 iters/s
+
+running (0m45.9s), 0005/0541 VUs, 45784 complete and 0 interrupted iterations
+mixed   [  76% ] 0005/0541 VUs  0m45.9s/1m0s  1000.00 iters/s
+
+running (0m46.9s), 0006/0541 VUs, 46783 complete and 0 interrupted iterations
+mixed   [  78% ] 0006/0541 VUs  0m46.9s/1m0s  1000.00 iters/s
+
+running (0m47.9s), 0008/0541 VUs, 47781 complete and 0 interrupted iterations
+mixed   [  80% ] 0008/0541 VUs  0m47.9s/1m0s  1000.00 iters/s
+
+running (0m48.9s), 0007/0541 VUs, 48782 complete and 0 interrupted iterations
+mixed   [  81% ] 0007/0541 VUs  0m48.9s/1m0s  1000.00 iters/s
+
+running (0m49.9s), 0006/0541 VUs, 49784 complete and 0 interrupted iterations
+mixed   [  83% ] 0006/0541 VUs  0m49.9s/1m0s  1000.00 iters/s
+
+running (0m50.9s), 0004/0541 VUs, 50785 complete and 0 interrupted iterations
+mixed   [  85% ] 0004/0541 VUs  0m50.9s/1m0s  1000.00 iters/s
+
+running (0m51.9s), 0013/0541 VUs, 51777 complete and 0 interrupted iterations
+mixed   [  86% ] 0013/0541 VUs  0m51.9s/1m0s  1000.00 iters/s
+
+running (0m52.9s), 0001/0541 VUs, 52788 complete and 0 interrupted iterations
+mixed   [  88% ] 0001/0541 VUs  0m52.9s/1m0s  1000.00 iters/s
+
+running (0m53.9s), 0001/0541 VUs, 53788 complete and 0 interrupted iterations
+mixed   [  90% ] 0001/0541 VUs  0m53.9s/1m0s  1000.00 iters/s
+
+running (0m54.9s), 0017/0541 VUs, 54767 complete and 0 interrupted iterations
+mixed   [  91% ] 0017/0541 VUs  0m54.9s/1m0s  1000.00 iters/s
+
+running (0m55.9s), 0014/0541 VUs, 55776 complete and 0 interrupted iterations
+mixed   [  93% ] 0014/0541 VUs  0m55.9s/1m0s  1000.00 iters/s
+
+running (0m56.9s), 0064/0541 VUs, 56726 complete and 0 interrupted iterations
+mixed   [  95% ] 0064/0541 VUs  0m56.9s/1m0s  1000.00 iters/s
+
+running (0m57.9s), 0036/0541 VUs, 57753 complete and 0 interrupted iterations
+mixed   [  96% ] 0036/0541 VUs  0m57.9s/1m0s  1000.00 iters/s
+
+running (0m58.9s), 0005/0541 VUs, 58775 complete and 0 interrupted iterations
+mixed   [  98% ] 0005/0541 VUs  0m58.9s/1m0s  1000.00 iters/s
+
+running (0m59.9s), 0008/0541 VUs, 59778 complete and 0 interrupted iterations
+mixed   [ 100% ] 0008/0541 VUs  0m59.9s/1m0s  1000.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:normal}
+    ✗ 'rate<0.01' rate=7.21%
+
+    business_latency{cohort:normal}
+    ✗ 'p(99)<200' p(99)=475.59ms
+
+    cohort_requests{cohort:normal}
+    ✗ 'count>=59940' count=59921
+
+    dropped_iterations
+    ✗ 'count<60' count=80
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    admission_rejections...........: 4317  71.874795/s
+    business_failed................: 7.21% 4322 out of 59921
+      { cohort:normal }............: 7.21% 4322 out of 59921
+    business_latency...............: avg=42.27ms min=247.91µs med=9.32ms max=3s    p(90)=110.32ms p(95)=193.56ms p(99)=475.59ms
+      { cohort:normal }............: avg=42.27ms min=247.91µs med=9.32ms max=3s    p(90)=110.32ms p(95)=193.56ms p(99)=475.59ms
+    business_success...............: 55599 925.681431/s
+    cohort_requests................: 59921 997.639472/s
+      { cohort:normal }............: 59921 997.639472/s
+    isolation_violations...........: 0     0/s
+    throttled......................: 4317  71.874795/s
+    unexpected_responses...........: 5     0.083246/s
+    write_attempts.................: 5992  99.762282/s
+    write_success..................: 5577  92.852845/s
+
+    HTTP
+    http_req_duration..............: avg=42.27ms min=247.91µs med=9.32ms max=3s    p(90)=110.32ms p(95)=193.56ms p(99)=475.59ms
+      { expected_response:true }...: avg=31.39ms min=419.25µs med=8.52ms max=2.52s p(90)=78.79ms  p(95)=138.87ms p(99)=353.14ms
+    http_req_failed................: 7.21% 4322 out of 59921
+    http_reqs......................: 59921 997.639472/s
+
+    EXECUTION
+    dropped_iterations.............: 80    1.33194/s
+    iteration_duration.............: avg=42.82ms min=319.25µs med=9.72ms max=3s    p(90)=111.21ms p(95)=194.55ms p(99)=476.41ms
+    iterations.....................: 59921 997.639472/s
+    vus............................: 11    min=0             max=520
+    vus_max........................: 541   min=536           max=541
+
+    NETWORK
+    data_received..................: 34 MB 563 kB/s
+    data_sent......................: 85 MB 1.4 MB/s
+
+
+
+
+running (1m00.1s), 0000/0541 VUs, 59921 complete and 0 interrupted iterations
+mixed ✓ [ 100% ] 0000/0541 VUs  1m0s  1000.00 iters/s
+time="2026-11-15T09:41:17Z" level=error msg="thresholds on metrics 'business_failed{cohort:normal}, business_latency{cohort:normal}, cohort_requests{cohort:normal}, dropped_iterations' have been crossed"

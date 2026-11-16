@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Tenant Workspace</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+<header><strong>Tenant Workspace</strong>
+    <button id="login">Sign in</button>
+    <button id="logout">Sign out</button>
+    <span id="identity"></span></header>
+<main>
+    <nav>
+        <button data-tab="workspace">Workspace</button>
+        <button data-tab="tenant">Tenant administration</button>
+        <button data-tab="platform">Platform administration</button>
+    </nav>
+    <label>Active organization <select id="tenants"></select></label>
+    <button id="reload">Refresh</button>
+    <p id="notice" role="status"></p>
+    <details>
+        <summary>Register an organization</summary>
+        <form id="register"><input aria-label="slug" name="slug" placeholder="Unique slug" required><input
+                aria-label="name"
+                name="name"
+                placeholder="Organization name"
+                required>
+            <button>Register organization owned by current identity</button>
+        </form>
+    </details>
+    <section id="workspace"><h1>Projects & tasks</h1>
+        <form id="project"><input aria-label="name" maxlength="160" name="name" placeholder="Project name" required>
+            <button>Create project</button>
+        </form>
+        <input id="search" placeholder="Search projects">
+        <button id="searchBtn">Search</button>
+        <div id="projects"></div>
+        <button id="previousProjects">Previous projects</button>
+        <span aria-live="polite" id="projectPage"></span>
+        <button id="nextProjects">Next projects</button>
+        <h2 id="taskTitle">Tasks</h2>
+        <form id="task"><input aria-label="title" maxlength="200" name="title" placeholder="Task title" required>
+            <button>Add task to selected project</button>
+        </form>
+        <div id="tasks"></div>
+        <button id="previousTasks">Previous tasks</button>
+        <span aria-live="polite" id="taskPage"></span>
+        <button id="nextTasks">Next tasks</button>
+    </section>
+    <section hidden id="tenant"><h1>Tenant administration</h1>
+        <form id="config"><input aria-label="name" name="name" placeholder="Organization name" required><label><input
+                aria-label="exportEnabled" checked name="exportEnabled" type="checkbox"> Enable exports when plan
+            permits</label>
+            <button>Save configuration</button>
+        </form>
+        <h2>Invite member</h2>
+        <form id="invite"><input aria-label="subject" name="subject" placeholder="OIDC user subject" required><select
+                name="role">
+            <option>TENANT_MEMBER</option>
+            <option>TENANT_ADMIN</option>
+            <option>TENANT_VIEWER</option>
+        </select>
+            <button>Invite</button>
+        </form>
+        <form id="accept"><input aria-label="Invitation UUID" name="id" placeholder="Invitation UUID" required><input
+                aria-label="Inviting tenant UUID" name="tenantId" placeholder="Inviting tenant UUID" required>
+            <button>Accept invitation for selected tenant</button>
+        </form>
+        <h2>Members</h2>
+        <div id="members"></div>
+        <form id="plan"><select name="plan">
+            <option>FREE</option>
+            <option>STARTER</option>
+            <option>BUSINESS</option>
+            <option>ENTERPRISE</option>
+        </select>
+            <button>Change sandbox plan</button>
+        </form>
+        <button id="export">Request export</button>
+        <button id="report">Generate report</button>
+        <button id="cancelSubscription">Cancel at period end</button>
+        <button id="transferOwner">Transfer ownership</button>
+        <h2>Jobs and delivery</h2>
+        <div id="jobList"></div>
+        <pre id="eventStatus"></pre>
+        <h2>Feature flags</h2>
+        <form id="feature"><select name="feature">
+            <option>export</option>
+            <option>reports</option>
+        </select><label><input aria-label="enabled" checked name="enabled" type="checkbox">Enabled</label><input
+                aria-label="Rollout percentage" max="100" min="0" name="rollout" type="number" value="100"><input
+                aria-label="Current feature version (0 creates)" min="0" name="version" type="number" value="0">
+            <button>Save feature flag</button>
+        </form>
+        <pre id="featureStatus"></pre>
+        <form id="job"><input aria-label="id" name="id" placeholder="Export job UUID" required>
+            <button>Inspect export</button>
+        </form>
+        <h2>Subscription, entitlements & usage</h2>
+        <pre id="usage"></pre>
+        <h2>Audit</h2>
+        <pre id="audit"></pre>
+    </section>
+    <section hidden id="platform"><h1>Platform administration</h1>
+        <p>Actions require the PLATFORM_ADMIN identity role and are audited.</p>
+        <button id="platformRefresh">List tenants</button>
+        <div id="platformTenants"></div>
+    </section>
+    <h2>Operation result</h2>
+    <pre id="result"></pre>
+</main>
+<script defer src="/app.js"></script>
+</body>
+</html>

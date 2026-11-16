@@ -1,0 +1,22 @@
+{
+  "result": "PASS",
+  "tenantA": "b1325f7d-8753-4b1d-9685-45170673743e",
+  "tenantB": "271e746f-01da-47c7-a816-debe73899ea4",
+  "checks": [
+    "signed OIDC and forged JWT rejection",
+    "provisioning",
+    "project/task isolation",
+    "IDOR 404",
+    "forged selector 403",
+    "streaming exports with gzip/SHA256",
+    "explicit support export and ordinary-route denial",
+    "suspension revocation",
+    "idempotent create replay",
+    "If-Match 412",
+    "durable report",
+    "versioned feature flags",
+    "storage metering",
+    "immutable billing history",
+    "period-end cancellation"
+  ]
+}

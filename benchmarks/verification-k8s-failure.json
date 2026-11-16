@@ -1,0 +1,7 @@
+{
+  "requests": 30,
+  "success": 30,
+  "errors": 0,
+  "replaced_pod": "saas-5d5bd74854-hdnz9",
+  "scope": "single-node local API pod termination; Compose database/workers remain running"
+}

@@ -1,0 +1,3 @@
+docker: --env-file: invalid env file (/var/folders/pr/5l4xy61s0b1b7mcgv4qblp3h0000gp/T/saas-mixed-ys6wc90s.env): bufio.Scanner: token too long
+
+Run 'docker run --help' for more information

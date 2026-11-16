@@ -1,0 +1,20 @@
+[
+  {
+    "id": "4f8606b1d656407b60bb65c9a8894c7e2f9e3f8ac35165acb8c8af1576f0e1d4",
+    "name": "enterprise-iam-mailpit-1",
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "id": "612fe9cd3538e0a36a93a6267235e270d0a424dd4aa373b768ff30f21d27af5a",
+    "name": "enterprise-iam-postgres-1",
+    "exit_code": 0,
+    "stderr": ""
+  },
+  {
+    "id": "f270a64d0e62a041956e91a4f5495b27d898d0e18a61a24270cb43a8b0925bc7",
+    "name": "enterprise-iam-redis-1",
+    "exit_code": 0,
+    "stderr": ""
+  }
+]

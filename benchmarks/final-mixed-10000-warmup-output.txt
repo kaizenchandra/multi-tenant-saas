@@ -1,0 +1,104 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/mixed.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1024 max VUs, 40s max duration (incl. graceful stop):
+              * mixed: 500.00 iterations/s for 10s (maxVUs: 256-1024, exec: mixed, gracefulStop: 30s)
+
+
+running (00.9s), 0116/0263 VUs, 314 complete and 0 interrupted iterations
+mixed   [   9% ] 0116/0263 VUs  00.9s/10s  500.00 iters/s
+
+running (01.9s), 0026/0263 VUs, 897 complete and 0 interrupted iterations
+mixed   [  19% ] 0026/0263 VUs  01.9s/10s  500.00 iters/s
+
+running (02.9s), 0025/0263 VUs, 1403 complete and 0 interrupted iterations
+mixed   [  29% ] 0025/0263 VUs  02.9s/10s  500.00 iters/s
+
+running (03.9s), 0004/0263 VUs, 1924 complete and 0 interrupted iterations
+mixed   [  39% ] 0004/0263 VUs  03.9s/10s  500.00 iters/s
+
+running (04.9s), 0004/0263 VUs, 2425 complete and 0 interrupted iterations
+mixed   [  49% ] 0004/0263 VUs  04.9s/10s  500.00 iters/s
+
+running (05.9s), 0005/0263 VUs, 2923 complete and 0 interrupted iterations
+mixed   [  59% ] 0005/0263 VUs  05.9s/10s  500.00 iters/s
+
+running (06.9s), 0004/0263 VUs, 3424 complete and 0 interrupted iterations
+mixed   [  69% ] 0004/0263 VUs  06.9s/10s  500.00 iters/s
+
+running (07.9s), 0007/0263 VUs, 3920 complete and 0 interrupted iterations
+mixed   [  79% ] 0007/0263 VUs  07.9s/10s  500.00 iters/s
+
+running (08.9s), 0002/0263 VUs, 4426 complete and 0 interrupted iterations
+mixed   [  89% ] 0002/0263 VUs  08.9s/10s  500.00 iters/s
+
+running (09.9s), 0002/0263 VUs, 4926 complete and 0 interrupted iterations
+mixed   [  99% ] 0002/0263 VUs  09.9s/10s  500.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:normal}
+    ✗ 'rate<0.01' rate=8.35%
+
+    business_latency{cohort:normal}
+    ✗ 'p(99)<200' p(99)=821.84ms
+
+    cohort_requests{cohort:normal}
+    ✗ 'count>=4995' count=4990
+
+    dropped_iterations
+    ✗ 'count<5' count=11
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    admission_rejections...........: 417    41.675678/s
+    business_failed................: 8.35%  417 out of 4990
+      { cohort:normal }............: 8.35%  417 out of 4990
+    business_latency...............: avg=52.52ms min=1.76ms med=8.04ms max=1.71s p(90)=137.03ms p(95)=248.59ms p(99)=821.84ms
+      { cohort:normal }............: avg=52.52ms min=1.76ms med=8.04ms max=1.71s p(90)=137.03ms p(95)=248.59ms p(99)=821.84ms
+    business_success...............: 4573   457.033279/s
+    cohort_requests................: 4990   498.708957/s
+      { cohort:normal }............: 4990   498.708957/s
+    isolation_violations...........: 0      0/s
+    throttled......................: 417    41.675678/s
+    write_attempts.................: 499    49.870896/s
+    write_success..................: 459    45.873229/s
+
+    HTTP
+    http_req_duration..............: avg=52.52ms min=1.76ms med=8.04ms max=1.71s p(90)=137.03ms p(95)=248.59ms p(99)=821.84ms
+      { expected_response:true }...: avg=36.07ms min=1.76ms med=7.15ms max=1.71s p(90)=61.28ms  p(95)=152.64ms p(99)=745.5ms 
+    http_req_failed................: 8.35%  417 out of 4990
+    http_reqs......................: 4990   498.708957/s
+
+    EXECUTION
+    dropped_iterations.............: 11     1.099358/s
+    iteration_duration.............: avg=53.07ms min=1.87ms med=8.37ms max=1.72s p(90)=138.33ms p(95)=249.19ms p(99)=826.93ms
+    iterations.....................: 4990   498.708957/s
+    vus............................: 2      min=2           max=111
+    vus_max........................: 263    min=263         max=263
+
+    NETWORK
+    data_received..................: 2.8 MB 281 kB/s
+    data_sent......................: 7.1 MB 707 kB/s
+
+
+
+
+running (10.0s), 0000/0263 VUs, 4990 complete and 0 interrupted iterations
+mixed ✓ [ 100% ] 0000/0263 VUs  10s  500.00 iters/s
+time="2026-11-15T06:23:18Z" level=error msg="thresholds on metrics 'business_failed{cohort:normal}, business_latency{cohort:normal}, cohort_requests{cohort:normal}, dropped_iterations' have been crossed"

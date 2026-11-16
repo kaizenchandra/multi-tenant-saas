@@ -1,0 +1,276 @@
+{
+  "captured_unix": 1794737071.675219,
+  "java_tests": {
+    "tests": 83,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "jar_sha256": "5cbb3848efa8a1b0c1d6affd6f369c788eb51c58ee82a4558500721cc150b2c7",
+  "compose_jar_sha256": "5cbb3848efa8a1b0c1d6affd6f369c788eb51c58ee82a4558500721cc150b2c7",
+  "api_pods": [
+    {
+      "name": "saas-7f7d7f56d6-sg7q8",
+      "image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "jar_sha256": "5cbb3848efa8a1b0c1d6affd6f369c788eb51c58ee82a4558500721cc150b2c7",
+      "ready": true,
+      "cpu_cgroup": "208\n250000 100000"
+    },
+    {
+      "name": "saas-7f7d7f56d6-tscpm",
+      "image_ids": [
+        "docker-pullable://multi-tenant-saas-app@sha256:897e8b6d6502b32f596dbec920425131fc6ce5051f0ccc266a302b6c4bb6ef76"
+      ],
+      "jar_sha256": "5cbb3848efa8a1b0c1d6affd6f369c788eb51c58ee82a4558500721cc150b2c7",
+      "ready": true,
+      "cpu_cgroup": "208\n250000 100000"
+    }
+  ],
+  "configuration": {
+    "DB_URL": "jdbc:postgresql://saas-postgres:5432/saas",
+    "REDIS_HOST": "saas-redis",
+    "SAAS_QUOTAS_LEASED_REQUESTS": "true",
+    "SAAS_ADMISSION_GLOBAL_CAPACITY": "28",
+    "SPRING_DATASOURCE_HIKARI_MAXIMUM_POOL_SIZE": "30"
+  },
+  "resources": {
+    "limits": {
+      "cpu": "2500m",
+      "memory": "1Gi"
+    },
+    "requests": {
+      "cpu": "2500m",
+      "memory": "384Mi"
+    }
+  },
+  "runtime_role": {
+    "role": "saas_runtime",
+    "superuser": false,
+    "bypassrls": false
+  },
+  "protected_tables": [
+    {
+      "table": "projects",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "tasks",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "project_members",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "task_assignments",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "invitations",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "audit",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "outbox",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "inbox",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "jobs",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "usage",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "usage_storage",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "idempotency",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "feature_flags",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "api_budgets",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "event_projection",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "billing_history",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    },
+    {
+      "table": "export_chunks",
+      "forced": true,
+      "owner": "saas_owner",
+      "runtime_inherits_owner": false
+    }
+  ],
+  "policies": [
+    {
+      "relname": "projects",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "tasks",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "project_members",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "task_assignments",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "invitations",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "audit",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "outbox",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "inbox",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "jobs",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "usage",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "usage_storage",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "idempotency",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "feature_flags",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "api_budgets",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "event_projection",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "billing_history",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    },
+    {
+      "relname": "export_chunks",
+      "polcmd": "*",
+      "using_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)",
+      "check_expr": "(tenant_id = (NULLIF(current_setting('app.current_tenant'::text, true), ''::text))::uuid)"
+    }
+  ],
+  "schema_version": 17,
+  "missing_context_project_count": 0,
+  "postgres_settings": {
+    "commit_delay": "1000",
+    "fsync": "on",
+    "pg_stat_statements.track": "all",
+    "synchronous_commit": "on",
+    "wal_sync_method": "fdatasync"
+  },
+  "benchmark_clones_remaining": 0,
+  "paused_window_final_counts": {
+    "removed": 5,
+    "running": 22
+  },
+  "scope": "Local Compose/single-node OrbStack only. No capacity/SLO/certification claim."
+}

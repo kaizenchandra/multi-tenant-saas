@@ -1,0 +1,16 @@
+{
+  "result": "PASS",
+  "tenant": "c5bac085-f1cd-4bc6-a3b1-bf83bba8b66a",
+  "job": "0d73090e-52c4-4722-944d-623f784eaca7",
+  "projects": 2001,
+  "tasks": 100000,
+  "chunks": 24,
+  "compressed_bytes": 5075350,
+  "expanded_bytes": 37887209,
+  "sha256": "a67c149abc7b1107d38f706cac38ef3de306729e0b8bed72057fb4c3b7e475ef",
+  "ownership_records_checked": 102002,
+  "seed_seconds": 1.037,
+  "build_seconds": 9.243,
+  "download_and_validation_seconds": 0.27,
+  "scope": "local PostgreSQL chunk-backed consistent snapshot, bounded 64KiB client reads; gzip CRC/SHA256 and every tenant ownership marker checked"
+}

@@ -1,0 +1,888 @@
+{
+  "label": "controlled-base-a",
+  "scope": "Execution samples are statistical. Monitor durations sum overlapping thread waits; compilation durations are elapsed, not CPU time.",
+  "pods": [
+    {
+      "file": "controlled-base-a-5070a6830882.jfr",
+      "execution_samples": 1089,
+      "sample_buckets": {
+        "regex": 133,
+        "other": 304,
+        "spring": 243,
+        "jwt": 183,
+        "observations": 180,
+        "jdbc": 21,
+        "json": 25
+      },
+      "top_leaf_frames": [
+        [
+          "org/apache/coyote/http11/Http11InputBuffer.parseHeader",
+          39
+        ],
+        [
+          "com/nimbusds/jose/util/Base64Codec.decode",
+          36
+        ],
+        [
+          "java/math/MutableBigInteger.mulsub",
+          36
+        ],
+        [
+          "java/util/regex/Pattern.lambda$CIRange$19",
+          34
+        ],
+        [
+          "java/lang/CharacterDataLatin1.getType",
+          18
+        ],
+        [
+          "java/util/regex/Pattern$CharPropertyGreedy.match",
+          17
+        ],
+        [
+          "org/springframework/boot/loader/net/protocol/jar/JarFileUrlKey.equals",
+          15
+        ],
+        [
+          "java/util/concurrent/ConcurrentHashMap.get",
+          14
+        ],
+        [
+          "java/math/BigInteger.addOne",
+          12
+        ],
+        [
+          "java/util/concurrent/ConcurrentHashMap$Traverser.advance",
+          12
+        ],
+        [
+          "java/math/BigInteger.implMultiplyToLen",
+          10
+        ],
+        [
+          "java/util/regex/Pattern.lambda$union$4",
+          10
+        ],
+        [
+          "java/util/HashMap$HashIterator.nextNode",
+          9
+        ],
+        [
+          "io/micrometer/core/instrument/Tags.isSortedSet",
+          9
+        ],
+        [
+          "java/util/HashMap.putVal",
+          8
+        ],
+        [
+          "java/lang/String.checkIndex",
+          7
+        ],
+        [
+          "java/lang/ThreadLocal$ThreadLocalMap.set",
+          7
+        ],
+        [
+          "java/lang/invoke/VarHandleByteArrayAsInts$ArrayHandle.index",
+          7
+        ],
+        [
+          "java/util/HashMap.getNode",
+          7
+        ],
+        [
+          "java/util/regex/Pattern.lambda$negate$7",
+          7
+        ]
+      ],
+      "monitor_wait_seconds": [
+        [
+          "com/example/saas/Admission.selectorRate",
+          74.84663926399992
+        ],
+        [
+          "com/example/saas/Admission.verified",
+          56.6735278529999
+        ],
+        [
+          "com/example/saas/Admission.lambda$verified$5",
+          50.83585782100002
+        ],
+        [
+          "com/example/saas/Admission.principalRate",
+          29.119389582999997
+        ],
+        [
+          "com/example/saas/Admission.lambda$ingress$3",
+          22.960938984999988
+        ],
+        [
+          "com/example/saas/Admission.releaseTenant",
+          9.853239525999996
+        ],
+        [
+          "com/example/saas/Admission.ingress",
+          6.561238077999999
+        ],
+        [
+          "com/example/saas/QuotaBudgets.reserve",
+          6.036074694
+        ],
+        [
+          "com/example/saas/QueryCache.list",
+          3.557834505000001
+        ],
+        [
+          "com/example/saas/Admission.acquirePrincipal",
+          3.141314904999999
+        ],
+        [
+          "sun/security/provider/SecureRandom.engineNextBytes",
+          2.7634205169999984
+        ],
+        [
+          "sun/nio/ch/EPollSelectorImpl.clearInterrupt",
+          1.6370742099999995
+        ],
+        [
+          "java/util/concurrent/ConcurrentHashMap.computeIfAbsent",
+          1.3565295119999998
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedQueue.offer",
+          1.1192452080000002
+        ],
+        [
+          "com/example/saas/TenantTransactions.lambda$executeOnce$2",
+          1.063923035
+        ],
+        [
+          "java/util/Hashtable.get",
+          0.79800412
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedStack.push",
+          0.3936360059999999
+        ],
+        [
+          "com/example/saas/QuotaBudgets.consume",
+          0.125099376
+        ],
+        [
+          "com/example/saas/TenantTransactions.audit",
+          0.113977558
+        ],
+        [
+          "org/apache/catalina/core/StandardContext.findFilterConfig",
+          0.110602636
+        ]
+      ],
+      "monitor_wait_events": [
+        [
+          "com/example/saas/Admission.selectorRate",
+          2312
+        ],
+        [
+          "com/example/saas/Admission.verified",
+          1617
+        ],
+        [
+          "com/example/saas/Admission.lambda$verified$5",
+          1496
+        ],
+        [
+          "com/example/saas/Admission.principalRate",
+          811
+        ],
+        [
+          "com/example/saas/Admission.lambda$ingress$3",
+          635
+        ],
+        [
+          "com/example/saas/Admission.releaseTenant",
+          228
+        ],
+        [
+          "com/example/saas/Admission.ingress",
+          198
+        ],
+        [
+          "com/example/saas/QuotaBudgets.reserve",
+          181
+        ],
+        [
+          "com/example/saas/QueryCache.list",
+          89
+        ],
+        [
+          "com/example/saas/Admission.acquirePrincipal",
+          80
+        ],
+        [
+          "sun/nio/ch/EPollSelectorImpl.clearInterrupt",
+          68
+        ],
+        [
+          "sun/security/provider/SecureRandom.engineNextBytes",
+          59
+        ],
+        [
+          "com/example/saas/TenantTransactions.lambda$executeOnce$2",
+          44
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedQueue.offer",
+          32
+        ],
+        [
+          "java/util/concurrent/ConcurrentHashMap.computeIfAbsent",
+          20
+        ],
+        [
+          "java/util/Hashtable.get",
+          18
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedStack.push",
+          11
+        ],
+        [
+          "org/apache/catalina/core/StandardContext.findFilterConfig",
+          6
+        ],
+        [
+          "com/example/saas/QuotaBudgets.consume",
+          5
+        ],
+        [
+          "com/example/saas/TenantTransactions.audit",
+          4
+        ]
+      ],
+      "gc_pause_count": 87,
+      "gc_pause_seconds": 0.886606658,
+      "max_gc_pause_seconds": 0.053096957,
+      "compilation_count": 59,
+      "compilation_elapsed_seconds": 16.374795059,
+      "thread_cpu_reported_fraction": [
+        [
+          "C2 CompilerThread0",
+          0.1466174116433333
+        ],
+        [
+          "DestroyJavaVM",
+          0.0179619176
+        ],
+        [
+          "C1 CompilerThread0",
+          0.013282235433333333
+        ],
+        [
+          "http-nio-8080-exec-33",
+          0.009233313533333334
+        ],
+        [
+          "http-nio-8080-exec-7",
+          0.009068568196666666
+        ],
+        [
+          "http-nio-8080-exec-10",
+          0.009036193113333334
+        ],
+        [
+          "http-nio-8080-Poller",
+          0.0089840147
+        ],
+        [
+          "http-nio-8080-exec-2",
+          0.008885995273333334
+        ],
+        [
+          "http-nio-8080-exec-38",
+          0.008878557546666667
+        ],
+        [
+          "http-nio-8080-exec-24",
+          0.008817285110000002
+        ],
+        [
+          "http-nio-8080-exec-39",
+          0.00881033978
+        ],
+        [
+          "http-nio-8080-exec-54",
+          0.008764509213333334
+        ]
+      ]
+    },
+    {
+      "file": "controlled-base-a-bd5d861bd168.jfr",
+      "execution_samples": 1010,
+      "sample_buckets": {
+        "spring": 198,
+        "jdbc": 27,
+        "observations": 172,
+        "regex": 156,
+        "jwt": 165,
+        "other": 276,
+        "json": 16
+      },
+      "top_leaf_frames": [
+        [
+          "java/util/regex/Pattern$CharPropertyGreedy.match",
+          66
+        ],
+        [
+          "org/apache/coyote/http11/Http11InputBuffer.parseHeader",
+          42
+        ],
+        [
+          "java/lang/CharacterDataLatin1.getType",
+          23
+        ],
+        [
+          "com/nimbusds/jose/util/Base64Codec.decode",
+          18
+        ],
+        [
+          "java/math/MutableBigInteger.mulsub",
+          18
+        ],
+        [
+          "java/util/regex/Pattern.lambda$CIRange$19",
+          17
+        ],
+        [
+          "java/math/BigInteger.addOne",
+          16
+        ],
+        [
+          "java/math/BigInteger.implMultiplyToLen",
+          12
+        ],
+        [
+          "java/util/HashMap.getNode",
+          11
+        ],
+        [
+          "java/lang/String.hashCode",
+          9
+        ],
+        [
+          "java/math/BigInteger.implMulAdd",
+          8
+        ],
+        [
+          "java/util/regex/Pattern.lambda$union$4",
+          8
+        ],
+        [
+          "java/lang/ThreadLocal$ThreadLocalMap.getEntry",
+          8
+        ],
+        [
+          "java/math/MutableBigInteger.divideMagnitude",
+          7
+        ],
+        [
+          "java/util/concurrent/ConcurrentHashMap.get",
+          7
+        ],
+        [
+          "com/nimbusds/jose/shaded/gson/internal/LinkedTreeMap.find",
+          7
+        ],
+        [
+          "java/util/concurrent/ConcurrentSkipListMap.cpr",
+          7
+        ],
+        [
+          "java/util/Objects.equals",
+          7
+        ],
+        [
+          "com/nimbusds/jose/util/Base64Codec.tpSelect",
+          6
+        ],
+        [
+          "java/lang/CharacterData.of",
+          6
+        ]
+      ],
+      "monitor_wait_seconds": [
+        [
+          "com/example/saas/Admission.selectorRate",
+          67.58896884999993
+        ],
+        [
+          "com/example/saas/Admission.verified",
+          54.84082630799993
+        ],
+        [
+          "com/example/saas/Admission.lambda$verified$5",
+          48.349212684
+        ],
+        [
+          "com/example/saas/Admission.principalRate",
+          29.26948363399996
+        ],
+        [
+          "com/example/saas/Admission.lambda$ingress$3",
+          23.979653342
+        ],
+        [
+          "com/example/saas/Admission.ingress",
+          7.449872755000002
+        ],
+        [
+          "com/example/saas/Admission.releaseTenant",
+          6.735395711000003
+        ],
+        [
+          "com/example/saas/QuotaBudgets.reserve",
+          3.9979991710000014
+        ],
+        [
+          "com/example/saas/Admission.acquirePrincipal",
+          2.6093693640000004
+        ],
+        [
+          "sun/security/provider/SecureRandom.engineNextBytes",
+          2.4688580339999997
+        ],
+        [
+          "sun/nio/ch/EPollSelectorImpl.clearInterrupt",
+          1.858908145
+        ],
+        [
+          "org/apache/catalina/core/StandardContext.findFilterConfig",
+          1.713496725
+        ],
+        [
+          "com/example/saas/QueryCache.list",
+          1.0290409120000001
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedQueue.offer",
+          0.7796536620000001
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedStack.push",
+          0.24599970300000001
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedQueue.size",
+          0.09538084799999999
+        ],
+        [
+          "java/util/Hashtable.get",
+          0.090859172
+        ],
+        [
+          "com/example/saas/TenantTransactions.lambda$executeOnce$2",
+          0.075196259
+        ],
+        [
+          "java/util/concurrent/ConcurrentHashMap.computeIfAbsent",
+          0.055049088
+        ],
+        [
+          "org/apache/catalina/core/StandardContext$ContextFilterMaps.asArray",
+          0.040954513
+        ]
+      ],
+      "monitor_wait_events": [
+        [
+          "com/example/saas/Admission.selectorRate",
+          1905
+        ],
+        [
+          "com/example/saas/Admission.verified",
+          1315
+        ],
+        [
+          "com/example/saas/Admission.lambda$verified$5",
+          1228
+        ],
+        [
+          "com/example/saas/Admission.principalRate",
+          673
+        ],
+        [
+          "com/example/saas/Admission.lambda$ingress$3",
+          552
+        ],
+        [
+          "com/example/saas/Admission.ingress",
+          201
+        ],
+        [
+          "com/example/saas/Admission.releaseTenant",
+          190
+        ],
+        [
+          "com/example/saas/QuotaBudgets.reserve",
+          131
+        ],
+        [
+          "sun/nio/ch/EPollSelectorImpl.clearInterrupt",
+          77
+        ],
+        [
+          "sun/security/provider/SecureRandom.engineNextBytes",
+          65
+        ],
+        [
+          "com/example/saas/Admission.acquirePrincipal",
+          54
+        ],
+        [
+          "com/example/saas/QueryCache.list",
+          33
+        ],
+        [
+          "org/apache/catalina/core/StandardContext.findFilterConfig",
+          33
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedQueue.offer",
+          21
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedStack.push",
+          13
+        ],
+        [
+          "java/util/Hashtable.get",
+          6
+        ],
+        [
+          "com/example/saas/TenantTransactions.lambda$executeOnce$2",
+          5
+        ],
+        [
+          "java/util/concurrent/ConcurrentHashMap.computeIfAbsent",
+          4
+        ],
+        [
+          "org/apache/tomcat/util/collections/SynchronizedQueue.size",
+          3
+        ],
+        [
+          "org/apache/catalina/core/StandardContext$ContextFilterMaps.asArray",
+          3
+        ]
+      ],
+      "gc_pause_count": 84,
+      "gc_pause_seconds": 0.975902326,
+      "max_gc_pause_seconds": 0.0568198,
+      "compilation_count": 71,
+      "compilation_elapsed_seconds": 16.981098974,
+      "thread_cpu_reported_fraction": [
+        [
+          "C2 CompilerThread0",
+          0.13981566504
+        ],
+        [
+          "DestroyJavaVM",
+          0.020179686999999998
+        ],
+        [
+          "C1 CompilerThread0",
+          0.01199277444
+        ],
+        [
+          "http-nio-8080-exec-34",
+          0.009260655433333334
+        ],
+        [
+          "http-nio-8080-exec-55",
+          0.009193358756666667
+        ],
+        [
+          "http-nio-8080-exec-38",
+          0.009139291663333333
+        ],
+        [
+          "http-nio-8080-exec-22",
+          0.008934648253333332
+        ],
+        [
+          "http-nio-8080-exec-23",
+          0.008908840873333332
+        ],
+        [
+          "http-nio-8080-exec-42",
+          0.008898099543333335
+        ],
+        [
+          "http-nio-8080-exec-59",
+          0.008897423133333332
+        ],
+        [
+          "http-nio-8080-exec-36",
+          0.008813725566666666
+        ],
+        [
+          "http-nio-8080-exec-21",
+          0.008720693456666666
+        ]
+      ]
+    }
+  ],
+  "container_cpu_percent": {
+    "k8s_app_saas-f7d6bd458-fb56m_saas-isolation-dev_6bf7ffe5-532f-4780-b2e0-202ebe5e0359_0": {
+      "mean": 257.92360655737707,
+      "max": 283.98,
+      "samples": 61
+    },
+    "k8s_app_saas-f7d6bd458-xcjjp_saas-isolation-dev_632b4ca0-16e6-44cd-a3b0-c5e59ce5512c_0": {
+      "mean": 257.4304918032787,
+      "max": 277.94,
+      "samples": 61
+    },
+    "multi-tenant-saas-postgres-1": {
+      "mean": 93.97049180327869,
+      "max": 135.42,
+      "samples": 61
+    },
+    "multi-tenant-saas-keycloak-1": {
+      "mean": 0.2736065573770492,
+      "max": 1.42,
+      "samples": 61
+    },
+    "multi-tenant-saas-redis-1": {
+      "mean": 0.4019672131147541,
+      "max": 0.56,
+      "samples": 61
+    },
+    "multi-tenant-saas-kafka-1": {
+      "mean": 2.2537704918032784,
+      "max": 7.12,
+      "samples": 61
+    },
+    "saas-load-controlled-base-a": {
+      "mean": 91.87083333333334,
+      "max": 149.19,
+      "samples": 60
+    }
+  },
+  "database_samples": 0,
+  "active_session_sample_counts": {},
+  "collector_errors": {
+    "JSONDecodeError": 62
+  },
+  "top_sql": [
+    {
+      "queryid": "-4710569760703197278",
+      "toplevel": true,
+      "query": "select grant_api_budget($1,$2,$3,$4,$5,$6)::text",
+      "calls": 18355,
+      "total_exec_time": 36704.10104000039,
+      "rows": 18355,
+      "wal_records": 124019,
+      "wal_bytes": 12885483,
+      "shared_blks_hit": 991483,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 49.25043100000005
+    },
+    {
+      "queryid": "-6365694158734749317",
+      "toplevel": true,
+      "query": "select subscription,trial_ends_at,data_epoch,member_role as role,fingerprint from establish_tenant($1,$2,$3)",
+      "calls": 28312,
+      "total_exec_time": 15176.115125999837,
+      "rows": 28312,
+      "wal_records": 200,
+      "wal_bytes": 19586,
+      "shared_blks_hit": 238940,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "-1833769829694729404",
+      "toplevel": false,
+      "query": "SELECT pg_advisory_xact_lock_shared(tenant_lock_key(selected))",
+      "calls": 43867,
+      "total_exec_time": 11240.920812999979,
+      "rows": 43867,
+      "wal_records": 0,
+      "wal_bytes": 0,
+      "shared_blks_hit": 0,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "123100203175237052",
+      "toplevel": false,
+      "query": "INSERT INTO usage(tenant_id,period) VALUES(selected,period_value) ON CONFLICT DO NOTHING",
+      "calls": 18355,
+      "total_exec_time": 7266.136550999924,
+      "rows": 0,
+      "wal_records": 47,
+      "wal_bytes": 10268,
+      "shared_blks_hit": 68251,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "-7069429159181700418",
+      "toplevel": false,
+      "query": "INSERT INTO api_budgets(tenant_id,id,period,granted,window_at,fingerprint,closed,actor) VALUES(selected,lease,period_value,amount,current_window,fp,amount=$18,actor)",
+      "calls": 18355,
+      "total_exec_time": 6460.192226999907,
+      "rows": 18355,
+      "wal_records": 74099,
+      "wal_bytes": 8810089,
+      "shared_blks_hit": 351688,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 46.70017399999997
+    },
+    {
+      "queryid": "-5806337019650041815",
+      "toplevel": false,
+      "query": "SELECT t.subscription,t.trial_ends_at,t.data_epoch,m.role,concat(t.plan,$3,p.api_requests,$4,p.api_rps,$5,date_trunc($6,now())::date)\n FROM tenants t JOIN memberships m ON m.tenant_id=t.id JOIN plans p ON p.name=t.plan\n WHERE t.id=selected AND t.state=$7 AND m.subject=actor AND m.active",
+      "calls": 28312,
+      "total_exec_time": 4285.5790809999635,
+      "rows": 28312,
+      "wal_records": 199,
+      "wal_bytes": 19510,
+      "shared_blks_hit": 235572,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "-2686951622531947571",
+      "toplevel": false,
+      "query": "SELECT p.api_requests,p.api_rps,concat(t.plan,$13,p.api_requests,$14,p.api_rps,$15,period_value)                 FROM tenants t JOIN memberships m ON m.tenant_id=t.id JOIN plans p ON p.name=t.plan WHERE t.id=selected AND t.state=$16 AND m.subject=actor AND m.active",
+      "calls": 18355,
+      "total_exec_time": 2497.426774999993,
+      "rows": 18355,
+      "wal_records": 122,
+      "wal_bytes": 11886,
+      "shared_blks_hit": 132597,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "7230320233601568489",
+      "toplevel": true,
+      "query": "update projects set name=$1,status=$2,version=version+$4 where id=$3",
+      "calls": 2781,
+      "total_exec_time": 2420.1986309999984,
+      "rows": 2781,
+      "wal_records": 13640,
+      "wal_bytes": 1082510,
+      "shared_blks_hit": 52995,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0.03299999999999992
+    },
+    {
+      "queryid": "1114371029863691130",
+      "toplevel": false,
+      "query": "SELECT close_api_budget(selected,previous,unused)",
+      "calls": 2396,
+      "total_exec_time": 2288.211327000002,
+      "rows": 2396,
+      "wal_records": 13009,
+      "wal_bytes": 1164831,
+      "shared_blks_hit": 60041,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 2.550256999999995
+    },
+    {
+      "queryid": "521685955684353376",
+      "toplevel": false,
+      "query": "UPDATE usage SET api=api+amount,api_confirmed=api_confirmed+$18,window_at=current_window,window_count=window_used+amount WHERE tenant_id=selected AND period=period_value",
+      "calls": 18355,
+      "total_exec_time": 2092.7423300000273,
+      "rows": 18355,
+      "wal_records": 18364,
+      "wal_bytes": 1892555,
+      "shared_blks_hit": 187394,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0.0
+    },
+    {
+      "queryid": "-4892519156645066544",
+      "toplevel": false,
+      "query": "SELECT api,window_count,window_at                                  FROM usage WHERE tenant_id=selected AND period=period_value FOR UPDATE",
+      "calls": 18355,
+      "total_exec_time": 1942.837221999992,
+      "rows": 18355,
+      "wal_records": 18375,
+      "wal_bytes": 995622,
+      "shared_blks_hit": 117333,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "-7902222726620828328",
+      "toplevel": false,
+      "query": "UPDATE usage SET api=api-unused,api_confirmed=api_confirmed+b.granted-unused-$11,\n api_assumed=api_assumed-CASE WHEN b.settlement=$12 THEN b.granted-$13 ELSE $14 END,\n window_count=CASE WHEN window_at=b.window_at THEN window_count-unused ELSE window_count END WHERE tenant_id=selected AND period=b.period",
+      "calls": 3772,
+      "total_exec_time": 1653.2626170000015,
+      "rows": 3772,
+      "wal_records": 3860,
+      "wal_bytes": 368522,
+      "shared_blks_hit": 26879,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "1546588385826378675",
+      "toplevel": false,
+      "query": "SELECT pg_advisory_xact_lock(tenant_lock_key(selected))",
+      "calls": 2800,
+      "total_exec_time": 1401.8417159999788,
+      "rows": 2800,
+      "wal_records": 0,
+      "wal_bytes": 0,
+      "shared_blks_hit": 0,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    },
+    {
+      "queryid": "6775213047942718513",
+      "toplevel": true,
+      "query": "select close_api_budget($1,$2,$3)",
+      "calls": 1376,
+      "total_exec_time": 1001.6912200000006,
+      "rows": 1376,
+      "wal_records": 7833,
+      "wal_bytes": 690886,
+      "shared_blks_hit": 34116,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0.27279300000000006
+    },
+    {
+      "queryid": "-3180529459335468917",
+      "toplevel": false,
+      "query": "SELECT *                     FROM api_budgets WHERE tenant_id=selected AND id=lease",
+      "calls": 18355,
+      "total_exec_time": 963.8629029999951,
+      "rows": 0,
+      "wal_records": 0,
+      "wal_bytes": 0,
+      "shared_blks_hit": 50531,
+      "shared_blks_read": 0,
+      "shared_blk_read_time": 0,
+      "shared_blk_write_time": 0
+    }
+  ]
+}

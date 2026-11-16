@@ -1,0 +1,186 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /Volumes/KaizenChandra/Workspace/01-Interview/system-design/system-design/multi-tenant-saas/benchmarks/mixed.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1024 max VUs, 50s max duration (incl. graceful stop):
+              * mixed: 10000.00 iterations/s for 20s (maxVUs: 256-1024, exec: mixed, gracefulStop: 30s)
+
+time="2026-11-15T10:04:36+05:30" level=warning msg="Insufficient VUs, reached 1024 active VUs and cannot initialize more" executor=constant-arrival-rate scenario=mixed
+
+running (01.0s), 1023/1024 VUs, 1399 complete and 0 interrupted iterations
+mixed   [   5% ] 1023/1024 VUs  01.0s/20s  10000.00 iters/s
+
+running (02.0s), 1024/1024 VUs, 3049 complete and 0 interrupted iterations
+mixed   [  10% ] 1024/1024 VUs  02.0s/20s  10000.00 iters/s
+
+running (03.0s), 1023/1024 VUs, 4818 complete and 0 interrupted iterations
+mixed   [  15% ] 1023/1024 VUs  03.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Patch \"http://localhost:30088/api/v1/projects/e322c343-99a1-43ed-9283-8abd8798639e\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/930e7480-9ea0-4a02-a903-a3be09b14684\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/87041e48-a0f4-49df-8d06-8335ff0b033e\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Patch \"http://localhost:30088/api/v1/projects/18c9d14e-bc9a-4335-8544-f022b91d99ce\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/9a100fdb-bdd7-4467-922d-b903b7ba0c11\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:38+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:39+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:39+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:39+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:39+05:30" level=warning msg="Request Failed" error="Patch \"http://localhost:30088/api/v1/projects/7d150324-cd2c-4524-8749-3e69031ed9fa\": request timeout"
+time="2026-11-15T10:04:39+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/7b394cc1-41fa-41db-9384-10f3bacd804f\": request timeout"
+time="2026-11-15T10:04:39+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (04.0s), 1024/1024 VUs, 6556 complete and 0 interrupted iterations
+mixed   [  20% ] 1024/1024 VUs  04.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/b888d58f-f782-471f-9458-b8dd074ae6d7\": request timeout"
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Patch \"http://localhost:30088/api/v1/projects/935ecb82-a09f-4d4d-8c80-ebcd1c8955c8\": request timeout"
+time="2026-11-15T10:04:40+05:30" level=warning msg="Request Failed" error="Patch \"http://localhost:30088/api/v1/projects/3e4b546b-1624-47c8-b5b9-dced0ab90bd7\": request timeout"
+
+running (05.0s), 1024/1024 VUs, 8245 complete and 0 interrupted iterations
+mixed   [  25% ] 1024/1024 VUs  05.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:41+05:30" level=warning msg="Request Failed" error="Patch \"http://localhost:30088/api/v1/projects/c1748596-08b4-4a1e-a285-56a93b73fe16\": request timeout"
+time="2026-11-15T10:04:41+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/d2f0af85-b23d-4bdf-9010-4589434b289a\": request timeout"
+
+running (06.0s), 1024/1024 VUs, 9948 complete and 0 interrupted iterations
+mixed   [  30% ] 1024/1024 VUs  06.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:41+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:41+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (07.0s), 1024/1024 VUs, 11730 complete and 0 interrupted iterations
+mixed   [  35% ] 1024/1024 VUs  07.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:42+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:43+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (08.0s), 1024/1024 VUs, 13416 complete and 0 interrupted iterations
+mixed   [  40% ] 1024/1024 VUs  08.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:44+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:44+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:44+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:44+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (09.0s), 1024/1024 VUs, 15171 complete and 0 interrupted iterations
+mixed   [  45% ] 1024/1024 VUs  09.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:45+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (10.0s), 1024/1024 VUs, 16903 complete and 0 interrupted iterations
+mixed   [  50% ] 1024/1024 VUs  10.0s/20s  10000.00 iters/s
+
+running (11.0s), 1024/1024 VUs, 18375 complete and 0 interrupted iterations
+mixed   [  55% ] 1024/1024 VUs  11.0s/20s  10000.00 iters/s
+
+running (12.0s), 1023/1024 VUs, 19797 complete and 0 interrupted iterations
+mixed   [  60% ] 1023/1024 VUs  12.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:48+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (13.0s), 1024/1024 VUs, 21545 complete and 0 interrupted iterations
+mixed   [  65% ] 1024/1024 VUs  13.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:49+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (14.0s), 1024/1024 VUs, 23224 complete and 0 interrupted iterations
+mixed   [  70% ] 1024/1024 VUs  14.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:49+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:50+05:30" level=warning msg="Request Failed" error="Patch \"http://localhost:30088/api/v1/projects/4c625bea-e9f0-4d51-9bc0-c4eda216446f\": request timeout"
+time="2026-11-15T10:04:50+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:50+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+time="2026-11-15T10:04:50+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects/bfa2ed7e-c665-4aed-b2ed-788b68d57947\": request timeout"
+time="2026-11-15T10:04:50+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (15.0s), 1024/1024 VUs, 24933 complete and 0 interrupted iterations
+mixed   [  75% ] 1024/1024 VUs  15.0s/20s  10000.00 iters/s
+
+running (16.0s), 1024/1024 VUs, 26621 complete and 0 interrupted iterations
+mixed   [  80% ] 1024/1024 VUs  16.0s/20s  10000.00 iters/s
+
+running (17.0s), 1024/1024 VUs, 28351 complete and 0 interrupted iterations
+mixed   [  85% ] 1024/1024 VUs  17.0s/20s  10000.00 iters/s
+
+running (18.0s), 1024/1024 VUs, 30133 complete and 0 interrupted iterations
+mixed   [  90% ] 1024/1024 VUs  18.0s/20s  10000.00 iters/s
+
+running (19.0s), 1024/1024 VUs, 31918 complete and 0 interrupted iterations
+mixed   [  95% ] 1024/1024 VUs  19.0s/20s  10000.00 iters/s
+time="2026-11-15T10:04:55+05:30" level=warning msg="Request Failed" error="Get \"http://localhost:30088/api/v1/projects\": request timeout"
+
+running (20.0s), 1024/1024 VUs, 33612 complete and 0 interrupted iterations
+mixed   [ 100% ] 1024/1024 VUs  20.0s/20s  10000.00 iters/s
+
+
+  █ THRESHOLDS 
+
+    business_failed{cohort:normal}
+    ✗ 'rate<0.01' rate=79.77%
+
+    business_latency{cohort:normal}
+    ✗ 'p(99)<200' p(99)=1.29s
+
+    dropped_iterations
+    ✗ 'count<200' count=165341
+
+    isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    CUSTOM
+    business_failed................: 79.77% 27651 out of 34661
+      { cohort:normal }............: 79.77% 27651 out of 34661
+    business_latency...............: avg=591.08ms min=80.55ms med=588.28ms max=3s    p(90)=775.64ms p(95)=872.19ms p(99)=1.29s
+      { cohort:normal }............: avg=591.08ms min=80.55ms med=588.28ms max=3s    p(90)=775.64ms p(95)=872.19ms p(99)=1.29s
+    business_success...............: 7010   336.904133/s
+    isolation_violations...........: 0      0/s
+    throttled......................: 27593  1326.133485/s
+    write_success..................: 684    32.873385/s
+
+    HTTP
+    http_req_duration..............: avg=591.08ms min=80.55ms med=588.28ms max=3s    p(90)=775.64ms p(95)=872.19ms p(99)=1.29s
+      { expected_response:true }...: avg=705.03ms min=80.55ms med=684.44ms max=2.72s p(90)=961.44ms p(95)=1.13s    p(99)=1.53s
+    http_req_failed................: 79.77% 27651 out of 34661
+    http_reqs......................: 34661  1665.825127/s
+
+    EXECUTION
+    dropped_iterations.............: 165341 7946.371783/s
+    iteration_duration.............: avg=591.31ms min=83.23ms med=588.51ms max=3s    p(90)=775.86ms p(95)=872.48ms p(99)=1.29s
+    iterations.....................: 34661  1665.825127/s
+    vus............................: 1021   min=1021           max=1024
+    vus_max........................: 1024   min=1024           max=1024
+
+    NETWORK
+    data_received..................: 20 MB  969 kB/s
+    data_sent......................: 49 MB  2.4 MB/s
+
+
+
+
+running (20.8s), 0000/1024 VUs, 34661 complete and 0 interrupted iterations
+mixed ✓ [ 100% ] 0000/1024 VUs  20s  10000.00 iters/s
+time="2026-11-15T10:04:56+05:30" level=error msg="thresholds on metrics 'business_failed{cohort:normal}, business_latency{cohort:normal}, dropped_iterations' have been crossed"

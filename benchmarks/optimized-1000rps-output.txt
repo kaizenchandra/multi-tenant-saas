@@ -1,0 +1,184 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: /results/load.js
+        output: -
+
+     scenarios: (100.00%) 1 scenario, 1000 max VUs, 50s max duration (incl. graceful stop):
+              * api: 1000.00 iterations/s for 20s (maxVUs: 100-1000, gracefulStop: 30s)
+
+
+running (00.9s), 0216/0223 VUs, 480 complete and 0 interrupted iterations
+api    [   5% ] 0216/0223 VUs  00.9s/20s  1000.00 iters/s
+
+running (01.9s), 0380/0381 VUs, 994 complete and 0 interrupted iterations
+api    [  10% ] 0380/0381 VUs  01.9s/20s  1000.00 iters/s
+
+running (02.9s), 0516/0523 VUs, 1559 complete and 0 interrupted iterations
+api    [  15% ] 0516/0523 VUs  02.9s/20s  1000.00 iters/s
+
+running (03.9s), 0469/0529 VUs, 2596 complete and 0 interrupted iterations
+api    [  20% ] 0469/0529 VUs  03.9s/20s  1000.00 iters/s
+
+running (04.9s), 0505/0529 VUs, 3562 complete and 0 interrupted iterations
+api    [  25% ] 0505/0529 VUs  04.9s/20s  1000.00 iters/s
+
+running (05.9s), 0427/0583 VUs, 4540 complete and 0 interrupted iterations
+api    [  30% ] 0427/0583 VUs  05.9s/20s  1000.00 iters/s
+
+running (06.9s), 0381/0583 VUs, 5585 complete and 0 interrupted iterations
+api    [  35% ] 0381/0583 VUs  06.9s/20s  1000.00 iters/s
+
+running (07.9s), 0175/0583 VUs, 6791 complete and 0 interrupted iterations
+api    [  40% ] 0175/0583 VUs  07.9s/20s  1000.00 iters/s
+
+running (08.9s), 0317/0583 VUs, 7650 complete and 0 interrupted iterations
+api    [  45% ] 0317/0583 VUs  08.9s/20s  1000.00 iters/s
+
+running (09.9s), 0190/0583 VUs, 8777 complete and 0 interrupted iterations
+api    [  50% ] 0190/0583 VUs  09.9s/20s  1000.00 iters/s
+
+running (10.9s), 0119/0583 VUs, 9845 complete and 0 interrupted iterations
+api    [  55% ] 0119/0583 VUs  10.9s/20s  1000.00 iters/s
+
+running (11.9s), 0185/0583 VUs, 10781 complete and 0 interrupted iterations
+api    [  60% ] 0185/0583 VUs  11.9s/20s  1000.00 iters/s
+
+running (12.9s), 0119/0583 VUs, 11845 complete and 0 interrupted iterations
+api    [  65% ] 0119/0583 VUs  12.9s/20s  1000.00 iters/s
+
+running (13.9s), 0169/0583 VUs, 12797 complete and 0 interrupted iterations
+api    [  70% ] 0169/0583 VUs  13.9s/20s  1000.00 iters/s
+
+running (14.9s), 0197/0583 VUs, 13770 complete and 0 interrupted iterations
+api    [  75% ] 0197/0583 VUs  14.9s/20s  1000.00 iters/s
+
+running (15.9s), 0160/0583 VUs, 14807 complete and 0 interrupted iterations
+api    [  80% ] 0160/0583 VUs  15.9s/20s  1000.00 iters/s
+
+running (16.9s), 0120/0583 VUs, 15844 complete and 0 interrupted iterations
+api    [  85% ] 0120/0583 VUs  16.9s/20s  1000.00 iters/s
+
+running (17.9s), 0131/0583 VUs, 16837 complete and 0 interrupted iterations
+api    [  90% ] 0131/0583 VUs  17.9s/20s  1000.00 iters/s
+
+running (18.9s), 0141/0583 VUs, 17826 complete and 0 interrupted iterations
+api    [  95% ] 0141/0583 VUs  18.9s/20s  1000.00 iters/s
+
+running (19.9s), 0146/0583 VUs, 18824 complete and 0 interrupted iterations
+api    [ 100% ] 0146/0583 VUs  19.9s/20s  1000.00 iters/s
+
+running (20.9s), 0042/0583 VUs, 18994 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0134/0583 VUs  20s  1000.00 iters/s
+
+running (21.9s), 0042/0583 VUs, 18994 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0134/0583 VUs  20s  1000.00 iters/s
+
+running (22.9s), 0042/0583 VUs, 18994 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0134/0583 VUs  20s  1000.00 iters/s
+
+running (23.9s), 0042/0583 VUs, 18994 complete and 0 interrupted iterations
+api  ↓ [ 100% ] 0134/0583 VUs  20s  1000.00 iters/s
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+time="2026-11-14T19:56:21Z" level=warning msg="Request Failed" error="Get \"http://host.docker.internal:30088/api/v1/projects\": EOF"
+
+
+  █ THRESHOLDS 
+
+    dropped_iterations
+    ✗ 'count==0' count=965
+
+    http_req_duration
+    ✗ 'p(99)<200' p(99)=1.08s
+
+    http_req_failed
+    ✗ 'rate<0.01' rate=84.46%
+
+    tenant_isolation_violations
+    ✓ 'count==0' count=0
+
+
+  █ TOTAL RESULTS 
+
+    checks_total.......: 19036  780.671665/s
+    checks_succeeded...: 15.53% 2957 out of 19036
+    checks_failed......: 84.46% 16079 out of 19036
+
+    ✗ authorized list
+      ↳  15% — ✓ 2957 / ✗ 16079
+
+    CUSTOM
+    authorized_responses...........: 2957   121.267394/s
+    rate_limited_responses.........: 16037  657.681839/s
+    tenant_isolation_violations....: 0      0/s
+    unexpected_responses...........: 42     1.722432/s
+
+    HTTP
+    http_req_duration..............: avg=271.86ms min=1.11ms med=126.78ms max=21.48s p(90)=527.89ms p(95)=634.02ms p(99)=1.08s
+      { expected_response:true }...: avg=154.44ms min=5.42ms med=97.9ms   max=1.65s  p(90)=282.17ms p(95)=631.29ms p(99)=1.28s
+    http_req_failed................: 84.46% 16079 out of 19036
+    http_reqs......................: 19036  780.671665/s
+
+    EXECUTION
+    dropped_iterations.............: 965    39.574919/s
+    iteration_duration.............: avg=272.03ms min=1.16ms med=126.98ms max=21.49s p(90)=527.98ms p(95)=634.32ms p(99)=1.08s
+    iterations.....................: 19036  780.671665/s
+    vus............................: 42     min=42             max=517
+    vus_max........................: 583    min=223            max=583
+
+    NETWORK
+    data_received..................: 11 MB  450 kB/s
+    data_sent......................: 25 MB  1.0 MB/s
+
+
+
+
+running (24.4s), 0000/0583 VUs, 19036 complete and 0 interrupted iterations
+api  ✓ [ 100% ] 0000/0583 VUs  20s  1000.00 iters/s
+time="2026-11-14T19:56:24Z" level=error msg="thresholds on metrics 'dropped_iterations, http_req_duration, http_req_failed' have been crossed"

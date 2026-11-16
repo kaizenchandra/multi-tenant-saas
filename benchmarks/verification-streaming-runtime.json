@@ -1,0 +1,151 @@
+{
+  "migrations": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "runtime_role": {
+    "superuser": false,
+    "bypass_rls": false
+  },
+  "runtime_can_write_migration_history": false,
+  "protected_tables": [
+    {
+      "table": "api_budgets",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "audit",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "billing_history",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "event_projection",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "export_chunks",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "feature_flags",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "idempotency",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "inbox",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "invitations",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "jobs",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "outbox",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "project_members",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "projects",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "task_assignments",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "tasks",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "usage",
+      "enabled": true,
+      "forced": true
+    },
+    {
+      "table": "usage_storage",
+      "enabled": true,
+      "forced": true
+    }
+  ],
+  "postgres_settings": {
+    "commit_delay": "1000",
+    "fsync": "on",
+    "max_connections": "192",
+    "synchronous_commit": "on",
+    "wal_sync_method": "fdatasync"
+  },
+  "pods": [
+    {
+      "name": "saas-6c66ff6774-m8m27",
+      "ready": true,
+      "images": [
+        {
+          "image_id": "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043",
+          "restarts": 0
+        }
+      ]
+    },
+    {
+      "name": "saas-6c66ff6774-nqwj2",
+      "ready": true,
+      "images": [
+        {
+          "image_id": "docker-pullable://multi-tenant-saas-app@sha256:95c6db294029eaf457a66f728b0fbe6411fe3cd71b0596e7695b291848c9b043",
+          "restarts": 0
+        }
+      ]
+    }
+  ],
+  "captured_unix": 1794725667.066478,
+  "scope": "Local Compose/OrbStack only; no production readiness or remote deployment claim",
+  "jar_sha256": "fc6b43e2a3726925f3a44a3599a542221b4f2ee3e3191df1a4c55b5e38e7b7a4",
+  "java_tests": {
+    "tests": 73,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}
